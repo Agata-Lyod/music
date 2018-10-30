@@ -39,7 +39,7 @@ gulp.task('html:build', function () {
         .pipe(livereload(server)); //И перезагрузим наш сервер для обновлений
 });
 gulp.task('css', function () {  
-    return gulp.src(['blocks/general/general.less','blocks/**/*.less'])
+    return gulp.src(['blocks/general/i-variables.less','blocks/general/i-less.less','blocks/general/general.less','blocks/**/*.less'])
         .pipe(changed('dist'))
         .pipe(concat('style2.less'))
         .pipe(less({

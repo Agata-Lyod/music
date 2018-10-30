@@ -1,75 +1,70 @@
 /* Header */
-.header {
+.b-header {
     margin-bottom: 65px;
     height:1062px;
     background: url('@{imgpath}header.png') no-repeat center top;
     /*background-size: cover;*/
     /*height:100rem;*/
-}
-.header__menu {
-    width: 100%;
-    height: 62px;
-    position: fixed;
-    top: 0;
-    background: url('@{imgpath}menu.png');
-}
-.header__menu-items {
-    list-style:none;
-    display: flex;
-    justify-content: space-between;
-    width: 1206px;
-    margin: 0 auto;
-    &:last-child {
-        padding-right:0;
+    &__menu {
+        width: 100%;
+        height: 62px;
+        position: fixed;
+        top: 0;
+        background: url('@{imgpath}menu.png');
     }
+    &__menu-items {
+        list-style:none;
+        display: flex;
+        justify-content: space-between;
+        width: 1206px;
+        margin: 0 auto;
+        &:last-child {
+            padding-right:0;
+        }
+    }
+    &__menu-item {
+        padding-top: 3.5px;
+        margin-right: 2px;
+        /*padding-left:8px;
+        padding-right: 8px;*/
+    }
+    &__link {
+        font-family: Dosis-Regular;
+        font-size: 17px;
+        line-height: 59.27px;
+        text-transform: uppercase;
+        position: relative;
+        text-decoration: none;
+        .va118;
+    }
+    &__link:hover {
+        color:#000000;
+    }
+    &__link:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.1em;
+        bottom: -9px;
+        left: 0;
+        background-color: #000000;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+    &__link:hover:before,
+    &__link:target:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    &__logo {
+        display:flex;
+        height: 1000px;
+        text-align: center;
 }
-.header__menu-item {
-    padding-top: 3.5px;
-    margin-right: 2px;
-    /*padding-left:8px;
-    padding-right: 8px;*/
-}
-.header__link {
-    font-family: Dosis-Regular;
-    font-size: 17px;
-    line-height: 59.27px;
-    text-transform: uppercase;
-    position: relative;
-    text-decoration: none;
-    .va118;
-}
-.header__link:hover {
-    color:#000000;
-}
-.header__link:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0.1em;
-    bottom: -9px;
-    left: 0;
-    background-color: #000000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-.header__link:hover:before,
-.header__link:target:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-.header__logo {
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    height: 1000px;
-    text-align: center;
-}
-.header__logo img {
-    margin:auto;
-    padding-bottom: 165px;
-    padding-right: 15.5px;
+    &__logo img {
+        margin:auto;
+        padding-bottom: 165px;
+        padding-right: 15.5px;
+    }
 }
