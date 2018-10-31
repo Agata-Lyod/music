@@ -49,6 +49,12 @@ a:hover {
   margin: 0 auto;
   max-width: 1200px;
 }
+/* Contact */
+.b-contact {
+  height: 862px;
+  background: url('../images/footer.png') no-repeat center bottom;
+  background-size: cover;
+}
 /* Concert tours */
 .concert-tours {
   height: 1253px;
@@ -137,21 +143,15 @@ a:hover {
   content: url('../images/button-buy.png');
   margin-left: 18px;
 }
-/* Contact */
-.contact {
-  height: 862px;
-  background: url(@{imgpath}footer.png) no-repeat center bottom;
-  background-size: cover;
-}
 /* Discography */
-.discography {
+.b-discography {
   /*display: block;*/
   background: url('../images/forest.png') no-repeat center bottom;
   height: 1778px;
   margin-bottom: 165px;
   /*width:100vw;*/
 }
-.discography__title {
+.b-discography__title {
   /*margin-top:-13px;*/
   line-height: 39px;
   margin: 0 auto;
@@ -164,11 +164,11 @@ a:hover {
   -webkit-transform: translate(-2px, -3px);
   transform: translate(-2px, -3px);
 }
-.discography__title:before {
+.b-discography__title:before {
   -webkit-transform: translate(-15.4%, -18px);
-  transform: translate(-15.4%, -18.1px);
+  transform: translate(-15.4%, -18px);
 }
-.discography__preview {
+.b-discography__preview {
   font-size: 14px;
   color: #798285;
   text-align: center;
@@ -178,36 +178,36 @@ a:hover {
   padding-left: 3px;
   letter-spacing: 0.118em;
 }
-.discography__album {
+.b-discography__album {
   width: 100%;
   clear: both;
   position: relative;
 }
-.discography__album-title {
+.b-discography__album-title {
   max-width: 50%;
   float: left;
   font-size: 14px;
   padding: 17px 0.3px;
 }
-.discography__album-year {
+.b-discography__album-year {
   font-family: OpenSans-Bold;
   color: rgba(0, 0, 0, 0.65);
   opacity: 35%;
 }
-.discography__album-year:after {
+.b-discography__album-year:after {
   /*display:block;*/
   content: url('../images/black-line-discography.png');
   position: absolute;
-  -webkit-transform: translate(-30px, 13px);
+  -webkit-transform: translate(-31px, 13px);
   transform: translate(-31px, 13px);
 }
-.discography__album-name {
+.b-discography__album-name {
   color: #000000;
   text-transform: uppercase;
   font-family: OpenSans-Bold;
   margin-top: 14px;
 }
-.discography__album-descr {
+.b-discography__album-descr {
   /*display:block;*/
   font-size: 14px;
   line-height: 24.27px;
@@ -217,46 +217,46 @@ a:hover {
   max-width: 672px;
   padding-left: 3px;
 }
-.discography__album-short-descr {
+.b-discography__album-short-descr {
   /*display:block;*/
   font-size: 23px;
   line-height: 24.27px;
   letter-spacing: 0.018em;
   color: #000000;
 }
-.discography__album-short-descr_number_1 {
+.b-discography__album-short-descr_number_1 {
   margin-bottom: 14px;
 }
-.discography__album-full-descr_number_1 {
-  margin-bottom: 25px;
-}
-.discography__album-short-descr_number_2 {
+.b-discography__album-short-descr_number_2 {
   margin-bottom: 19px;
 }
-.discography__album-full-descr_number_2 {
-  margin-bottom: 17.5px;
-}
-.discography__album-short-descr_number_3 {
+.b-discography__album-short-descr_number_3 {
   line-height: 35.27px;
   margin-bottom: 14px;
 }
-.discography__album-full-descr_number_3 {
-  margin-bottom: 88.5px;
-}
-.discography__album-short-descr_wrap_nowrap {
+.b-discography__album-short-descr_wrap_nowrap {
   white-space: nowrap;
 }
-.discography__album-year_margin_double {
-  margin-top: 42px;
-}
-.discography__album-full-descr {
+.b-discography__album-full-descr {
   /*display:block;*/
   font-size: 14px;
   line-height: 24.27px;
   letter-spacing: 0.018em;
   color: #acacac;
 }
-.discography__button-play {
+.b-discography__album-full-descr_number_1 {
+  margin-bottom: 25px;
+}
+.b-discography__album-full-descr_number_2 {
+  margin-bottom: 17.5px;
+}
+.b-discography__album-full-descr_number_3 {
+  margin-bottom: 88.5px;
+}
+.b-discography__album-year_margin_double {
+  margin-top: 42px;
+}
+.b-discography__button-play {
   /*display:flex;*/
   width: 196px;
   height: 56px;
@@ -267,55 +267,19 @@ a:hover {
   /*vertical-align: middle;*/
   alignment-baseline: middle;
 }
-.discography__button-play_background_one {
+.b-discography__button-play_background_one {
   background: url('../images/mount.png') no-repeat;
   color: #ffffff;
   margin-bottom: 108.9px;
 }
-.discography__button-play_background_two {
+.b-discography__button-play_background_two {
   background: url('../images/palm.png') no-repeat;
   color: #000000;
   margin-bottom: 86.2px;
 }
-.discography__button-play_background_three {
+.b-discography__button-play_background_three {
   background: url('../images/shadow.png') no-repeat;
   color: #000000;
-}
-/* History */
-.history {
-  height: 1105px;
-  background: url('../images/history.png') no-repeat center bottom;
-  margin-bottom: 119px;
-}
-.history__title {
-  padding-top: 15px;
-}
-/* Latter compositions */
-.b-latter-compositions {
-  margin-bottom: 159px;
-  height: 1667px;
-}
-.b-latter-compositions__title {
-  line-height: 34px;
-}
-.b-latter-compositions__title:before {
-  -webkit-transform: translate(-15px, -14px);
-  transform: translate(-15px, -14px);
-}
-.b-latter-compositions__descr-of-track_float_right {
-  float: right;
-}
-.b-latter-compositions__descr-of-track_float_left {
-  float: left;
-  /*clear:none;*/
-}
-.b-latter-compositions__track_float_left {
-  float: left;
-  /*clear:none;*/
-}
-.b-latter-compositions__track_float_right {
-  float: right;
-  /*clear:none;*/
 }
 /* Header */
 .b-header {
@@ -395,6 +359,42 @@ a:hover {
   margin: auto;
   padding-bottom: 165px;
   padding-right: 15.5px;
+}
+/* History */
+.b-history {
+  height: 1105px;
+  background: url('../images/history.png') no-repeat center bottom;
+  margin-bottom: 119px;
+}
+.b-history__title {
+  padding-top: 15px;
+}
+/* Latter compositions */
+.b-latter-compositions {
+  margin-bottom: 159px;
+  height: 1667px;
+}
+.b-latter-compositions__title {
+  line-height: 34px;
+}
+.b-latter-compositions__title:before {
+  -webkit-transform: translate(-15px, -14px);
+  transform: translate(-15px, -14px);
+}
+.b-latter-compositions__descr-of-track_float_right {
+  float: right;
+}
+.b-latter-compositions__descr-of-track_float_left {
+  float: left;
+  /*clear:none;*/
+}
+.b-latter-compositions__track_float_left {
+  float: left;
+  /*clear:none;*/
+}
+.b-latter-compositions__track_float_right {
+  float: right;
+  /*clear:none;*/
 }
 /*  new-tracks */
 .new-tracks {
