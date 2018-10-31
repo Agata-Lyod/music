@@ -39,33 +39,24 @@ a:hover {
   letter-spacing: 0.118em;
   text-transform: uppercase;
   text-align: center;
+  z-index: 10;
 }
 .title:before {
   content: url('../images/black-line-title.png');
   position: absolute;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 .wrap {
   margin: 0 auto;
   max-width: 1200px;
 }
-/* Contact */
-.b-contact {
-  height: 862px;
-  background: url('../images/footer.png') no-repeat center bottom;
-  background-size: cover;
-}
 /* Concert tours */
-.concert-tours {
+.b-concert-tours {
   height: 1253px;
   margin-bottom: 162px;
   background: url('../images/concert-tours.png') no-repeat center bottom;
 }
-.concert-tours__title:before {
-  -webkit-transform: translate(-9.8%, -16px);
-  transform: translate(-9.8%, -16px);
-}
-.concert-tours__title {
+.b-concert-tours__title {
   line-height: 40px;
   height: 1.1em;
   background: -webkit-gradient(linear, left top, left bottom, from(#62a2ad), to(#8dbab3));
@@ -73,7 +64,11 @@ a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.concert-tours__preview {
+.b-concert-tours__title:before {
+  -webkit-transform: translate(-9.8%, -16px);
+  transform: translate(-9.8%, -16px);
+}
+.b-concert-tours__preview {
   text-align: center;
   font-size: 14px;
   line-height: 24.27px;
@@ -82,22 +77,22 @@ a:hover {
   -webkit-transform: translateX(-2.7px);
   transform: translateX(-2.7px);
 }
-.concert-tours__tour {
+.b-concert-tours__tour {
   margin-top: 463px;
 }
-.concert-tours__date {
+.b-concert-tours__date {
   font-family: OpenSans-Bold;
   color: rgba(0, 0, 0, 0.65);
   font-size: 14px;
   margin-bottom: 14px;
 }
-.concert-tours__date:after {
+.b-concert-tours__date:after {
   content: url('../images/black-line-tours.png');
   position: absolute;
-  -webkit-transform: translate(-19.8%, -16px);
+  -webkit-transform: translate(-70px, 12.3px);
   transform: translate(-70px, 12.3px);
 }
-.concert-tours__name-of-tour {
+.b-concert-tours__name-of-tour {
   text-transform: uppercase;
   font-family: OpenSans-Bold;
   font-size: 14px;
@@ -106,7 +101,7 @@ a:hover {
   transform: translateX(-1.5px);
   margin-bottom: 71px;
 }
-.concert-tours__time-of-tour {
+.b-concert-tours__time-of-tour {
   font-family: OpenSans-Regular;
   font-size: 23px;
   letter-spacing: 0.018em;
@@ -115,7 +110,7 @@ a:hover {
   transform: translateX(-1.5px);
   margin-bottom: 16px;
 }
-.concert-tours__descr-of-tour {
+.b-concert-tours__descr-of-tour {
   width: 672px;
   font-family: OpenSans-Regular;
   font-size: 14px;
@@ -124,7 +119,7 @@ a:hover {
   color: #798285;
   margin-bottom: 34px;
 }
-.concert-tours__buy {
+.b-concert-tours__buy {
   width: 194px;
   height: 54px;
   line-height: 54px;
@@ -139,9 +134,15 @@ a:hover {
   opacity: 0.439;
   z-index: 201;
 }
-.concert-tours__buy:after {
+.b-concert-tours__buy:after {
   content: url('../images/button-buy.png');
   margin-left: 18px;
+}
+/* Contact */
+.b-contact {
+  height: 862px;
+  background: url('../images/footer.png') no-repeat center bottom;
+  background-size: cover;
 }
 /* Discography */
 .b-discography {
@@ -281,6 +282,15 @@ a:hover {
   background: url('../images/shadow.png') no-repeat;
   color: #000000;
 }
+/* History */
+.b-history {
+  height: 1105px;
+  background: url('../images/history.png') no-repeat center bottom;
+  margin-bottom: 119px;
+}
+.b-history__title {
+  padding-top: 15px;
+}
 /* Header */
 .b-header {
   margin-bottom: 65px;
@@ -295,6 +305,7 @@ a:hover {
   position: fixed;
   top: 0;
   background: url('../images/menu.png');
+  z-index: 50;
 }
 .b-header__menu-items {
   list-style: none;
@@ -359,42 +370,6 @@ a:hover {
   margin: auto;
   padding-bottom: 165px;
   padding-right: 15.5px;
-}
-/* History */
-.b-history {
-  height: 1105px;
-  background: url('../images/history.png') no-repeat center bottom;
-  margin-bottom: 119px;
-}
-.b-history__title {
-  padding-top: 15px;
-}
-/* Latter compositions */
-.b-latter-compositions {
-  margin-bottom: 159px;
-  height: 1667px;
-}
-.b-latter-compositions__title {
-  line-height: 34px;
-}
-.b-latter-compositions__title:before {
-  -webkit-transform: translate(-15px, -14px);
-  transform: translate(-15px, -14px);
-}
-.b-latter-compositions__descr-of-track_float_right {
-  float: right;
-}
-.b-latter-compositions__descr-of-track_float_left {
-  float: left;
-  /*clear:none;*/
-}
-.b-latter-compositions__track_float_left {
-  float: left;
-  /*clear:none;*/
-}
-.b-latter-compositions__track_float_right {
-  float: right;
-  /*clear:none;*/
 }
 /*  new-tracks */
 .new-tracks {
@@ -482,10 +457,37 @@ a:hover {
   /*white-space: nowrap;*/
   /*height: 50%;*/
 }
+/* Latter compositions */
+.b-latter-compositions {
+  margin-bottom: 159px;
+  height: 1667px;
+}
+.b-latter-compositions__title {
+  line-height: 34px;
+}
+.b-latter-compositions__title:before {
+  -webkit-transform: translate(-15px, -14px);
+  transform: translate(-15px, -14px);
+}
+.b-latter-compositions__descr-of-track_float_right {
+  float: right;
+}
+.b-latter-compositions__descr-of-track_float_left {
+  float: left;
+  /*clear:none;*/
+}
+.b-latter-compositions__track_float_left {
+  float: left;
+  /*clear:none;*/
+}
+.b-latter-compositions__track_float_right {
+  float: right;
+  /*clear:none;*/
+}
 /* Slider */
 .slider {
   margin-bottom: 165px;
-  background-image: url(../images/ocean.png);
+  background-image: url('../images/ocean.png');
   height: 642px;
   border: 1px solid #888;
   position: relative;
@@ -502,7 +504,7 @@ a:hover {
   transform: translateY(400px);
   /*display: none;*/
   margin-right: 38px;
-  /*z-index:220;*/
+  z-index: 20;
 }
 #slider_3 {
   margin-right: 0;
@@ -520,7 +522,7 @@ a:hover {
   top: 40%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 210;
+  /*z-index: 10;*/
 }
 .slider > input:checked + div + label:after,
 .slider > input:checked + div + label + label:after {
@@ -529,7 +531,7 @@ a:hover {
   top: 0px;
   bottom: 0px;
   line-height: 120px;
-  z-index: 210;
+  /*z-index: 10;*/
   cursor: pointer;
 }
 .slider > input:checked + div + label {
@@ -565,16 +567,21 @@ a:hover {
   transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
 }
 /* Upcoming events */
-.upcoming-events {
+.b-upcoming-events {
   height: 1203px;
   margin-bottom: 145px;
   background: url('../images/bridge.png') no-repeat center bottom;
   /*background-size: cover;*/
 }
-.upcoming-events__title {
+.b-upcoming-events__title {
   height: 1.1em;
   background: -webkit-gradient(linear, left top, left bottom, from(#62a2ad), to(#8dbab3));
   background: linear-gradient(#62a2ad, #8dbab3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.b-upcoming-events__title:before {
+  -webkit-transform: translate(10px, 10px);
+  transform: translate(10px, 10px);
+  z-index: 20;
 }

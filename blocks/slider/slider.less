@@ -1,7 +1,7 @@
 /* Slider */
 .slider {
     margin-bottom: 165px;
-    background-image: url(../images/ocean.png);
+    background-image: url('@{imgpath}ocean.png');
     height: 642px;
     border: 1px solid #888;
     position: relative;
@@ -17,7 +17,7 @@
     transform: translateY(400px);
     /*display: none;*/
     margin-right: 38px;
-    /*z-index:220;*/
+    z-index: 20;
 }
 #slider_3 {
     margin-right: 0;
@@ -34,7 +34,7 @@
     position: absolute;
     top: 40%;
     transform: translateY(-50%);
-    z-index: 210;
+    /*z-index: 10;*/
 }
 .slider > input:checked + div + label:after,
 .slider > input:checked + div + label + label:after {
@@ -43,7 +43,7 @@
     top: 0px;
     bottom: 0px;
     line-height: 120px;
-    z-index: 210;
+    /*z-index: 10;*/
     cursor: pointer;
 }
 .slider > input:checked + div + label {
