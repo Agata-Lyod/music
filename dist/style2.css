@@ -50,12 +50,6 @@ a:hover {
   margin: 0 auto;
   max-width: 1200px;
 }
-/* Contact */
-.b-contact {
-  height: 862px;
-  background: url('../images/footer.png') no-repeat center bottom;
-  background-size: cover;
-}
 /* Concert tours */
 .b-concert-tours {
   height: 1253px;
@@ -151,6 +145,12 @@ a:hover {
 .b-concert-tours__buy-link:after {
   content: url('../images/button-buy.png');
   margin-left: 18px;
+}
+/* Contact */
+.b-contact {
+  height: 862px;
+  background: url('../images/footer.png') no-repeat center bottom;
+  background-size: cover;
 }
 /* Discography */
 .b-discography {
@@ -387,26 +387,71 @@ a:hover {
   height: 1667px;
 }
 .b-latter-compositions__title {
+  color: #000000;
   line-height: 34px;
+  margin-bottom: 56px;
 }
 .b-latter-compositions__title:before {
   -webkit-transform: translate(-15px, -14px);
   transform: translate(-15px, -14px);
 }
+.b-latter-compositions__preview {
+  text-align: center;
+  font-family: OpenSans-Regular;
+  line-height: 24.27px;
+  color: #798285;
+  letter-spacing: 0.118em;
+  margin-bottom: 131px;
+}
+.b-latter-compositions__track {
+  height: 422px;
+  margin-bottom: 53.5px;
+}
+.b-latter-compositions__descr-of-track {
+  width: 600px;
+  height: 422px;
+  background-color: #f5f6f6;
+}
 .b-latter-compositions__descr-of-track_float_right {
   float: right;
+  clear: right;
+}
+.b-latter-compositions__descr-of-track_float_right:before {
+  position: absolute;
+  content: url('../images/lat-comp-strelka-vlevo.png');
+  -webkit-transform: translate(-13px, 230px);
+  transform: translate(-13px, 230px);
 }
 .b-latter-compositions__descr-of-track_float_left {
   float: left;
-  /*clear:none;*/
+  clear: left;
 }
-.b-latter-compositions__track_float_left {
+.b-latter-compositions__descr-of-track_float_left:after {
+  position: absolute;
+  content: url('../images/lat-comp-strelka-vpravo.png');
+  -webkit-transform: translate(600px, 60px);
+  transform: translate(600px, 60px);
+}
+.b-latter-compositions__player {
+  width: 600px;
+  height: 422px;
+}
+.b-latter-compositions__player_float_left {
   float: left;
-  /*clear:none;*/
+  clear: none;
 }
-.b-latter-compositions__track_float_right {
+.b-latter-compositions__player_float_right {
   float: right;
-  /*clear:none;*/
+  clear: none;
+}
+.b-latter-compositions__player_background_1 {
+  background: url('../images/show-me-love.png');
+}
+.b-latter-compositions__player_background_2 {
+  background: url('../images/music-is-life.png');
+}
+.b-latter-compositions__player_background_3 {
+  background: url('../images/chill-nation.png');
 }
 /*  new-tracks */
 .b-new-tracks {
