@@ -35,11 +35,11 @@ a:hover {
 .title {
   font-size: 50.49px;
   font-family: Dosis-Regular;
-  /*line-height: 34px;*/
+  line-height: 34px;
   letter-spacing: 0.118em;
   text-transform: uppercase;
   text-align: center;
-  z-index: 10;
+  /*z-index: 10;*/
 }
 .title:before {
   content: url('../images/black-line-title.png');
@@ -50,6 +50,12 @@ a:hover {
   margin: 0 auto;
   max-width: 1200px;
 }
+/* Contact */
+.b-contact {
+  height: 862px;
+  background: url('../images/footer.png') no-repeat center bottom;
+  background-size: cover;
+}
 /* Concert tours */
 .b-concert-tours {
   height: 1253px;
@@ -57,28 +63,31 @@ a:hover {
   background: url('../images/concert-tours.png') no-repeat center bottom;
 }
 .b-concert-tours__title {
-  line-height: 40px;
-  height: 1.1em;
+  margin-bottom: 34px;
+  line-height: 34px;
+  height: 1.05em;
   background: -webkit-gradient(linear, left top, left bottom, from(#62a2ad), to(#8dbab3));
   background: linear-gradient(#62a2ad, #8dbab3);
+  background-position: 5px 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .b-concert-tours__title:before {
   -webkit-transform: translate(-9.8%, -16px);
   transform: translate(-9.8%, -16px);
+  z-index: -1;
 }
 .b-concert-tours__preview {
+  margin-bottom: 464px;
   text-align: center;
   font-size: 14px;
   line-height: 24.27px;
   letter-spacing: 0.118em;
-  margin-top: 32px;
   -webkit-transform: translateX(-2.7px);
   transform: translateX(-2.7px);
 }
 .b-concert-tours__tour {
-  margin-top: 463px;
+  /*margin-bottom: 464px;*/
 }
 .b-concert-tours__date {
   font-family: OpenSans-Bold;
@@ -120,29 +129,28 @@ a:hover {
   margin-bottom: 34px;
 }
 .b-concert-tours__buy {
-  width: 194px;
-  height: 54px;
-  line-height: 54px;
-  font-size: 14px;
-  font-family: OpenSans-Bold;
-  color: #000000;
-  text-align: left;
-  padding-left: 36px;
+  width: 195px;
+  height: 55px;
+  /*line-height: 55px;*/
+  /*text-align: center;*/
+  /*padding-left: 36px;*/
   border-width: 1px;
   border-color: #636363;
   border-style: solid;
   opacity: 0.439;
   z-index: 201;
 }
-.b-concert-tours__buy:after {
+.b-concert-tours__buy-link {
+  font-size: 14px;
+  font-family: OpenSans-Bold;
+  color: #000000;
+  padding-left: 49.5px;
+  line-height: 55px;
+  /*text-align: center;*/
+}
+.b-concert-tours__buy-link:after {
   content: url('../images/button-buy.png');
   margin-left: 18px;
-}
-/* Contact */
-.b-contact {
-  height: 862px;
-  background: url('../images/footer.png') no-repeat center bottom;
-  background-size: cover;
 }
 /* Discography */
 .b-discography {
@@ -153,28 +161,27 @@ a:hover {
   /*width:100vw;*/
 }
 .b-discography__title {
-  /*margin-top:-13px;*/
-  line-height: 39px;
+  line-height: 35px;
   margin: 0 auto;
   width: 345px;
-  /*height: 40px;*/
+  height: 40px;
   background: url('../images/discography-back.png') no-repeat;
-  background-position: 3px 2.5px;
+  background-position: 2.9px 1.3px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transform: translate(-2px, -3px);
-  transform: translate(-2px, -3px);
+  /*transform: translate(-2px,-3px);*/
 }
 .b-discography__title:before {
   -webkit-transform: translate(-15.4%, -18px);
   transform: translate(-15.4%, -18px);
+  z-index: -1;
 }
 .b-discography__preview {
   font-size: 14px;
   color: #798285;
   text-align: center;
   line-height: 24.27px;
-  max-width: 735px;
+  /*max-width: 735px;*/
   margin: 42px auto 149px;
   padding-left: 3px;
   letter-spacing: 0.118em;
@@ -264,6 +271,7 @@ a:hover {
   font-family: OpenSans-Bold;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
   line-height: 56px;
   /*vertical-align: middle;*/
   alignment-baseline: middle;
@@ -281,15 +289,6 @@ a:hover {
 .b-discography__button-play_background_three {
   background: url('../images/shadow.png') no-repeat;
   color: #000000;
-}
-/* History */
-.b-history {
-  height: 1105px;
-  background: url('../images/history.png') no-repeat center bottom;
-  margin-bottom: 119px;
-}
-.b-history__title {
-  padding-top: 15px;
 }
 /* Header */
 .b-header {
@@ -309,23 +308,25 @@ a:hover {
 }
 .b-header__menu-items {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  position: relative;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
   width: 1206px;
-  margin: 0 auto;
-}
-.b-header__menu-items:last-child {
-  padding-right: 0;
+  /*margin: 0 auto;*/
+  left: 50%;
+  -webkit-transform: translateX(-49.72%);
+  transform: translateX(-49.72%);
 }
 .b-header__menu-item {
+  display: inline-block;
   padding-top: 3.5px;
-  margin-right: 2px;
-  /*padding-left:8px;
-        padding-right: 8px;*/
+  padding-right: 39px;
+}
+.b-header__menu-item_padding_min {
+  padding-right: 34px;
+}
+.b-header__menu-item:last-child {
+  padding-right: 0;
 }
 .b-header__link {
   font-family: Dosis-Regular;
@@ -371,91 +372,14 @@ a:hover {
   padding-bottom: 165px;
   padding-right: 15.5px;
 }
-/*  new-tracks */
-.new-tracks {
-  height: 872px;
-  margin-bottom: 122px;
+/* History */
+.b-history {
+  height: 1105px;
+  background: url('../images/history.png') no-repeat center bottom;
+  margin-bottom: 119px;
 }
-.new-tracks__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1201px;
-  height: 872px;
-  /*clear:none;*/
-  -ms-flex-line-pack: justify;
-  align-content: space-between;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-.new-tracks__item {
-  width: 384px;
-  height: 422px;
-  /*margin:14px 12.5px;*/
-}
-.new-tracks__item_number_1 {
-  background: url('../images/track1.png');
-}
-.new-tracks__item_number_2 {
-  background: url('../images/track2.png');
-}
-.new-tracks__item_number_3 {
-  background: url('../images/track3.png');
-}
-.new-tracks__item_number_4 {
-  background: url('../images/track4.png');
-}
-.new-tracks__item_number_5 {
-  background: url('../images/track5.png');
-}
-.new-tracks__item_number_6 {
-  background: url('../images/track6.png');
-}
-.new-tracks__descr {
-  padding: 35px;
-  text-align: left;
-}
-.new-tracks__date {
-  color: #000000;
-  /*margin-top:35px;*/
-  /*text-align: left;*/
-  font-family: OpenSans-Bold;
-  margin-bottom: 12px;
-}
-.new-tracks__date:after {
-  content: url('../images/black-line.png');
-}
-.new-tracks__album {
-  color: #ffffff;
-  /*margin-top:35px;*/
-  /*text-align: left;*/
-  font-family: OpenSans-Bold;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-.new-tracks__name {
-  color: #000000;
-  /*margin-top:35px;*/
-  /*text-align: left;*/
-  font-family: OpenSans-Regular;
-  font-size: 23px;
-}
-.new-tracks__full-descr {
-  /*position: absolute;*/
-  /*position: relative;*/
-  font-family: OpenSans-Regular;
-  font-size: 14px;
-  overflow-y: hidden;
-  max-height: 155px;
-  /*text-overflow: scroll;*/
-  /*white-space: nowrap;*/
-  /*height: 50%;*/
+.b-history__title {
+  padding-top: 15px;
 }
 /* Latter compositions */
 .b-latter-compositions {
@@ -483,6 +407,92 @@ a:hover {
 .b-latter-compositions__track_float_right {
   float: right;
   /*clear:none;*/
+}
+/*  new-tracks */
+.b-new-tracks {
+  height: 872px;
+  margin-bottom: 122px;
+}
+.b-new-tracks__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1201px;
+  height: 872px;
+  /*clear:none;*/
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.b-new-tracks__item {
+  width: 384px;
+  height: 422px;
+  /*margin:14px 12.5px;*/
+}
+.b-new-tracks__item_number_1 {
+  background: url('../images/track1.png');
+}
+.b-new-tracks__item_number_2 {
+  background: url('../images/track2.png');
+}
+.b-new-tracks__item_number_3 {
+  background: url('../images/track3.png');
+}
+.b-new-tracks__item_number_4 {
+  background: url('../images/track4.png');
+}
+.b-new-tracks__item_number_5 {
+  background: url('../images/track5.png');
+}
+.b-new-tracks__item_number_6 {
+  background: url('../images/track6.png');
+}
+.b-new-tracks__descr {
+  padding: 35px;
+  text-align: left;
+}
+.b-new-tracks__date {
+  color: #000000;
+  /*margin-top:35px;*/
+  /*text-align: left;*/
+  font-family: OpenSans-Bold;
+  margin-bottom: 12px;
+}
+.b-new-tracks__date:after {
+  content: url('../images/black-line.png');
+}
+.b-new-tracks__album {
+  color: #ffffff;
+  /*margin-top:35px;*/
+  /*text-align: left;*/
+  font-family: OpenSans-Bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.b-new-tracks__name {
+  color: #000000;
+  /*margin-top:35px;*/
+  /*text-align: left;*/
+  font-family: OpenSans-Regular;
+  font-size: 23px;
+}
+.b-new-tracks__full-descr {
+  /*position: absolute;*/
+  /*position: relative;*/
+  font-family: OpenSans-Regular;
+  font-size: 14px;
+  overflow-y: hidden;
+  max-height: 155px;
+  /*text-overflow: scroll;*/
+  /*white-space: nowrap;*/
+  /*height: 50%;*/
 }
 /* Slider */
 .slider {
