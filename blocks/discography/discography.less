@@ -2,30 +2,30 @@
 .b-discography {
     /*display: block;*/
     background: url('@{imgpath}forest.png') no-repeat center bottom;
-    height:1778px;
+    height: 1778px;
     margin-bottom: 165px;
     /*width:100vw;*/
     &__title {
-        /*margin-top:-13px;*/
-        line-height: 39px;
+        line-height: 35px;
         margin: 0 auto;
         width: 345px;
-        /*height: 40px;*/
+        height: 40px;
         background: url('@{imgpath}discography-back.png') no-repeat;
-        background-position: 3px 2.5px;
+        background-position: 2.9px 1.3px;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transform: translate(-2px,-3px);
+        /*transform: translate(-2px,-3px);*/
     }
     &__title:before {
         transform: translate(-15.4%,-18px);
+        z-index: -1;
     }
     &__preview {
         font-size: 14px;
         color: #798285;
         text-align: center;
         line-height: 24.27px;
-        max-width: 735px;
+        /*max-width: 735px;*/
         margin: 42px auto 149px;
         padding-left: 3px;
         .va118;
@@ -62,7 +62,7 @@
         /*display:block;*/
         font-size: 14px;
         line-height: 24.27px;
-        letter-spacing: 0.018em;
+        .va18;
         clear: none;
         float: right;
         max-width: 672px;
@@ -72,7 +72,7 @@
         /*display:block;*/
         font-size: 23px;
         line-height: 24.27px;
-        letter-spacing: 0.018em;
+        .va18;
         color:#000000;
         &_number_1 {
             margin-bottom: 14px;
@@ -112,8 +112,9 @@
         width:196px;
         height:56px;
         font-family: OpenSans-Bold;
-        text-align:center;
+        text-align: center;
         text-transform: uppercase;
+        cursor: pointer;
         line-height: 56px;
         /*vertical-align: middle;*/
         alignment-baseline: middle;

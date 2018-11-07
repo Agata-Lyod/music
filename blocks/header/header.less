@@ -14,20 +14,25 @@
         z-index: 50;
     }
     &__menu-items {
-        list-style:none;
-        display: flex;
-        justify-content: space-between;
+        list-style: none;
+        position: relative;
+        /*display: flex;*/
+        /*justify-content: space-between;*/
         width: 1206px;
-        margin: 0 auto;
-        &:last-child {
-            padding-right:0;
+        /*margin: 0 auto;*/
+        left: 50%;
+        transform: translateX(-49.72%);
         }
-    }
     &__menu-item {
+        display: inline-block;
         padding-top: 3.5px;
-        margin-right: 2px;
-        /*padding-left:8px;
-        padding-right: 8px;*/
+        padding-right: 39px;
+        &_padding_min {
+            padding-right: 34px;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
     }
     &__link {
         font-family: Dosis-Regular;
@@ -59,12 +64,12 @@
         transform: scaleX(1);
     }
     &__logo {
-        display:flex;
+        display: flex;
         height: 1000px;
         text-align: center;
 }
     &__logo img {
-        margin:auto;
+        margin: auto;
         padding-bottom: 165px;
         padding-right: 15.5px;
     }

@@ -3,24 +3,69 @@
     margin-bottom: 159px;
     height: 1667px;
     &__title {
-        line-height:34px;
+        color: rgb(0,0,0);
+        line-height: 34px;
+        margin-bottom: 56px;
     }
     &__title:before {
         transform: translate(-15px, -14px);
     }
-    &__descr-of-track_float_right {
-        float: right;
+    &__preview {
+        text-align: center;
+        font-family: OpenSans-Regular;
+        line-height: 24.27px;
+        color: rgb(121,130,133);
+        .va118;
+        margin-bottom: 131px;
     }
-    &__descr-of-track_float_left {
+    &__track {
+        height: 422px;
+        margin-bottom: 53.5px;
+    }
+    &__descr-of-track {
+        width: 600px;
+        height: 422px;
+        background-color: rgb(245,246,246);
+        &_float_right {
+            float: right;
+            clear: right;
+        }
+        &_float_right:before {
+            position: absolute;
+            content: url('@{imgpath}lat-comp-strelka-vlevo.png');
+            transform: translate(-13px, 230px);
+        }
+        &_float_left {
+            float: left;
+            clear: left;
+        }
+        &_float_left:after {
+            position: absolute;
+            content: url('@{imgpath}lat-comp-strelka-vpravo.png');
+            transform: translate(600px, 60px);
+
+        }
+    }
+    &__player {
+        width: 600px;
+        height: 422px;
+        &_float_left {
         float: left;
-        /*clear:none;*/
-    }
-    &__track_float_left {
-        float: left;
-        /*clear:none;*/
-    }
-    &__track_float_right {
+        clear: none;
+        }
+        &_float_right {
         float: right;
-        /*clear:none;*/
+        clear: none;
+        }
+        &_background_1 {
+            background: url('@{imgpath}show-me-love.png');
+        }
+        &_background_2 {
+            background: url('@{imgpath}music-is-life.png');
+        }
+        &_background_3 {
+            background: url('@{imgpath}chill-nation.png');
+        }
     }
 }
+

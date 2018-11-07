@@ -1,87 +1,79 @@
 /*  new-tracks */
-.new-tracks {
-    height: 872px;
-    margin-bottom:122px;
-}
-.new-tracks__list {
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    max-width:1201px;
-    height: 872px;
-    /*clear:none;*/
-    -ms-flex-line-pack: justify;
-    align-content: space-between;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack:justify;
-    -ms-flex-pack:justify;
-    justify-content:space-between;
-}
-.new-tracks__item {
-    width:384px;
-    height:422px;
-    /*margin:14px 12.5px;*/
-}
-.new-tracks__item_number_1 {
-    background: url('@{imgpath}track1.png');
-}
-.new-tracks__item_number_2 {
-    background: url('@{imgpath}track2.png');
-}
-.new-tracks__item_number_3 {
-    background: url('@{imgpath}track3.png');
-}
-.new-tracks__item_number_4 {
-    background: url('@{imgpath}track4.png');
-}
-.new-tracks__item_number_5 {
-    background: url('@{imgpath}track5.png');
-}
-.new-tracks__item_number_6 {
-    background: url('@{imgpath}track6.png');
-}
-.new-tracks__descr {
-    text-align: left;
-    padding:35px;
-    text-align: left;
-}
-.new-tracks__date {
-    color:#000000;
-    /*margin-top:35px;*/
-    /*text-align: left;*/
-    font-family: OpenSans-Bold;
-    margin-bottom:12px;
-}
-.new-tracks__date:after {
-    content:url('@{imgpath}black-line.png');
-}
-.new-tracks__album {
-    color:#ffffff;
-    /*margin-top:35px;*/
-    /*text-align: left;*/
-    font-family: OpenSans-Bold;
-    text-transform: uppercase;
-    margin-bottom:12px;
-}
-.new-tracks__name {
-    color:#000000;
-    /*margin-top:35px;*/
-    /*text-align: left;*/
-    font-family: OpenSans-Regular;
-    font-size:23px;
-}
-.new-tracks__full-descr {
-    /*position: absolute;*/
-    /*position: relative;*/
-    font-family: OpenSans-Regular;
-    font-size: 14px;
-    overflow-y: hidden;
-    max-height: 155px;
-    /*text-overflow: scroll;*/
-    /*white-space: nowrap;*/
-    /*height: 50%;*/
+.b-new-tracks {
+    height       : 872px;
+    margin-bottom: 122px;
+    &__list {
+        display  : flex;
+        max-width: 1201px;
+        height   : 872px;
+        /*clear:none;*/
+        align-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        width:384px;
+        height:422px;
+        /*margin:14px 12.5px;*/
+        &_number_1 {
+            background: url('@{imgpath}track1.png');
+        }
+        &_number_2 {
+            background: url('@{imgpath}track2.png');
+        }
+        &_number_3 {
+            background: url('@{imgpath}track3.png');
+        }
+        &_number_4 {
+            background: url('@{imgpath}track4.png');
+        }
+        &_number_5 {
+            background: url('@{imgpath}track5.png');
+        }
+        &_number_6 {
+            background: url('@{imgpath}track6.png');
+        }
+    }
+    &__descr {
+        text-align: left;
+        padding: 35px;
+        text-align: left;
+    }
+    &__date {
+        color: #000000;
+        /*margin-top:35px;*/
+        /*text-align: left;*/
+        font-family: OpenSans-Bold;
+        margin-bottom: 12px;
+    }
+    &__date:after {
+        content: url('@{imgpath}black-line.png');
+    }
+    &__album {
+        color: #ffffff;
+        /*margin-top:35px;*/
+        /*text-align: left;*/
+        font-family: OpenSans-Bold;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    &__name {
+        color: #000000;
+        /*margin-top:35px;*/
+        /*text-align: left;*/
+        font-family: OpenSans-Regular;
+        font-size: 23px;
+    }
+    &__full-descr {
+        /*position: absolute;*/
+        /*position: relative;*/
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        overflow-y: hidden;
+        max-height: 155px;
+        /*text-overflow: scroll;*/
+        /*white-space: nowrap;*/
+        /*height: 50%;*/
+    }
 }
