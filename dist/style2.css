@@ -368,6 +368,8 @@ a:hover {
   text-align: center;
 }
 .b-header__logo img {
+  width: 428px;
+  height: 397px;
   margin: auto;
   padding-bottom: 165px;
   padding-right: 15.5px;
@@ -390,6 +392,8 @@ a:hover {
   color: #000000;
   line-height: 34px;
   margin-bottom: 56px;
+  -webkit-transform: translate();
+  transform: translate();
 }
 .b-latter-compositions__title:before {
   -webkit-transform: translate(-15px, -14px);
@@ -419,8 +423,8 @@ a:hover {
 .b-latter-compositions__descr-of-track_float_right:before {
   position: absolute;
   content: url('../images/lat-comp-strelka-vlevo.png');
-  -webkit-transform: translate(-13px, 230px);
-  transform: translate(-13px, 230px);
+  -webkit-transform: translate(-12px, 230px);
+  transform: translate(-12px, 230px);
 }
 .b-latter-compositions__descr-of-track_float_left {
   float: left;
@@ -561,6 +565,9 @@ a:hover {
   margin-right: 38px;
   z-index: 20;
 }
+.slider > input:lastchild {
+  margin-right: 0;
+}
 #slider_3 {
   margin-right: 0;
 }
@@ -608,7 +615,7 @@ a:hover {
   top: 0px;
   left: 0px;
   right: 0px;
-  bottom: 0px;
+  /*bottom: 0px;*/
   z-index: 0;
   visibility: hidden;
   opacity: 0;
