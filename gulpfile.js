@@ -1,7 +1,7 @@
 const gulp = require('gulp')
       prefixer = require('gulp-autoprefixer');
-      lr = require('tiny-lr'), // Минивебсервер для livereload
-      livereload = require('gulp-livereload'); // Livereload для Gulp
+      //lr = require('tiny-lr'), // Минивебсервер для livereload
+      //livereload = require('gulp-livereload'); // Livereload для Gulp
       rigger = require('gulp-rigger'),
       myth = require('gulp-myth'), // Плагин для Myth - http://www.myth.io/
       csso = require('gulp-csso'), // Минификация CSS
@@ -9,14 +9,16 @@ const gulp = require('gulp')
       uglify = require('gulp-uglify'), // Минификация JS
       concat = require('gulp-concat'), // Склейка файлов
       connect = require('connect'), // Webserver
-      server = lr();
+      //server = lr();
       less = require('gulp-less'),
       path = require('path'),
-      changed = require('gulp-changed');
+      changed = require('gulp-changed'),
+      browserSync = require("browser-sync").create();
+      //reload = browserSync.reload;
       //watch = require('gulp-watch');
 const config = {
         server: {
-        baseDir: "/"
+          baseDir: "./"
         },
         tunnel: true,
         host: 'localhost',
@@ -31,13 +33,6 @@ gulp.task('prefixer', () =>
         }))
         .pipe(gulp.dest('dist'))
 );
-gulp.task('html:build', function () {
-    return gulp.src('blocks/**/*.html') //Выберем файлы по нужному пути
-        .pipe(rigger()) //Прогоним через rigger
-        .pipe(concat('index2.html'))
-        .pipe(gulp.dest('dist')) //Выплюнем их в папку build
-        .pipe(livereload(server)); //И перезагрузим наш сервер для обновлений
-});
 gulp.task('css', function () {  
     return gulp.src(['blocks/general/i-variables.less','blocks/general/i-less.less','blocks/general/general.less','blocks/**/*.less'])
         .pipe(changed('dist'))
@@ -50,8 +45,18 @@ gulp.task('css', function () {
             cascade: false
         }))
         .pipe(gulp.dest('dist'))
-        .pipe(livereload(server)); // даем команду на перезагрузку страницы
+        .pipe(browserSync.stream()); // даем команду на перезагрузку страницы
 });
-gulp.task('css:watch', function () {  
+gulp.task('watch', function () {  
     gulp.watch('blocks/**/*.less', gulp.series('css'));
 });
+gulp.task('webserver', function () {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+    gulp.watch('blocks/**/*.less', gulp.series('css'));
+    gulp.watch("./*.html").on('change', browserSync.reload);
+});
+gulp.task('default', gulp.series('css','webserver'));
