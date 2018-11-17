@@ -5,45 +5,83 @@
     &__title {
         color: rgb(0,0,0);
         line-height: 34px;
-        margin-bottom: 56px;
-        transform: translate();
+        margin-bottom: 52px;
+        transform: translateX(7px);
     }
     &__title:before {
-        transform: translate(-15px, -14px);
+        content: url('@{imgpath}black-line-lat-comp.png');
+        transform: translate(-27px, -18px);
     }
     &__preview {
         text-align: center;
+        font-size: 14px;
         font-family: OpenSans-Regular;
         line-height: 24.27px;
         color: rgb(121,130,133);
         .va118;
-        margin-bottom: 131px;
+        margin-bottom: 160px;
     }
     &__track {
         height: 422px;
         margin-bottom: 53.5px;
     }
+    &__date {
+        font-size: 14px;
+        font-family: OpenSans-Bold;
+        color: rgba(0,0,0,0.65);
+        margin-bottom: 14px;
+    }
+    &__date:after {
+        content: url('@{imgpath}lat-comp-black-line.png');
+        position: absolute;
+        transform: translate(-70.5px, 13px);
+    }
+    &__short-name {
+        font-size: 14px;
+        font-family: OpenSans-Bold;
+        text-transform: uppercase;
+        margin-bottom: 40.5px;
+    }
+    &__name {
+        font-size: 23px;
+        font-family: OpenSans-Regular;
+        .va18;
+        line-height: 24.27px;
+        margin-bottom: 29.5px;
+    }
+    &__description {
+        font-size: 14px;
+        font-family: OpenSans-Regular;
+        color: #798285;
+        .va18;
+        line-height: 24.27px;
+    }
     &__descr-of-track {
+        box-sizing: border-box;
         width: 600px;
         height: 422px;
         background-color: rgb(245,246,246);
+        padding-left: 35px;
+        padding-right: 50px;
         &_float_right {
             float: right;
             clear: right;
+            padding-top: 31px;
         }
         &_float_right:before {
             position: absolute;
             content: url('@{imgpath}lat-comp-strelka-vlevo.png');
-            transform: translate(-12px, 230px);
+            transform: translate(-47px, 169px);
         }
         &_float_left {
             float: left;
             clear: left;
+            padding-top: 29px;
         }
         &_float_left:after {
             position: absolute;
             content: url('@{imgpath}lat-comp-strelka-vpravo.png');
-            transform: translate(600px, 60px);
+            transform: translate(565px, -94px);
 
         }
     }
