@@ -3,11 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="stylesheet" media="all" href="dist/style2.css" />
+<link rel="stylesheet" media="all" href="dist/style.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 <body>
 <!-- Header -->
-<div class="b-header"><a name="about"></a>
+<div class="b-header"><a name="about" id="about"></a>
     <div class="b-header__menu">
         <ul class="b-header__menu-items">
             <li class="b-header__menu-item"><a href="#about" class="b-header__link">about</a></li>
@@ -28,7 +29,7 @@
 <!-- Discography -->
 <div class="b-discography">
     <div class="wrap">
-    <a name="discography"></a><div class="title b-discography__title">discography</div>
+    <a name="discography" id="discography"></a><div class="title b-discography__title">discography</div>
     <div class="b-discography__preview">September 4 world heard Night Visions, the first full album. He reached the 2 position in</br>the chart Billboard 200. The single &laquo;it's Time&raquo; took 22 th place in the Billboard Hot 100, </br>4th in the Billboard Alternative and Billboard Rock, and how went platinum.</div>
     <div class="b-discography__album">
         <div class="b-discography__album-title">
@@ -67,7 +68,7 @@
 </div>
 <!-- /Discography -->
 <!-- Concert tours -->
-<a name="concert-tours"></a>
+<a name="concert-tours" id="concert-tours"></a>
 <div class="b-concert-tours">
     <div class="wrap">
         <div class="title b-concert-tours__title">concert tours</div>
@@ -85,13 +86,13 @@
 <!-- /Concert tours -->
 <!-- Latter Compositions -->
 <div class="wrap b-latter-compositions">
-    <a name="latter-compositions"><div class="title b-latter-compositions__title">latter compositions</div></a>
-    <div class="b-latter-compositions__preview">"It's Time" was released as the lead single from Continued Silence and It's Time, both extended plays preceding Night Visions' release.</div>
+    <a name="latter-compositions" id="latter-compositions"><div class="title b-latter-compositions__title">latter compositions</div></a>
+    <div class="b-latter-compositions__preview">"It's Time" was released as the lead single from Continued Silence and It's Time, both</br>extended plays preceding Night Visions' release.</div>
     <div class="b-latter-compositions__track">
         <div class="b-latter-compositions__descr-of-track b-latter-compositions__descr-of-track_float_left">
             <div class="b-latter-compositions__date">03.04.2015</div>
             <div class="b-latter-compositions__short-name">indian sammer</div>
-            <div class="b-latter-compositions__name">Sam Feldt ft.Kimberly Anne - Show Me Love (EDX's Indian Summer Remix)</div>
+            <div class="b-latter-compositions__name">Sam Feldt ft. Kimberly Anne - Show Me Love (EDX's Indian Summer Remix)</div>
             <div class="b-latter-compositions__description">"Radioactive" is a song recorded by American rock band Imagine Dragons for their major-label debut EP Continued Silence and later on their debut studio album, Night Visions (2012), as the opening track. "Radioactive" was</div>
             <div class="b-latter-compositions__links"><div class="button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a></div></div>
         </div>
@@ -99,11 +100,19 @@
     </div>
     <div class="b-latter-compositions__track">
         <div class="b-latter-compositions__descr-of-track b-latter-compositions__descr-of-track_float_right">
-            <div class="b-latter-compositions__date">03.04.2015</div>
-            <div class="b-latter-compositions__short-name">indian sammer</div>
-            <div class="b-latter-compositions__name">Sam Feldt ft.Kimberly Anne - Show Me Love (EDX's Indian Summer Remix)</div>
-            <div class="b-latter-compositions__description">"Radioactive" is a song recorded by American rock band Imagine Dragons for their major-label debut EP Continued Silence and later on their debut studio album, Night Visions (2012), as the opening track. "Radioactive" was</div>
-            <div class="b-latter-compositions__links"><div class="button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a></div></div>
+            <div class="b-latter-compositions__date">20.07.2015</div>
+            <div class="b-latter-compositions__short-name">indian sammer remix</div>
+            <div class="b-latter-compositions__name">Sam Feldt - Show Me Love (EDX's Indian Summer Remix)</div>
+            <div class="b-latter-compositions__description">Amsterdam's Sam Feldt earned attention in Europe and then worldwide for his melodic house remixes, mixtapes, and collaborations including 2014's "Bloesem" with De Hofnar and "Hot Skin" with Kav Verhouzer on... Dutch label Spinnin' Records. After a series of live shows in Europe, which he built over time to contain mostly his own productions, he toured North America for the first time in early 2015. "Midnight Hearts" with the Him featuring ANG13 followed soon...</div>
+            <ul class="b-latter-compositions__links">    <li class="b-latter-compositions__link">
+                    <div class="button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a>
+                    </div>
+                </li>
+                <li class="b-latter-compositions__link"></li>
+                <li class="b-latter-compositions__link"></li>
+                <li class="b-latter-compositions__link"></li>
+                <li class="b-latter-compositions__link"></li>
+            </ul>
         </div>
         <div class="b-latter-compositions__player b-latter-compositions__player_float_left b-latter-compositions__player_background_2"></div>
     </div>
@@ -144,7 +153,7 @@
 <!-- /Slider -->
 <!-- New tracks -->
 <div class="wrap b-new-tracks">
-    <a name="new-tracks"></a>
+    <a name="new-tracks" id="new-tracks"></a>
     <div class="b-new-tracks__list">
         <div class="b-new-tracks__item b-new-tracks__item_number_1">
             <div class="b-new-tracks__descr">
@@ -198,23 +207,24 @@
 
 </div>
 <!-- Upcoming events -->
-<a name="upcoming-events"></a>
+<a name="upcoming-events" id="upcoming-events"></a>
 <div class="b-upcoming-events">
 <div class=" title b-upcoming-events__title">upcoming events</div>
 </div>
 <!-- /Upcoming events -->
 <!-- History -->
 <div class="b-history">
-    <a name="history"></a>
+    <a name="history" id="history"></a>
     <div class="title b-history__title">history</div>
 </div>
 <!-- /History -->
 <!-- Contact -->
 <div class="b-contact">
 <div class="wrap">
-<a name="contact"><div class="title b-contact__title">contact</div></a>
+<a name="contact" id="contact"><div class="title b-contact__title">contact</div></a>
 </div>
 </div>
 <!-- /Contact -->
+<script src="dist/script.js"></script>
 </body>
 </html>

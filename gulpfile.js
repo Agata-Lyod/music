@@ -1,7 +1,5 @@
 const gulp = require('gulp')
       prefixer = require('gulp-autoprefixer');
-      //lr = require('tiny-lr'), // Минивебсервер для livereload
-      //livereload = require('gulp-livereload'); // Livereload для Gulp
       rigger = require('gulp-rigger'),
       myth = require('gulp-myth'), // Плагин для Myth - http://www.myth.io/
       csso = require('gulp-csso'), // Минификация CSS
@@ -9,13 +7,10 @@ const gulp = require('gulp')
       uglify = require('gulp-uglify'), // Минификация JS
       concat = require('gulp-concat'), // Склейка файлов
       connect = require('connect'), // Webserver
-      //server = lr();
       less = require('gulp-less'),
       path = require('path'),
       changed = require('gulp-changed'),
       browserSync = require("browser-sync").create();
-      //reload = browserSync.reload;
-      //watch = require('gulp-watch');
 const config = {
         server: {
           baseDir: "./"
@@ -36,7 +31,7 @@ gulp.task('prefixer', () =>
 gulp.task('css', function () {  
     return gulp.src(['blocks/general/i-variables.less','blocks/general/i-less.less','blocks/general/general.less','blocks/**/*.less'])
         .pipe(changed('dist'))
-        .pipe(concat('style2.less'))
+        .pipe(concat('style.less'))
         .pipe(less({
             paths: [ path.join(__dirname, 'less', 'includes') ]
         }))
@@ -47,8 +42,17 @@ gulp.task('css', function () {
         .pipe(gulp.dest('dist'))
         .pipe(browserSync.stream()); // даем команду на перезагрузку страницы
 });
+gulp.task('js', function () {  
+    return gulp.src(['blocks/**/*.js'])
+        .pipe(changed('dist'))
+        .pipe(concat('script.js'))
+        //.pipe(uglify())
+        .pipe(gulp.dest('dist'))
+        .pipe(browserSync.stream()); // даем команду на перезагрузку страницы
+});
 gulp.task('watch', function () {  
     gulp.watch('blocks/**/*.less', gulp.series('css'));
+    gulp.watch('blocks/**/*.js', gulp.series('js'));
 });
 gulp.task('webserver', function () {
     browserSync.init({
@@ -57,6 +61,7 @@ gulp.task('webserver', function () {
         }
     });
     gulp.watch('blocks/**/*.less', gulp.series('css'));
+    gulp.watch('blocks/**/*.js', gulp.series('js'));
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
-gulp.task('default', gulp.series('css','webserver'));
+gulp.task('default', gulp.series('css','js','webserver'));
