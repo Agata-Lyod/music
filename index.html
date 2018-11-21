@@ -4,10 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="stylesheet" media="all" href="dist/style.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 <body>
-<!-- Header -->
+    <!-- Header -->
 <div class="b-header"><a name="about" id="about"></a>
     <div class="b-header__menu">
         <ul class="b-header__menu-items">
@@ -26,7 +26,7 @@
     </div>
 </div>
 <!-- /Header -->
-<!-- Discography -->
+    <!-- Discography -->
 <div class="b-discography">
     <div class="wrap">
     <a name="discography" id="discography"></a><div class="title b-discography__title">discography</div>
@@ -67,7 +67,7 @@
 </div>
 </div>
 <!-- /Discography -->
-<!-- Concert tours -->
+    <!-- Concert tours -->
 <a name="concert-tours" id="concert-tours"></a>
 <div class="b-concert-tours">
     <div class="wrap">
@@ -78,13 +78,14 @@
             <div class="b-concert-tours__name-of-tour">smoke + mirrors tour</div>
             <div class="b-concert-tours__time-of-tour">2015–present</div>
             <div class="b-concert-tours__descr-of-tour">At Lollapalooza in Sao Paulo, Brazil, the last date on the Into the Night Tour, the band announced a</br>rest, and complemented saying, "This is our last show for a while, and had no better place to end this tour".[51] The conclusion of the Into the Night Tour signaled the end of the Night Visions album cycle. Lead singer Dan Reynolds joked about the end of the Night Visions cycle, saying that "We're always writing on the road, [so] that second album will come, unless we die.</div>
-            <div class="b-concert-tours__buy">
-                <a class="b-concert-tours__buy-link">&nbsp;Buy online</a></div>
+            <a class="b-concert-tours__buy-button">
+                <div class="b-concert-tours__buy">Buy online</div>
+            </a>
         </div>
     </div>
 </div>
 <!-- /Concert tours -->
-<!-- Latter Compositions -->
+    <!-- Latter Compositions -->
 <div class="wrap b-latter-compositions">
     <a name="latter-compositions" id="latter-compositions"><div class="title b-latter-compositions__title">latter compositions</div></a>
     <div class="b-latter-compositions__preview">"It's Time" was released as the lead single from Continued Silence and It's Time, both</br>extended plays preceding Night Visions' release.</div>
@@ -94,17 +95,8 @@
             <div class="b-latter-compositions__short-name">indian sammer</div>
             <div class="b-latter-compositions__name">Sam Feldt ft. Kimberly Anne - Show Me Love (EDX's Indian Summer Remix)</div>
             <div class="b-latter-compositions__description">"Radioactive" is a song recorded by American rock band Imagine Dragons for their major-label debut EP Continued Silence and later on their debut studio album, Night Visions (2012), as the opening track. "Radioactive" was</div>
-            <div class="b-latter-compositions__links"><div class="button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a></div></div>
-        </div>
-        <div class="b-latter-compositions__player b-latter-compositions__player_float_right"><img src="images/show-me-love.png"></div>
-    </div>
-    <div class="b-latter-compositions__track">
-        <div class="b-latter-compositions__descr-of-track b-latter-compositions__descr-of-track_float_right">
-            <div class="b-latter-compositions__date">20.07.2015</div>
-            <div class="b-latter-compositions__short-name">indian sammer remix</div>
-            <div class="b-latter-compositions__name">Sam Feldt - Show Me Love (EDX's Indian Summer Remix)</div>
-            <div class="b-latter-compositions__description">Amsterdam's Sam Feldt earned attention in Europe and then worldwide for his melodic house remixes, mixtapes, and collaborations including 2014's "Bloesem" with De Hofnar and "Hot Skin" with Kav Verhouzer on... Dutch label Spinnin' Records. After a series of live shows in Europe, which he built over time to contain mostly his own productions, he toured North America for the first time in early 2015. "Midnight Hearts" with the Him featuring ANG13 followed soon...</div>
-            <ul class="b-latter-compositions__links">    <li class="b-latter-compositions__link">
+            <ul class="b-latter-compositions__links">
+                <li class="b-latter-compositions__link">
                     <div class="button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a>
                     </div>
                 </li>
@@ -114,7 +106,47 @@
                 <li class="b-latter-compositions__link"></li>
             </ul>
         </div>
-        <div class="b-latter-compositions__player b-latter-compositions__player_float_left b-latter-compositions__player_background_2"></div>
+        <div class="b-latter-compositions__player b-latter-compositions__player_float_right b-latter-compositions__player_background_1">
+            <audio class="b-latter-compositions__audio-control-panel" id="sound1" src="media/Show-Me-Love-feat-Kimberly.aac">
+                <source src="media/Show-Me-Love-feat-Kimberly.ogg" type="audio/ogg">
+                <source src="media/Show-Me-Love-feat-Kimberly.mp3" type="audio/mp3">
+            </audio>
+            <div class="b-latter-compositions__controls">
+                <span class="b-latter-compositions__play" id="play1">
+                    <img src="images/play.png" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="b-latter-compositions__track">
+        <div class="b-latter-compositions__descr-of-track b-latter-compositions__descr-of-track_float_right">
+            <div class="b-latter-compositions__date">20.07.2015</div>
+            <div class="b-latter-compositions__short-name">indian sammer remix</div>
+            <div class="b-latter-compositions__name">Sam Feldt - Show Me Love (EDX's Indian Summer Remix)</div>
+            <div class="b-latter-compositions__description">Amsterdam's Sam Feldt earned attention in Europe and then worldwide for his melodic house remixes, mixtapes, and collaborations including 2014's "Bloesem" with De Hofnar and "Hot Skin" with Kav Verhouzer on... Dutch label Spinnin' Records. After a series of live shows in Europe, which he built over time to contain mostly his own productions, he toured North America for the first time in early 2015. "Midnight Hearts" with the Him featuring ANG13 followed soon...</div>
+            <ul class="b-latter-compositions__links">
+                <li class="b-latter-compositions__link">
+                    <div class="b-latter-compositions__button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a>
+                    </div>
+                </li>
+                <li class="b-latter-compositions__link"></li>
+                <li class="b-latter-compositions__link"></li>
+                <li class="b-latter-compositions__link"></li>
+                <li class="b-latter-compositions__link"></li>
+            </ul>
+        </div>
+        <div class="b-latter-compositions__player b-latter-compositions__player_float_left b-latter-compositions__player_background_2">
+            <audio class="b-latter-compositions__audio-control-panel" id="sound2" src="media/Show-Me-Love.aac">
+                <source src="media/Show-Me-Love.ogg" type="audio/ogg">
+                <source src="media/Show-Me-Love.mp3" type="audio/mp3">
+            </audio>
+            <div id="audioplayer">
+                <button id="pButton" class="play"></button>
+                <div id="timeline">    
+                    <div id="playhead"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="b-latter-compositions__track">
         <div class="b-latter-compositions__descr-of-track b-latter-compositions__descr-of-track_float_left">
@@ -124,34 +156,39 @@
             <div class="b-latter-compositions__description">"Radioactive" is a song recorded by American rock band Imagine Dragons for their major-label debut EP Continued Silence and later on their debut studio album, Night Visions (2012), as the opening track. "Radioactive" was</div>
             <div class="b-latter-compositions__links"><div class="button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a></div></div>
         </div>
-        <div class="b-latter-compositions__player b-latter-compositions__player_float_right b-latter-compositions__player_background_3"></div>
+        <div class="b-latter-compositions__player b-latter-compositions__player_float_right b-latter-compositions__player_background_3">
+            <audio class="b-latter-compositions__audio-control-panel" id="sound1" src="media/Let-It-Go.aac" controls preload>
+                <source src="media/Let-It-Go.ogg" type="audio/ogg">
+                <source src="media/Let-It-Go.mp3" type="audio/mp3">
+            </audio>
+        </div>
     </div>
 </div>
 <!-- /Latter Compositions-->
-<!-- Slider -->
-<div class="slider">
+    <!-- Slider -->
+<div class="b-slider">
     <input type="radio" name="slider" id="slider_1" checked="checked">
-    <div class="slider__slide">
+    <div class="b-slider__slide">
         <img src='images/note.png' alt=''>
-        <div class="slider__preview">In 2008, lead singer Dan Reynolds met drummer Andrew Tolman at Brigham Young University where they were both students</div>
+        <div class="b-slider__preview">In 2008, lead singer Dan Reynolds met drummer Andrew Tolman at Brigham Young University where they were both students</div>
     </div>
     <label for="slider_3"></label>
     <label for="slider_2"></label>
     <input type="radio" name="slider" id="slider_2">
-    <div class="slider__slide">
+    <div class="b-slider__slide">
         2 слайд
     </div>
     <label for="slider_1"></label>
     <label for="slider_3"></label>
     <input type="radio" name="slider" id="slider_3">
-    <div class="slider__slide">
+    <div class="b-slider__slide">
         3 слайд
     </div>
     <label for="slider_2"></label>
     <label for="slider_1"></label>
 </div>
 <!-- /Slider -->
-<!-- New tracks -->
+    <!-- New tracks -->
 <div class="wrap b-new-tracks">
     <a name="new-tracks" id="new-tracks"></a>
     <div class="b-new-tracks__list">
@@ -204,27 +241,27 @@
             </div>
         </div>
     </div>
-
 </div>
-<!-- Upcoming events -->
+<!-- /New tracks -->
+    <!-- Upcoming events -->
 <a name="upcoming-events" id="upcoming-events"></a>
 <div class="b-upcoming-events">
 <div class=" title b-upcoming-events__title">upcoming events</div>
 </div>
 <!-- /Upcoming events -->
-<!-- History -->
+    <!-- History -->
 <div class="b-history">
     <a name="history" id="history"></a>
     <div class="title b-history__title">history</div>
 </div>
 <!-- /History -->
-<!-- Contact -->
+    <!-- Contact -->
 <div class="b-contact">
 <div class="wrap">
 <a name="contact" id="contact"><div class="title b-contact__title">contact</div></a>
 </div>
 </div>
 <!-- /Contact -->
-<script src="dist/script.js"></script>
+    <script src="dist/script.js"></script>
 </body>
 </html>

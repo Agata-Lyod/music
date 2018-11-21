@@ -85,6 +85,12 @@
 
         }
     }
+    &__link {
+        display: inline-block;
+    }
+    &__link:last-child {
+        margin-right: 0;
+    }
     &__player {
         width: 600px;
         height: 422px;
@@ -106,5 +112,13 @@
             background: url('@{imgpath}chill-nation.png');
         }
     }
+    &__controls span {
+        display: inline-block;
+        /*vertical-align: bottom;*/
+    }
+    &__play:hover {
+        cursor: pointer;
+    }
 }
+
 

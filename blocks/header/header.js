@@ -11,7 +11,7 @@ $(function(){
     * dn - определяем положение блока на странице
     */
     
-    $('html, body').animate({scrollTop: dn}, 1000);
+    $('html, body').animate({scrollTop: dn - 70}, 1000);
     
     /*
     * 1000 скорость перехода в миллисекундах

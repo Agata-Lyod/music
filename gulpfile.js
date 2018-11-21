@@ -6,11 +6,12 @@ const gulp = require('gulp')
       imagemin = require('gulp-imagemin'); // Минификация изображений
       uglify = require('gulp-uglify'), // Минификация JS
       concat = require('gulp-concat'), // Склейка файлов
-      connect = require('connect'), // Webserver
+      //connect = require('connect'), // Webserver
       less = require('gulp-less'),
       path = require('path'),
       changed = require('gulp-changed'),
-      browserSync = require("browser-sync").create();
+      browserSync = require('browser-sync').create(),
+      fileinclude = require('gulp-file-include');
 const config = {
         server: {
           baseDir: "./"
@@ -28,6 +29,15 @@ gulp.task('prefixer', () =>
         }))
         .pipe(gulp.dest('dist'))
 );
+gulp.task('html', function () {  
+    return gulp.src(['blocks/general/index.html'])
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(gulp.dest('./'))
+        .pipe(browserSync.stream()); // даем команду на перезагрузку страницы
+});
 gulp.task('css', function () {  
     return gulp.src(['blocks/general/i-variables.less','blocks/general/i-less.less','blocks/general/general.less','blocks/**/*.less'])
         .pipe(changed('dist'))
@@ -46,22 +56,24 @@ gulp.task('js', function () {
     return gulp.src(['blocks/**/*.js'])
         .pipe(changed('dist'))
         .pipe(concat('script.js'))
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('dist'))
         .pipe(browserSync.stream()); // даем команду на перезагрузку страницы
 });
-gulp.task('watch', function () {  
+gulp.task('watch', function () {
+    gulp.watch('blocks/**/*.html', gulp.series('html'));
     gulp.watch('blocks/**/*.less', gulp.series('css'));
     gulp.watch('blocks/**/*.js', gulp.series('js'));
+
 });
 gulp.task('webserver', function () {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: './'
         }
     });
     gulp.watch('blocks/**/*.less', gulp.series('css'));
     gulp.watch('blocks/**/*.js', gulp.series('js'));
-    gulp.watch("./*.html").on('change', browserSync.reload);
+    gulp.watch('blocks/**/*.html', gulp.series('html')).on('change', browserSync.reload);
 });
-gulp.task('default', gulp.series('css','js','webserver'));
+gulp.task('default', gulp.series('html','css','js','webserver'));

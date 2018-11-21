@@ -1,5 +1,5 @@
-/* Slider */
-.slider {
+/* b-Slider */
+.b-slider {
     margin-bottom: 165px;
     background-image: url('@{imgpath}ocean.png');
     height: 642px;
@@ -8,28 +8,28 @@
     overflow: hidden;
     text-align: center;
 }
-.slider img {
+.b-slider img {
     max-width: 100%;
     vertical-align: middle;
 }
-.slider > input {
+.b-slider > input {
     /*position: absolute;*/
     transform: translateY(400px);
     /*display: none;*/
     margin-right: 38px;
     /*z-index: 20;*/
 }
-.slider > input:last-child {
+.b-slider > input:last-child {
     margin-right: 0;
 }
 #slider_3 {
     margin-right: 0;
 }
-.slider > label {
+.b-slider > label {
     /*display: none;*/
 }
-.slider > input:checked + div + label,
-.slider > input:checked + div + label + label {
+.b-slider > input:checked + div + label,
+.b-slider > input:checked + div + label + label {
     display: block;
     /*width: 80px;
     height: 80px;*/
@@ -39,8 +39,8 @@
     transform: translateY(-50%);
     /*z-index: 10;*/
 }
-.slider > input:checked + div + label:after,
-.slider > input:checked + div + label + label:after {
+.b-slider > input:checked + div + label:after,
+.b-slider > input:checked + div + label + label:after {
     display: block;
     position: absolute;
     top: 0px;
@@ -49,21 +49,21 @@
     /*z-index: 10;*/
     cursor: pointer;
 }
-.slider > input:checked + div + label {
+.b-slider > input:checked + div + label {
     left: 0;
 }
-.slider > input:checked + div + label:after {
+.b-slider > input:checked + div + label:after {
     content: url(../images/right.png);
     left: 55%;
 }
-.slider > input:checked + div + label + label {
+.b-slider > input:checked + div + label + label {
     right: 0;
 }
-.slider > input:checked + div + label + label:after {
+.b-slider > input:checked + div + label + label:after {
     content: url(../images/left.png);
     right: 55%;
 }
-.slider > div {
+.b-slider > div {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -74,7 +74,7 @@
     opacity: 0;
     transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
 }
-.slider > input:checked + div {
+.b-slider > input:checked + div {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
