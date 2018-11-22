@@ -1,10 +1,21 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<title>John Doe | Музыка | remix</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="stylesheet" media="all" href="dist/style.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="dist/script.js"></script>
+<script type="text/javascript" src="plugins/jquery-1.4.2.min.js"></script>
+<!--<script type="text/javascript">var jq14 = jQuery.noConflict(true);</script>-->
+<script type="text/javascript" src="plugins/jquery-ui-1.8.2.custom.min.js"></script>
+<script>
+    $(function() {
+        $('#audio1').gAudio();
+        $('#audio2').gAudio();
+        $('#audio3').gAudio();
+    });
+</script>
 </head>
 <body>
     @@include('./../header/header.html')
@@ -16,6 +27,7 @@
     @@include('./../upcoming-events/upcoming-events.html')
     @@include('./../history/history.html')
     @@include('./../contact/contact.html')
-    <script src="dist/script.js"></script>
+    <script type="text/javascript" src="plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="dist/script.js"></script>
 </body>
 </html>

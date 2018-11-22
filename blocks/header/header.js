@@ -1,5 +1,6 @@
 // Прокрутка к якорям
-$(function(){
+var jq11 = jQuery.noConflict(true);
+(function($){
   $('a[href^="#"]').on('click', function(event) {
     // отменяем стандартное действие
     event.preventDefault();
@@ -17,4 +18,4 @@ $(function(){
     * 1000 скорость перехода в миллисекундах
     */
   });
-});
+})(jq11);

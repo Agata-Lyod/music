@@ -1,0 +1,35 @@
+var audio1 = $("#sound1")[0];
+var audio2 = $("#sound2")[0];
+var audio3 = $("#sound3")[0];
+$("#play1").click(function() {
+    audio1.play();
+}).click(function() {
+    $(this).toggleClass("b-latter-compositions_display_none b-latter-compositions__playpause");
+}).click(function() {
+    $("#pause1").toggleClass("b-latter-compositions_display_none b-latter-compositions__playpause");
+});
+$("#pause1").click(function() {
+    audio1.pause();
+}).click(function() {
+    $(this).toggleClass("b-latter-compositions_display_none b-latter-compositions__playpause");
+}).click(function() {
+    $("#play1").toggleClass("b-latter-compositions_display_none b-latter-compositions__playpause");
+});
+$("#scrubber1").bind("change", function() {
+    audio1.currentTime = $(this).val();
+    $("#scrubber1").attr("max", audio1.duration);
+});
+song.addEventListener('timeupdate',function (){
+    curtime = parseInt(audio1.currentTime, 10);
+    $("#scrubber1").attr("value", curtime);
+});
+$("#play2").click(function() {
+    audio2.play();
+}).click(function() {
+    audio2.pause();
+});
+$("#play3").click(function() {
+    audio3.play();
+}).click(function() {
+    audio3.pause();
+});

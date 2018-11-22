@@ -1,10 +1,21 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<title>John Doe | Музыка | remix</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="stylesheet" media="all" href="dist/style.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="dist/script.js"></script>
+<script type="text/javascript" src="plugins/jquery-1.4.2.min.js"></script>
+<!--<script type="text/javascript">var jq14 = jQuery.noConflict(true);</script>-->
+<script type="text/javascript" src="plugins/jquery-ui-1.8.2.custom.min.js"></script>
+<script>
+    $(function() {
+        $('#audio1').gAudio();
+        $('#audio2').gAudio();
+        $('#audio3').gAudio();
+    });
+</script>
 </head>
 <body>
     <!-- Header -->
@@ -107,13 +118,23 @@
             </ul>
         </div>
         <div class="b-latter-compositions__player b-latter-compositions__player_float_right b-latter-compositions__player_background_1">
-            <audio class="b-latter-compositions__audio-control-panel" id="sound1" src="media/Show-Me-Love-feat-Kimberly.aac">
-                <source src="media/Show-Me-Love-feat-Kimberly.ogg" type="audio/ogg">
-                <source src="media/Show-Me-Love-feat-Kimberly.mp3" type="audio/mp3">
+            <audio class="b-latter-compositions__audio-control-panel" id="audio1" src="media/Show-Me-Love-feat-Kimberly.aac">
+                <source src="media/Show-Me-Love-feat-Kimberly.ogg" type="audio/ogg"/>
+                <source src="media/Show-Me-Love-feat-Kimberly.mp3" type="audio/mp3"/>
             </audio>
             <div class="b-latter-compositions__controls">
-                <span class="b-latter-compositions__play" id="play1">
-                    <img src="images/play.png" alt="">
+                <span class="b-latter-compositions__play b-latter-compositions__playpause" id="play1">
+                    <img src="images/play.png" alt=""/>
+                </span>
+                <span class="b-latter-compositions__pause b-latter-compositions_display_none" id="pause1">
+                    <img src="images/pause.png" alt=""/>
+                    <img src="images/pause.png" alt=""/>
+                </span>
+                <span class="b-latter-compositions__timeline">
+                    <img src="images/white-timeline.png" alt=""/>
+                </span>
+                <span class="b-latter-compositions__scrubber b-latter-compositions_display_none" id="scrubber1">
+                    <img src="images/scrubber.png" alt=""/>
                 </span>
             </div>
         </div>
@@ -136,16 +157,10 @@
             </ul>
         </div>
         <div class="b-latter-compositions__player b-latter-compositions__player_float_left b-latter-compositions__player_background_2">
-            <audio class="b-latter-compositions__audio-control-panel" id="sound2" src="media/Show-Me-Love.aac">
+            <audio class="b-latter-compositions__audio-control-panel" id="audio2" src="media/Show-Me-Love.aac">
                 <source src="media/Show-Me-Love.ogg" type="audio/ogg">
                 <source src="media/Show-Me-Love.mp3" type="audio/mp3">
             </audio>
-            <div id="audioplayer">
-                <button id="pButton" class="play"></button>
-                <div id="timeline">    
-                    <div id="playhead"></div>
-                </div>
-            </div>
         </div>
     </div>
     <div class="b-latter-compositions__track">
@@ -157,7 +172,7 @@
             <div class="b-latter-compositions__links"><div class="button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a></div></div>
         </div>
         <div class="b-latter-compositions__player b-latter-compositions__player_float_right b-latter-compositions__player_background_3">
-            <audio class="b-latter-compositions__audio-control-panel" id="sound1" src="media/Let-It-Go.aac" controls preload>
+            <audio id="audio3" src="media/Let-It-Go.aac">
                 <source src="media/Let-It-Go.ogg" type="audio/ogg">
                 <source src="media/Let-It-Go.mp3" type="audio/mp3">
             </audio>
@@ -262,6 +277,7 @@
 </div>
 </div>
 <!-- /Contact -->
-    <script src="dist/script.js"></script>
+    <script type="text/javascript" src="plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="dist/script.js"></script>
 </body>
 </html>
