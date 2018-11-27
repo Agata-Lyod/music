@@ -1,23 +1,35 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="stylesheet" media="all" href="dist/style.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <title>John Doe | Музыка | remix</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" media="all" href="dist/style.css" />
+    <script type="text/javascript" src="plugins/jquery-1.4.2.min.js"></script>
+    <!--<script type="text/javascript">var jq14 = jQuery.noConflict(true);</script>-->
+    <script type="text/javascript" src="plugins/jquery-ui-1.8.2.custom.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="dist/script.js"></script>
+    <script>
+        $(function() {
+            $('#audio1').gAudio();
+            $('#audio2').gAudio();
+            $('#audio3').gAudio();
+        });
+    </script>
 </head>
 <body>
 <!-- Header -->
-<div class="b-header"><a name="about" id="about"></a>
+<div class="b-header" id="about">
     <div class="b-header__menu">
         <ul class="b-header__menu-items">
             <li class="b-header__menu-item"><a href="#about" class="b-header__link">about</a></li>
             <li class="b-header__menu-item"><a href="#discography" class="b-header__link">discography</a></li>
             <li class="b-header__menu-item"><a href="#concert-tours" class="b-header__link">concert tours</a></li>
             <li class="b-header__menu-item"><a href="#latter-compositions" class="b-header__link">latter compositions</a></li>
-            <li class="b-header__menu-item b-header__menu-item_padding_min"><a href="#new-tracks" class="b-header__link">new tracks</a></li>
+            <li class="b-header__menu-item b-header__menu-item_padding_right-small"><a href="#new-tracks" class="b-header__link">new tracks</a></li>
             <li class="b-header__menu-item"><a href="#upcoming-events" class="b-header__link">upcoming events</a></li>
-            <li class="b-header__menu-item b-header__menu-item_padding_min"><a href="#history" class="b-header__link">history</a></li>
+            <li class="b-header__menu-item b-header__menu-item_padding_right-small"><a href="#history" class="b-header__link">history</a></li>
             <li class="b-header__menu-item"><a href="#contact" class="b-header__link">contact</a></li>
         </ul>
     </div>
@@ -27,9 +39,9 @@
 </div>
 <!-- /Header -->
 <!-- Discography -->
-<div class="b-discography">
+<div class="b-discography" id="discography">
     <div class="wrap">
-    <a name="discography" id="discography"></a><div class="title b-discography__title">discography</div>
+    <div class="title b-discography__title">discography</div>
     <div class="b-discography__preview">September 4 world heard Night Visions, the first full album. He reached the 2 position in</br>the chart Billboard 200. The single &laquo;it's Time&raquo; took 22 th place in the Billboard Hot 100, </br>4th in the Billboard Alternative and Billboard Rock, and how went platinum.</div>
     <div class="b-discography__album">
         <div class="b-discography__album-title">
@@ -38,7 +50,7 @@
         </div>
         <div class="b-discography__album-descr">
             <div class="b-discography__album-short-descr b-discography__album-short-descr_number_1">Hell and Silence is an EP by Las Vegas rock group</div>
-            <div class="b-discography__album-full-descr b-discography__album-full-descr_number_1">Hell and Silence is an EP by Las Vegas rock group , released in March 2010 in the United States. It was recorded at Battle Born Studios. All songs were written by Imagine Dragons and self-produced. The EP was in part mixed by Grammy nominated engineer Mark Needham.</br>To promote the album the band performed five shows at SXSW 2010 including at the BMI Official Showcase.While at SXSW they were endorsed by Blue Microphones. They also toured the western United States with Nico Vega and Saint Motel. They also performed at Bite of Las Vegas Festival 2010, New Noise Music Festival, Neon Reverb Festival, and Fork Fest.</div>
+            <div class="b-discography__album-full-descr b-discography__album-full-descr_number_one">Hell and Silence is an EP by Las Vegas rock group , released in March 2010 in the United States. It was recorded at Battle Born Studios. All songs were written by Imagine Dragons and self-produced. The EP was in part mixed by Grammy nominated engineer Mark Needham.</br>To promote the album the band performed five shows at SXSW 2010 including at the BMI Official Showcase.While at SXSW they were endorsed by Blue Microphones. They also toured the western United States with Nico Vega and Saint Motel. They also performed at Bite of Las Vegas Festival 2010, New Noise Music Festival, Neon Reverb Festival, and Fork Fest.</div>
             <div class="b-discography__button-play b-discography__button-play_background_one">play</div>
         </div>
     </div>
@@ -48,8 +60,8 @@
             <div class="b-discography__album-name">Night Visions</div>
         </div>
         <div class="b-discography__album-descr">
-            <div class="b-discography__album-short-descr b-discography__album-short-descr_number_2 b-discography__album-short-descr_wrap_nowrap">Night Visions is the debut studio album by American rock band</div>
-            <div class="b-discography__album-full-descr b-discography__album-full-descr_number_2">It was released on September 4, 2012 through interscope Records. The extended track was released on February 12, 2013, adding three more songs. Recorded between 2010 and 2012, the album was primarily produced by the band themselves, as well as English hip-hop producer Alex da Kid and Brandon Darner from the American indie rock group The Envy Corps. It was mastered by joe LaPorta. According to frontman Dan Reynolds, the album took three years to finish ...</div>
+            <div class="b-discography__album-short-descr b-discography__album-short-descr_number_two b-discography__album-short-descr_wrap_nowrap">Night Visions is the debut studio album by American rock band</div>
+            <div class="b-discography__album-full-descr b-discography__album-full-descr_number_two">It was released on September 4, 2012 through interscope Records. The extended track was released on February 12, 2013, adding three more songs. Recorded between 2010 and 2012, the album was primarily produced by the band themselves, as well as English hip-hop producer Alex da Kid and Brandon Darner from the American indie rock group The Envy Corps. It was mastered by joe LaPorta. According to frontman Dan Reynolds, the album took three years to finish ...</div>
             <div class="b-discography__button-play b-discography__button-play_background_two">play</div>
         </div>
     </div>
@@ -59,8 +71,8 @@
             <div class="b-discography__album-name">Smoke + Mirrors</div>
         </div>
         <div class="b-discography__album-descr">
-            <div class="b-discography__album-short-descr b-discography__album-short-descr_number_3 b-discography__album-short-descr_wrap_nowrap">The album was recorded during 2014</br>at the band's home studio in Las Vegas, Nevada</div>
-            <div class="b-discography__album-full-descr b-discography__album-full-descr_number_3">Self-produced by members of the band along with English hip-hop producer Alexander Grant, known by his moniker Alex da Kid, the album was released by interscope Records and Grant's KIDi-naKORNER label on February 17, 2015,  in the United States</div>
+            <div class="b-discography__album-short-descr b-discography__album-short-descr_number_three b-discography__album-short-descr_wrap_nowrap">The album was recorded during 2014</br>at the band's home studio in Las Vegas, Nevada</div>
+            <div class="b-discography__album-full-descr b-discography__album-full-descr_number_three">Self-produced by members of the band along with English hip-hop producer Alexander Grant, known by his moniker Alex da Kid, the album was released by interscope Records and Grant's KIDi-naKORNER label on February 17, 2015,  in the United States</div>
             <div class="b-discography__button-play b-discography__button-play_background_three">play</div>
         </div>
     </div>
@@ -68,8 +80,7 @@
 </div>
 <!-- /Discography -->
 <!-- Concert tours -->
-<a name="concert-tours" id="concert-tours"></a>
-<div class="b-concert-tours">
+<div class="b-concert-tours" id="concert-tours">
     <div class="wrap">
         <div class="title b-concert-tours__title">concert tours</div>
         <div class="b-concert-tours__preview">Before the release of Night Visions, Imagine Dragons made appearances on American radio and television to</br>promote their extended play. Continued Silence and debut single it's Time. The band performed "it's Time"</br> on the July 16, 2012 airing of NBC late-night talk show The Tonight Show with jay Leno"</div>
@@ -78,15 +89,16 @@
             <div class="b-concert-tours__name-of-tour">smoke + mirrors tour</div>
             <div class="b-concert-tours__time-of-tour">2015–present</div>
             <div class="b-concert-tours__descr-of-tour">At Lollapalooza in Sao Paulo, Brazil, the last date on the Into the Night Tour, the band announced a</br>rest, and complemented saying, "This is our last show for a while, and had no better place to end this tour".[51] The conclusion of the Into the Night Tour signaled the end of the Night Visions album cycle. Lead singer Dan Reynolds joked about the end of the Night Visions cycle, saying that "We're always writing on the road, [so] that second album will come, unless we die.</div>
-            <div class="b-concert-tours__buy">
-                <a class="b-concert-tours__buy-link">&nbsp;Buy online</a></div>
+            <a class="b-concert-tours__buy-button">
+                <div class="b-concert-tours__buy">Buy online</div>
+            </a>
         </div>
     </div>
 </div>
 <!-- /Concert tours -->
 <!-- Latter Compositions -->
-<div class="wrap b-latter-compositions">
-    <a name="latter-compositions" id="latter-compositions"><div class="title b-latter-compositions__title">latter compositions</div></a>
+<div class="wrap b-latter-compositions" id="latter-compositions">
+    <div class="title b-latter-compositions__title">latter compositions</div>
     <div class="b-latter-compositions__preview">"It's Time" was released as the lead single from Continued Silence and It's Time, both</br>extended plays preceding Night Visions' release.</div>
     <div class="b-latter-compositions__track">
         <div class="b-latter-compositions__descr-of-track b-latter-compositions__descr-of-track_float_left">
@@ -94,17 +106,8 @@
             <div class="b-latter-compositions__short-name">indian sammer</div>
             <div class="b-latter-compositions__name">Sam Feldt ft. Kimberly Anne - Show Me Love (EDX's Indian Summer Remix)</div>
             <div class="b-latter-compositions__description">"Radioactive" is a song recorded by American rock band Imagine Dragons for their major-label debut EP Continued Silence and later on their debut studio album, Night Visions (2012), as the opening track. "Radioactive" was</div>
-            <div class="b-latter-compositions__links"><div class="button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a></div></div>
-        </div>
-        <div class="b-latter-compositions__player b-latter-compositions__player_float_right"><img src="images/show-me-love.png"></div>
-    </div>
-    <div class="b-latter-compositions__track">
-        <div class="b-latter-compositions__descr-of-track b-latter-compositions__descr-of-track_float_right">
-            <div class="b-latter-compositions__date">20.07.2015</div>
-            <div class="b-latter-compositions__short-name">indian sammer remix</div>
-            <div class="b-latter-compositions__name">Sam Feldt - Show Me Love (EDX's Indian Summer Remix)</div>
-            <div class="b-latter-compositions__description">Amsterdam's Sam Feldt earned attention in Europe and then worldwide for his melodic house remixes, mixtapes, and collaborations including 2014's "Bloesem" with De Hofnar and "Hot Skin" with Kav Verhouzer on... Dutch label Spinnin' Records. After a series of live shows in Europe, which he built over time to contain mostly his own productions, he toured North America for the first time in early 2015. "Midnight Hearts" with the Him featuring ANG13 followed soon...</div>
-            <ul class="b-latter-compositions__links">    <li class="b-latter-compositions__link">
+            <ul class="b-latter-compositions__links">
+                <li class="b-latter-compositions__link">
                     <div class="button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a>
                     </div>
                 </li>
@@ -114,7 +117,51 @@
                 <li class="b-latter-compositions__link"></li>
             </ul>
         </div>
-        <div class="b-latter-compositions__player b-latter-compositions__player_float_left b-latter-compositions__player_background_2"></div>
+        <div class="b-latter-compositions__player b-latter-compositions__player_float_right b-latter-compositions__player_background_first">
+            <audio class="b-latter-compositions__audio-control-panel" id="audio1" src="media/Show-Me-Love-feat-Kimberly.ogg">
+                <source src="media/Show-Me-Love-feat-Kimberly.ogg" type="audio/ogg"/>
+                <source src="media/Show-Me-Love-feat-Kimberly.aac" type="audio/aac"/>
+            </audio>
+            <div class="b-latter-compositions__controls">
+                <span class="b-latter-compositions__play b-latter-compositions__playpause" id="play1">
+                    <img src="images/play.png" alt=""/>
+                </span>
+                <span class="b-latter-compositions__pause b-latter-compositions_display_none" id="pause1">
+                    <img src="images/pause.png" alt=""/>
+                    <img src="images/pause.png" alt=""/>
+                </span>
+                <span class="b-latter-compositions__timeline">
+                    <img src="images/white-timeline.png" alt=""/>
+                </span>
+                <span class="b-latter-compositions__scrubber b-latter-compositions_display_none" id="scrubber1">
+                    <img src="images/scrubber.png" alt=""/>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="b-latter-compositions__track">
+        <div class="b-latter-compositions__descr-of-track b-latter-compositions__descr-of-track_float_right">
+            <div class="b-latter-compositions__date">20.07.2015</div>
+            <div class="b-latter-compositions__short-name">indian sammer remix</div>
+            <div class="b-latter-compositions__name">Sam Feldt - Show Me Love (EDX's Indian Summer Remix)</div>
+            <div class="b-latter-compositions__description">Amsterdam's Sam Feldt earned attention in Europe and then worldwide for his melodic house remixes, mixtapes, and collaborations including 2014's "Bloesem" with De Hofnar and "Hot Skin" with Kav Verhouzer on... Dutch label Spinnin' Records. After a series of live shows in Europe, which he built over time to contain mostly his own productions, he toured North America for the first time in early 2015. "Midnight Hearts" with the Him featuring ANG13 followed soon...</div>
+            <ul class="b-latter-compositions__links">
+                <li class="b-latter-compositions__link">
+                    <div class="b-latter-compositions__button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a>
+                    </div>
+                </li>
+                <li class="b-latter-compositions__link"></li>
+                <li class="b-latter-compositions__link"></li>
+                <li class="b-latter-compositions__link"></li>
+                <li class="b-latter-compositions__link"></li>
+            </ul>
+        </div>
+        <div class="b-latter-compositions__player b-latter-compositions__player_float_left b-latter-compositions__player_background_second">
+            <audio class="b-latter-compositions__audio-control-panel" id="audio2" src="media/Show-Me-Love.aac">
+                <source src="media/Show-Me-Love.ogg" type="audio/ogg">
+                <source src="media/Show-Me-Love.mp3" type="audio/mp3">
+            </audio>
+        </div>
     </div>
     <div class="b-latter-compositions__track">
         <div class="b-latter-compositions__descr-of-track b-latter-compositions__descr-of-track_float_left">
@@ -124,27 +171,32 @@
             <div class="b-latter-compositions__description">"Radioactive" is a song recorded by American rock band Imagine Dragons for their major-label debut EP Continued Silence and later on their debut studio album, Night Visions (2012), as the opening track. "Radioactive" was</div>
             <div class="b-latter-compositions__links"><div class="button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a></div></div>
         </div>
-        <div class="b-latter-compositions__player b-latter-compositions__player_float_right b-latter-compositions__player_background_3"></div>
+        <div class="b-latter-compositions__player b-latter-compositions__player_float_right b-latter-compositions__player_background_third">
+            <audio id="audio3" src="media/Let-It-Go.aac">
+                <source src="media/Let-It-Go.ogg" type="audio/ogg">
+                <source src="media/Let-It-Go.mp3" type="audio/mp3">
+            </audio>
+        </div>
     </div>
 </div>
 <!-- /Latter Compositions-->
 <!-- Slider -->
-<div class="slider">
+<div class="b-slider">
     <input type="radio" name="slider" id="slider_1" checked="checked">
-    <div class="slider__slide">
+    <div class="b-slider__slide">
         <img src='images/note.png' alt=''>
-        <div class="slider__preview">In 2008, lead singer Dan Reynolds met drummer Andrew Tolman at Brigham Young University where they were both students</div>
+        <div class="b-slider__preview">In 2008, lead singer Dan Reynolds met drummer Andrew Tolman at Brigham Young University where they were both students</div>
     </div>
     <label for="slider_3"></label>
     <label for="slider_2"></label>
     <input type="radio" name="slider" id="slider_2">
-    <div class="slider__slide">
+    <div class="b-slider__slide">
         2 слайд
     </div>
     <label for="slider_1"></label>
     <label for="slider_3"></label>
     <input type="radio" name="slider" id="slider_3">
-    <div class="slider__slide">
+    <div class="b-slider__slide">
         3 слайд
     </div>
     <label for="slider_2"></label>
@@ -152,8 +204,7 @@
 </div>
 <!-- /Slider -->
 <!-- New tracks -->
-<div class="wrap b-new-tracks">
-    <a name="new-tracks" id="new-tracks"></a>
+<div class="wrap b-new-tracks" id="new-tracks">
     <div class="b-new-tracks__list">
         <div class="b-new-tracks__item b-new-tracks__item_number_1">
             <div class="b-new-tracks__descr">
@@ -204,27 +255,26 @@
             </div>
         </div>
     </div>
-
 </div>
+<!-- /New tracks -->
 <!-- Upcoming events -->
-<a name="upcoming-events" id="upcoming-events"></a>
-<div class="b-upcoming-events">
+<div class="b-upcoming-events" id="upcoming-events">
 <div class=" title b-upcoming-events__title">upcoming events</div>
 </div>
 <!-- /Upcoming events -->
 <!-- History -->
-<div class="b-history">
-    <a name="history" id="history"></a>
+<div class="b-history" id="history">
     <div class="title b-history__title">history</div>
 </div>
 <!-- /History -->
 <!-- Contact -->
-<div class="b-contact">
+<div class="b-contact" id="contact">
 <div class="wrap">
-<a name="contact" id="contact"><div class="title b-contact__title">contact</div></a>
+    <div class="title b-contact__title">contact</div>
 </div>
 </div>
 <!-- /Contact -->
-<script src="dist/script.js"></script>
+<script type="text/javascript" src="plugins/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="dist/script.js"></script>
 </body>
 </html>

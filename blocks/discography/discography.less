@@ -2,7 +2,7 @@
 .b-discography {
     /*display: block;*/
     background: url('@{imgpath}forest.png') no-repeat center bottom;
-    height: 1778px;
+    min-height: 1778px;
     margin-bottom: 165px;
     /*width:100vw;*/
     &__title {
@@ -74,13 +74,13 @@
         line-height: 24.27px;
         .va18;
         color:#000000;
-        &_number_1 {
+        &_number_one {
             margin-bottom: 14px;
         }
-        &_number_2 {
+        &_number_two {
             margin-bottom: 19px;
         }
-        &_number_3 {
+        &_number_three {
             line-height: 35.27px;
             margin-bottom: 14px;
         }
@@ -94,13 +94,13 @@
         line-height: 24.27px;
         .va18;
         color:#acacac;
-        &_number_1 {
+        &_number_one {
             margin-bottom: 25px;
         }
-        &_number_2 {
+        &_number_two {
             margin-bottom: 17.5px;
         }
-        &_number_3 {
+        &_number_three {
             margin-bottom: 88.5px;
         }
     }
@@ -109,8 +109,8 @@
     }
     &__button-play {
         /*display:flex;*/
-        width:196px;
-        height:56px;
+        width: 196px;
+        height: 56px;
         font-family: OpenSans-Bold;
         text-align: center;
         text-transform: uppercase;
@@ -121,16 +121,19 @@
         &_background_one {
             background: url('@{imgpath}mount.png') no-repeat;
             color:#ffffff;
-            margin-bottom: 108.9px;
+            margin-bottom: 109px;
         }
         &_background_two {
             background: url('@{imgpath}palm.png') no-repeat;
             color:#000000;
-            margin-bottom: 86.2px;
+            margin-bottom: 86px;
         }
         &_background_three {
             background: url('@{imgpath}shadow.png') no-repeat;
             color:#000000;
         }
+    }
+    &__button-play:active {
+        box-shadow: inset 0 5px 15px #535353;
     }
 }

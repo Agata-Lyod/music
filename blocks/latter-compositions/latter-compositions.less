@@ -1,7 +1,7 @@
 /* Latter compositions */
 .b-latter-compositions {
     margin-bottom: 159px;
-    height: 1667px;
+    min-height: 1667px;
     &__title {
         color: rgb(0,0,0);
         line-height: 34px;
@@ -82,12 +82,18 @@
             position: absolute;
             content: url('@{imgpath}lat-comp-strelka-vpravo.png');
             transform: translate(565px, -94px);
-
         }
+    }
+    &__link {
+        display: inline-block;
+    }
+    &__link:last-child {
+        margin-right: 0;
     }
     &__player {
         width: 600px;
         height: 422px;
+        text-align: center;
         &_float_left {
         float: left;
         clear: none;
@@ -96,15 +102,45 @@
         float: right;
         clear: none;
         }
-        &_background_1 {
+        &_background_first {
             background: url('@{imgpath}show-me-love.png');
         }
-        &_background_2 {
+        &_background_second {
             background: url('@{imgpath}music-is-life.png');
         }
-        &_background_3 {
+        &_background_third {
             background: url('@{imgpath}chill-nation.png');
         }
     }
+    &__controls {
+        width: 80%;
+        margin: 380px auto 5px;
+        /*display: table-cell;*/
+        /*vertical-align: bottom;*/
+    }
+    &__controls span {
+        display: table-cell;
+        height: 16px;
+        vertical-align: middle;
+    }
+    &__play {
+        box-sizing: border-box;
+        /*padding-left: ;*/
+    }
+    &__play:hover {
+        cursor: pointer;
+    }
+    &__pause:hover {
+        cursor: pointer;
+    }
+    &__playpause {
+        width:20px;
+        height: 16px;
+        text-align: center;
+    }
+    &_display_none img {
+        display: none;
+    }
 }
+
 
