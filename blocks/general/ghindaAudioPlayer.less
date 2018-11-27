@@ -9,17 +9,17 @@
  */
 
 /* base styles */
-.ghinda-audio-player {}
-.ghinda-audio-play {
+.i-latter-compositions__audio-player {}
+.i-latter-compositions__audio-play {
     cursor: pointer;
 }
-.ghinda-audio-timer {
+.i-latter-compositions__audio-timer {
     cursor: default;
 }
 
 
 /* Start of simpledark default theme */
-.ghinda-audio-player.simpledark {
+.i-latter-compositions__audio-player.simpledark {
     width: 90%;
     /*float: left;*/
     position: relative;
@@ -35,22 +35,22 @@
     background-image: -moz-linear-gradient(top, #313131, #000000); /* FF3.6 */
     /*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #313131),color-stop(1, #000000)); /* Saf4+, Chrome */
     
-    box-shadow: inset 0 15px 35px #535353;
+    /*box-shadow: inset 0 15px 35px #535353;*/
 }
 
-.ghinda-audio-player.simpledark .ghinda-audio-controls {
+.i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-controls {
     position: relative;
     padding-top: 5px;
     width: 100%;
 }
 
-.ghinda-audio-player.simpledark .ghinda-audio-play, .ghinda-audio-player.simpledark .ghinda-audio-seek, .ghinda-audio-timer, .ghinda-audio-duration {
+.i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-play, .i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-seek, .i-latter-compositions__audio-timer, .i-latter-compositions__audio-duration {
     /*float: left;*/
     display: inline-block;
 }
 
 /* play, pause */
-.ghinda-audio-player.simpledark .ghinda-audio-play {
+.i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-play {
     /*display: block;*/
     width: 22px;
     height: 22px;
@@ -65,29 +65,27 @@
     transition: all 0.2s ease-in-out; 
 }
 
-.ghinda-audio-player.simpledark .ghinda-paused-button {
+.i-latter-compositions__audio-player.simpledark .i-latter-compositions__paused-button {
     background: url('@{imgpath}pause.png') no-repeat, url('@{imgpath}pause.png') no-repeat 50% 0;
 }
 
 
-.ghinda-audio-player.simpledark audio {
+.i-latter-compositions__audio-player.simpledark audio {
     /*float: left;*/
 }
 
 
-.ghinda-audio-player.simpledark .ghinda-audio-play:hover {  
+.i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-play:hover {  
     opacity: 1;
 }
 
 /* seek */
-.ghinda-audio-player.simpledark .ghinda-audio-seek {
+.i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-seek {
     position: relative;      
     width: 405px;
     height: 10px;
     margin-top: 5px;    
     border: 1px solid #494949;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
     border-radius:15px;
     background: #535353;
     background-image: -moz-linear-gradient(top, #535353, #333333);
@@ -95,14 +93,11 @@
     box-shadow: inset 0 -3px 3px #333333;
 }
 
-.ghinda-audio-player.simpledark .ghinda-audio-seek .ui-slider-handle {
+.i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-seek .ui-slider-handle {
     width: 15px;
     height: 15px;
     border: 1px solid #333;
     top: -4px;
-
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
     border-radius:10px; 
     
     background: #e6e6e6;
@@ -112,11 +107,11 @@
     box-shadow: inset 0 -3px 3px #d5d5d5;   
 }
 
-.ghinda-audio-player.simpledark .ghinda-audio-seek .ui-slider-handle.ui-state-hover {
+.i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-seek .ui-slider-handle.ui-state-hover {
     background: #fff;
 }
 
-.ghinda-audio-player.simpledark .ghinda-audio-seek .ui-slider-range {
+.i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-seek .ui-slider-range {
     border-radius:15px;
     
     background: #fff;
@@ -128,196 +123,23 @@
 
 
 /* timer */
-.ghinda-audio-player.simpledark .ghinda-audio-timer {
+.i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-timer {
     margin-top: 5px;
     margin-left: 10px;
     color: #999;
     font-size: 0.7em;
     font-weight: bold;
 }
-.ghinda-audio-player.simpledark .ghinda-audio-duration {
+.i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-duration {
     margin-top: 5px;
     margin-left: 10px;
     color: #999;
     font-size: 0.7em;
     font-weight: bold;
 }
-.ghinda-audio-player.simpledark .ghinda-audio-duration:before {
+.i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-duration:before {
     content: "/";
 }
-/* volume */
-.ghinda-audio-player.simpledark .ghinda-volume-box {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    overflow: hidden;
-    width: 20px;
-    height: 30px;
-    color: #fff;
-    padding: 0px 10px;
-    
-    -moz-transition: all 0.1s ease-in-out; /* Firefox */
-    -webkit-transition: all 0.1s ease-in-out; /* Safari and Chrome */
-    -o-transition: all 0.2s ease-in-out;  /* Opera */
-    transition: all 0.1s ease-in-out; 
-}
-
-.ghinda-audio-player.simpledark .ghinda-volume-box:hover {  
-    height: 135px;
-    padding-top: 5px;
-}
-
-
-.ghinda-audio-player.simpledark .ghinda-volume-box:hover .ghinda-volume-slider {
-    position: relative;
-    visibility: visible;
-    opacity: 1;
-}
-
-.ghinda-audio-player.simpledark .ghinda-volume-slider { 
-    position: relative;
-    height: 100px;
-    width: 7px;
-    left: 4px;
-    visiblity: hidden;
-    opacity: 0;
-    
-    border: 1px solid #444;
-
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-    border-radius:15px;
-    
-    background: #535353;
-    background-image: -moz-linear-gradient(top, #535353, #333333);
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #535353),color-stop(1, #333333));
-    
-    box-shadow: inset 0 3px 3px #333333;
-    
-    -moz-transition: all 0.1s ease-in-out; /* Firefox */
-    -webkit-transition: all 0.1s ease-in-out; /* Safari and Chrome */
-    -o-transition: all 0.1s ease-in-out;  /* Opera */
-    transition: all 0.1s ease-in-out; 
-}
-
-.ghinda-audio-player.simpledark .ghinda-volume-slider .ui-slider-handle {
-    width: 12px;
-    height: 12px;
-    left: -4px;
-    margin-bottom:-0.6em;
-    margin-left:0;
-    border: 1px solid #333; 
-
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    border-radius:10px; 
-    
-    background: #e6e6e6;
-    background-image: -moz-linear-gradient(top, #e6e6e6, #d5d5d5);
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #e6e6e6),color-stop(1, #d5d5d5));
-    
-    box-shadow: inset 0 3px 3px #d5d5d5;    
-}
-
-.ghinda-audio-player.simpledark .ghinda-volume-slider .ui-slider-handle.ui-state-hover {
-    background: #fff;
-}
-
-.ghinda-audio-player.simpledark .ghinda-volume-slider .ui-slider-range {
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-    border-radius:15px;
-    
-    background: #e6e6e6;
-    background-image: -moz-linear-gradient(top, #e6e6e6, #d5d5d5);
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #e6e6e6),color-stop(1, #d5d5d5));
-    
-    box-shadow: inset 0 3px 3px #d5d5d5;
-}
-
-/* volume button */
-
-.ghinda-audio-player.simpledark .ghinda-volume-button {
-    position: absolute;
-    bottom: 0px;
-    display: block;
-    width: 22px;
-    height: 22px;
-    background: url(images/volume-full-icon.png) no-repeat;
-    text-indent: -9999px;
-    
-    opacity: 0.8;
-}
-
-.ghinda-audio-player.simpledark .ghinda-volume-button:hover {
-    opacity: 1;
-}
-
-.ghinda-audio-player.simpledark .ghinda-volume-mute {
-    background: url(images/volume-mute-icon.png) no-repeat;
-}
-
-
-/* Start of smalldark child theme */
-
-.ghinda-audio-player.smalldark {
-    padding: 0px;
-}
-
-.ghinda-audio-player.smalldark audio:hover + .ghinda-audio-controls {
-    visibility: visible;
-    opacity: 0.7;
-}
-
-.ghinda-audio-player.smalldark .ghinda-audio-controls:hover {
-    visibility: visible;
-    opacity: 0.7;
-}
-
-.ghinda-audio-player.smalldark .ghinda-audio-controls {
-    position: absolute;
-    top: 150px;
-    left: 80px;
-    width: 320px;
-    padding: 10px;
-    
-    border: 1px solid #2E2E2E;
-    
-    -moz-border-radius: 5px; /* FF1+ */
-    -webkit-border-radius: 5px; /* Saf3+, Chrome */
-    border-radius: 5px; /* Opera 10.5, IE 9 */
-    
-    background: #000000;
-    background-image: -moz-linear-gradient(top, #313131, #000000); /* FF3.6 */
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #313131),color-stop(1, #000000)); /* Saf4+, Chrome */
-    
-    opacity: 0;
-    visibility: hidden;
-    
-    box-shadow: inset 0 15px 35px #535353;
-    
-    -moz-transition: all 0.1s ease-in-out; /* Firefox */
-    -webkit-transition: all 0.1s ease-in-out; /* Safari and Chrome */
-    -o-transition: all 0.1s ease-in-out;  /* Opera */
-    transition: all 0.1s ease-in-out; 
-}
-
-.ghinda-audio-player.smalldark .ghinda-audio-seek {
-    width: 200px;
-}
-
-.ghinda-audio-player.smalldark .ghinda-volume-box {
-    bottom: 10px;
-}
-
-.ghinda-audio-player.smalldark .ghinda-volume-box:hover {   
-    height: 85px;   
-}
-
-.ghinda-audio-player.smalldark .ghinda-volume-slider {
-    height: 50px;
-}
-
 /* needed jquery ui styles
  * using these, we don't depend on jQuery UI's stylsheet
  */

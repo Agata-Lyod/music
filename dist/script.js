@@ -43,26 +43,26 @@ var jq11 = jQuery.noConflict(true);
             
             //create html structure
             //main wrapper
-            var $audio_wrap = $('<div></div>').addClass('ghinda-audio-player').addClass(options.theme).addClass(options.childtheme);
+            var $audio_wrap = $('<div></div>').addClass('i-latter-compositions__audio-player').addClass(options.theme).addClass(options.childtheme);
             //controls wraper
-            var $audio_controls = $('<div class="ghinda-audio-controls"><a class="ghinda-audio-play" title="Play/Pause"></a><div class="ghinda-audio-seek"></div><div class="ghinda-audio-timer">00:00</div><div class="ghinda-audio-duration"></div></div>');
+            var $audio_controls = $('<div class="i-latter-compositions__audio-controls"><a class="i-latter-compositions__audio-play" title="Play/Pause"></a><div class="i-latter-compositions__audio-seek"></div><div class="i-latter-compositions__audio-timer">00:00</div><div class="i-latter-compositions__audio-duration"></div></div>');
             $gAudio.wrap($audio_wrap);
             $gAudio.after($audio_controls);
             
             //get new elements
-            var $audio_container = $gAudio.parent('.ghinda-audio-player');
-            var $audio_controls = $('.ghinda-audio-controls', $audio_container);
-            var $ghinda_play_btn = $('.ghinda-audio-play', $audio_container);
-            var $ghinda_audio_seek = $('.ghinda-audio-seek', $audio_container);
-            var $ghinda_audio_timer = $('.ghinda-audio-timer', $audio_container);
-            var $ghinda_audio_duration = $('.ghinda-audio-duration', $audio_container);
+            var $audio_container = $gAudio.parent('.i-latter-compositions__audio-player');
+            var $audio_controls = $('.i-latter-compositions__audio-controls', $audio_container);
+            var $ghinda_play_btn = $('.i-latter-compositions__audio-play', $audio_container);
+            var $ghinda_audio_seek = $('.i-latter-compositions__audio-seek', $audio_container);
+            var $ghinda_audio_timer = $('.i-latter-compositions__audio-timer', $audio_container);
+            var $ghinda_audio_duration = $('.i-latter-compositions__audio-duration', $audio_container);
 
             $audio_controls.hide(); // keep the controls hidden
                         
             var gPlay = function() {
                 if($gAudio.attr('paused') == false) {
                     $gAudio[0].pause();
-                } else {                    
+                } else {
                     $gAudio[0].play();
                 }
             };
@@ -71,15 +71,15 @@ var jq11 = jQuery.noConflict(true);
             $gAudio.click(gPlay);
             
             $gAudio.bind('play', function() {
-                $ghinda_play_btn.addClass('ghinda-paused-button');
+                $ghinda_play_btn.addClass('i-latter-compositions__paused-button');
             });
             
             $gAudio.bind('pause', function() {
-                $ghinda_play_btn.removeClass('ghinda-paused-button');
+                $ghinda_play_btn.removeClass('i-latter-compositions__paused-button');
             });
             
             $gAudio.bind('ended', function() {
-                $ghinda_play_btn.removeClass('ghinda-paused-button');
+                $ghinda_play_btn.removeClass('i-latter-compositions__paused-button');
             });
             
             var seeksliding;
