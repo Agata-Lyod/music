@@ -50,6 +50,9 @@ a:hover {
   margin: 0 auto;
   max-width: 1200px;
 }
+body > div:last-child {
+  margin-bottom: 0;
+}
 /* Concert tours */
 .b-concert-tours {
   min-height: 1253px;
@@ -96,13 +99,13 @@ a:hover {
   transform: translate(-70px, 12.3px);
 }
 .b-concert-tours__name-of-tour {
+  margin-bottom: 71px;
   text-transform: uppercase;
   font-family: OpenSans-Bold;
   font-size: 14px;
   color: #000000;
   -webkit-transform: translateX(-1.5px);
   transform: translateX(-1.5px);
-  margin-bottom: 71px;
 }
 .b-concert-tours__time-of-tour {
   font-family: OpenSans-Regular;
@@ -340,15 +343,6 @@ a:hover {
   -webkit-box-shadow: inset 0 5px 15px #535353;
   box-shadow: inset 0 5px 15px #535353;
 }
-/*
- * ghindaaudioPlayer - jQuery plugin 1.0.0
- *
- * Copyright (c) 2010 Cristian-Ionut Colceriu
- *
- * ghindaaudioPlayer.css
- * Styles for the ghindaaudioPlayer
- *
- */
 /* base styles */
 .i-latter-compositions__audio-play {
   cursor: pointer;
@@ -361,20 +355,15 @@ a:hover {
   width: 90%;
   /*float: left;*/
   position: relative;
-  padding: 10px;
-  margin: 290px auto 10px;
+  padding-left: 32px;
+  margin-top: 357px;
   /*border: 5px solid #61625d;*/
   font-family: Arial, Helvetica, sans-serif;
-  border-radius: 5px;
-  /* Opera 10.5, IE 9 */
-  /*background: #000000;
-    background-image: -moz-linear-gradient(top, #313131, #000000); /* FF3.6 */
-  /*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #313131),color-stop(1, #000000)); /* Saf4+, Chrome */
-  /*box-shadow: inset 0 15px 35px #535353;*/
 }
 .i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-controls {
   position: relative;
-  padding-top: 5px;
+  /*padding-top: 5px;*/
+  /*padding-left: 5px;*/
   width: 100%;
 }
 .i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-play,
@@ -389,7 +378,9 @@ a:hover {
   /*display: block;*/
   width: 22px;
   height: 22px;
-  margin-right: 15px;
+  padding-top: 5px;
+  margin-left: 5px;
+  margin-right: 16px;
   background: url('../images/play.png') no-repeat;
   opacity: 0.7;
   /* Firefox */
@@ -399,7 +390,7 @@ a:hover {
   transition: all 0.2s ease-in-out;
 }
 .i-latter-compositions__audio-player.simpledark .i-latter-compositions__paused-button {
-  background: url('../images/pause.png') no-repeat, url('../images/pause.png') no-repeat 50% 0;
+  background: url('../images/pause.png') no-repeat, url('../images/pause.png') no-repeat 35% 0;
 }
 .i-latter-compositions__audio-player.simpledark audio {
   /*float: left;*/
@@ -411,10 +402,8 @@ a:hover {
 .i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-seek {
   position: relative;
   width: 405px;
-  height: 10px;
-  margin-top: 5px;
-  border: 1px solid #494949;
-  border-radius: 15px;
+  height: 2px;
+  /*margin-top: 0;*/
   background: #535353;
   background-image: -moz-linear-gradient(top, #535353, #333333);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #535353), color-stop(1, #333333));
@@ -422,10 +411,9 @@ a:hover {
   box-shadow: inset 0 -3px 3px #333333;
 }
 .i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-seek .ui-slider-handle {
-  width: 15px;
-  height: 15px;
-  border: 1px solid #333;
-  top: -4px;
+  width: 12px;
+  height: 12px;
+  top: -5px;
   border-radius: 10px;
   background: #e6e6e6;
   background-image: -moz-linear-gradient(top, #e6e6e6, #d5d5d5);
@@ -437,23 +425,18 @@ a:hover {
   background: #fff;
 }
 .i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-seek .ui-slider-range {
-  border-radius: 15px;
   background: #fff;
-  /*background-image: -moz-linear-gradient(top, #4cbae8, #39a2ce);
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #4cbae8),color-stop(1, #39a2ce));*/
-  -webkit-box-shadow: inset 0 -1px 1px #39a2ce;
-  box-shadow: inset 0 -1px 1px #39a2ce;
 }
 /* timer */
 .i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-timer {
-  margin-top: 5px;
+  padding-top: 5px;
   margin-left: 10px;
   color: #999;
   font-size: 0.7em;
   font-weight: bold;
 }
 .i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-duration {
-  margin-top: 5px;
+  /*margin-top: 5px;*/
   margin-left: 10px;
   color: #999;
   font-size: 0.7em;
@@ -461,6 +444,7 @@ a:hover {
 }
 .i-latter-compositions__audio-player.simpledark .i-latter-compositions__audio-duration:before {
   content: "/";
+  margin-right: 5px;
 }
 /* needed jquery ui styles
  * using these, we don't depend on jQuery UI's stylsheet
@@ -578,7 +562,7 @@ a:hover {
 }
 /* Latter compositions */
 .b-latter-compositions {
-  margin-bottom: 159px;
+  margin-bottom: 156px;
   min-height: 1667px;
 }
 .b-latter-compositions__title {
@@ -600,11 +584,14 @@ a:hover {
   line-height: 24.27px;
   color: #798285;
   letter-spacing: 0.118em;
-  margin-bottom: 160px;
+  margin-bottom: 159px;
 }
 .b-latter-compositions__track {
   height: 422px;
-  margin-bottom: 53.5px;
+  margin-bottom: 54px;
+}
+.b-latter-compositions__track:last-child {
+  margin-bottom: 0;
 }
 .b-latter-compositions__date {
   font-size: 14px;
@@ -903,17 +890,98 @@ a:hover {
   min-height: 1203px;
   margin-bottom: 145px;
   background: url('../images/bridge.png') no-repeat center bottom;
+  z-index: -20;
   /*background-size: cover;*/
 }
 .b-upcoming-events__title {
+  position: relative;
   height: 1.1em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#62a2ad), to(#8dbab3));
-  background: linear-gradient(#62a2ad, #8dbab3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  padding-top: 214px;
+  margin-left: 461px;
+  margin-bottom: 93px;
+  color: #42717e;
+  z-index: 1;
 }
 .b-upcoming-events__title:before {
-  -webkit-transform: translate(10px, 10px);
-  transform: translate(10px, 10px);
-  z-index: 20;
+  position: absolute;
+  -webkit-transform: translate(-4px, -18px);
+  transform: translate(-4px, -18px);
+  z-index: -1;
+}
+.b-upcoming-events__tour {
+  padding-left: 50.13%;
+}
+.b-upcoming-events__name-of-tour {
+  margin-bottom: 15px;
+  font-family: OpenSans-Regular;
+  letter-spacing: 0.018em;
+  color: #000;
+  font-size: 23px;
+}
+.b-upcoming-events__name-of-tour_margin-bottom_big {
+  margin-bottom: 28px;
+}
+.b-upcoming-events__name-of-tour_letter-spacing_small {
+  color: inherit;
+  letter-spacing: -0.025em;
+}
+.b-upcoming-events__name-of-tour:after {
+  position: absolute;
+  -webkit-transform: translate(-238px, 12px);
+  transform: translate(-238px, 12px);
+  content: url('../images/underline-upcom.png');
+}
+.b-upcoming-events__name-of-tour_underline-size_short:after {
+  content: url('../images/underline-short-upcom.png');
+  -webkit-transform: translate(-238px, 18px);
+  transform: translate(-238px, 18px);
+}
+.b-upcoming-events__location-of-tour {
+  height: 52px;
+  margin-bottom: 72px;
+  font-family: OpenSans-Regular;
+  letter-spacing: 0.018em;
+  color: #798285;
+  font-size: 14px;
+  line-height: 24.27px;
+  overflow: hidden;
+}
+.b-upcoming-events__location-of-tour:after {
+  position: absolute;
+  -webkit-transform: translate(-4px, 16px);
+  transform: translate(-4px, 16px);
+  content: url('../images/black-line-short.png');
+}
+.b-upcoming-events__descr-of-tour {
+  height: 128px;
+  margin-bottom: 59px;
+  font-family: OpenSans-Regular;
+  color: #798285;
+  line-height: 24.27px;
+  letter-spacing: 0.018em;
+  font-size: 14px;
+  overflow: hidden;
+}
+.b-upcoming-events__descr-of-tour:after {
+  position: absolute;
+  -webkit-transform: translate(-383px, 8px);
+  transform: translate(-383px, 8px);
+  content: url('../images/black-line-short.png');
+}
+.b-upcoming-events__start-date-of-tour {
+  margin-bottom: 201px;
+  font-family: OpenSans-Bold;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+}
+.b-upcoming-events__start-date-of-tour:after {
+  position: absolute;
+  -webkit-transform: translate(-38px, 40px);
+  transform: translate(-38px, 40px);
+  content: url('../images/black-line-long.png');
+}
+.b-upcoming-events__finish-date-of-tour {
+  font-family: OpenSans-Bold;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
 }
