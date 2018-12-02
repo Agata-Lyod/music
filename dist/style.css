@@ -50,9 +50,15 @@ a:hover {
   margin: 0 auto;
   max-width: 1200px;
 }
-body > div:last-child {
-  margin-bottom: 0;
+@media only screen and (max-width: 750px) {
+  .wrap {
+    margin: 0 auto;
+    max-width: 650px;
+  }
 }
+/*body>div:last-child {
+    margin-bottom: 0 !important;
+}*/
 /* Concert tours */
 .b-concert-tours {
   min-height: 1253px;
@@ -201,6 +207,128 @@ body > div:last-child {
   background: url('../images/footer.png') no-repeat center bottom;
   background-size: cover;
 }
+.b-contact__content {
+  text-align: left;
+  padding-left: 49.8%;
+}
+.b-contact__title {
+  padding-top: 151px;
+  text-align: left;
+  color: #454545;
+  margin-bottom: 36px;
+}
+.b-contact__title:before {
+  -webkit-transform: translate(3px, -18px);
+  transform: translate(3px, -18px);
+}
+.b-contact__adress {
+  margin-bottom: 10px;
+  font-family: OpenSans-Regular;
+  font-size: 14px;
+  color: #798285;
+  letter-spacing: 0.018em;
+  padding-left: 2px;
+}
+.b-contact__tel {
+  display: block;
+  padding-left: 2px;
+  font-family: OpenSans-Regular;
+  color: #7b7b7b;
+  font-size: 14px;
+  margin-bottom: 78px;
+}
+.b-contact__form {
+  width: 382px;
+  padding-left: 3px;
+  float: left;
+  clear: left;
+}
+.b-contact__form:after {
+  content: url('../images/black-line-contact.png');
+  position: absolute;
+  -webkit-transform: translate(448px, -187px);
+  transform: translate(448px, -187px);
+}
+.b-contact__form-name,
+.b-contact__form-email,
+.b-contact__form-message {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 382px;
+  height: 30px;
+  margin-bottom: 44px;
+  border-style: hidden;
+  border-bottom: 1px solid #000;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 0.018em;
+  font-family: OpenSans-Regular;
+}
+.b-contact__form-message {
+  margin-bottom: 25px;
+}
+.b-contact__form-name:focus,
+.b-contact__form-email:focus,
+.b-contact__form-message:focus {
+  border: 1px solid #000;
+}
+.b-contact__form input::-webkit-input-placeholder {
+  color: #798285;
+}
+.b-contact__form input::ms-input-placeholder {
+  color: #798285;
+}
+.b-contact__form input:ms-input-placeholder {
+  color: #798285;
+}
+.b-contact__form input::-moz-placeholder {
+  color: #798285;
+  opacity: 1;
+}
+.b-contact__form input:-moz-placeholder {
+  color: #798285;
+  opacity: 1;
+}
+.b-contact__form-send {
+  text-transform: uppercase;
+  background: transparent;
+  border-style: none;
+  color: #000;
+  font-family: OpenSans-Bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.b-contact__form-send:hover {
+  border-bottom: 1px solid #000;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.b-contact__social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 186px;
+  padding-top: 19px;
+  margin-right: 53px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  float: right;
+  clear: right;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.b-contact__social-link_padding-top_big > img {
+  padding-top: 7px;
+  /*padding-left: 2px;*/
+}
 /* Discography */
 .b-discography {
   /*display: block;*/
@@ -215,7 +343,7 @@ body > div:last-child {
   width: 345px;
   height: 40px;
   background: url('../images/discography-back.png') no-repeat;
-  background-position: 2.9px 1.3px;
+  background-position: 0 -269px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /*transform: translate(-2px,-3px);*/
@@ -532,7 +660,8 @@ body > div:last-child {
   transition: all 0.3s ease-in-out 0s;
 }
 .b-header__link:hover:before,
-.b-header__link:target:before {
+.b-header__link:target:before,
+.b-header__link:focus:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
