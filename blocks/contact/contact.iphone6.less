@@ -1,0 +1,117 @@
+/* Contact */
+@media @iphone6 {
+    .b-contact {
+        min-height:862px;
+        background: url('@{imgpath}footer.png') no-repeat center bottom;
+        background-size: cover;
+        &__content {
+            text-align: left;
+            padding-left: 19.8%;
+        }
+        &__title {
+            padding-top: 151px;
+            text-align: left;
+            color: #454545;
+            margin-bottom: 36px;
+        }
+        &__title:before {
+            transform: translate(3px,-18px);
+        }
+        &__adress {
+            margin-bottom: 10px;
+            font-family: OpenSans-Regular;
+            font-size: 14px;
+            color: #798285;
+            .va18;
+            padding-left: 2px;
+        }
+        &__tel {
+            display: block;
+            padding-left: 2px;
+            font-family: OpenSans-Regular;
+            color: #7b7b7b;
+            font-size: 14px;
+            margin-bottom: 78px;
+        }
+        &__form {
+            width: 382px;
+            padding-left: 3px;
+            float: left;
+            clear: left;
+        }
+        &__form:after {
+            content: url('@{imgpath}black-line-contact.png');
+            position: absolute;
+            transform: translate(348px, -187px);
+        }
+        &__form-name,
+        &__form-email,
+        &__form-message {
+            box-sizing: border-box;
+            background: transparent;
+            width: 382px;
+            height: 30px;
+            margin-bottom: 44px;
+            border-style: hidden;
+            border-bottom: 1px solid #000;
+            color: #000;
+            font-size: 14px;
+            .va18;
+            font-family: OpenSans-Regular;
+        }
+        &__form-message {
+            margin-bottom: 25px;
+        }
+        &__form-name:focus,
+        &__form-email:focus,
+        &__form-message:focus {
+            border: 1px solid #000;
+        }
+        &__form input::-webkit-input-placeholder {
+            color: #798285;
+        }
+        &__form input::ms-input-placeholder {
+            color: #798285;
+        }
+        &__form input:ms-input-placeholder {
+            color: #798285;
+        }
+        &__form input::-moz-placeholder {
+            color: #798285;
+            opacity: 1;
+        }
+        &__form input:-moz-placeholder {
+            color: #798285;
+            opacity: 1;
+        }
+        &__form-send {
+            text-transform: uppercase;
+            background: transparent;
+            border-style: none;
+            color:#000;
+            font-family: OpenSans-Bold;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        &__form-send:hover {
+            border-bottom: 1px solid #000;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        &__social-links {
+            display: flex;
+            height: 186px;
+            padding-top: 19px;
+            margin-right: 53px;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            float: right;
+            clear: right;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__social-link_padding-top_big>img {
+            padding-top: 7px;
+            /*padding-left: 2px;*/
+        }
+    }
+}

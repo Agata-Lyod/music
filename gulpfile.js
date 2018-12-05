@@ -35,7 +35,7 @@ gulp.task('html', function() {
 });
 gulp.task('css', function() {
 
-    return gulp.src(['blocks/general/i-variables.less','blocks/general/i-less.less','blocks/general/general.less','blocks/**/*.less'])
+    return gulp.src(['blocks/general/i-variables.less','blocks/general/i-less.less','blocks/general/general.less', 'blocks/**/*.desk.less','blocks/**/*.iphone6.less'])
         .pipe(changed('dist'))
         .pipe(concat('style.less'))
         .pipe(less({

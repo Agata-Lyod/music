@@ -1,0 +1,139 @@
+/* Discography */
+.b-discography {
+    /*display: block;*/
+    background: url('@{imgpath}forest.png') no-repeat center bottom;
+    min-height: 1778px;
+    margin-bottom: 165px;
+    /*width:100vw;*/
+    &__title {
+        line-height: 35px;
+        margin: 0 auto;
+        width: 345px;
+        height: 40px;
+        background: url('@{imgpath}discography-back.png') no-repeat;
+        background-position: 0 -269px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: translate(-1px,-1px);
+    }
+    &__title:before {
+        transform: translate(-15.4%,-18px);
+        z-index: -1;
+    }
+    &__preview {
+        font-size: 14px;
+        color: #798285;
+        text-align: center;
+        line-height: 24.27px;
+        /*max-width: 735px;*/
+        margin: 42px auto 149px;
+        padding-left: 3px;
+        .va118;
+    }
+    &__album {
+        width: 100%;
+        clear: both;
+        position: relative;
+    }
+    &__album-title {
+        max-width: 50%;
+        float: left;
+        font-size: 14px;
+        padding: 17px 1px;
+    }
+    &__album-year {
+        font-family: OpenSans-Bold;
+        color: rgba(0,0,0,0.65);
+        opacity: 35%;
+    }
+    &__album-year:after {
+        /*display:block;*/
+        content: url('@{imgpath}black-line-discography.png');
+        position:absolute;
+        transform: translate(-31px, 13px);
+    }
+    &__album-name {
+        color: #000000;
+        text-transform: uppercase;
+        font-family: OpenSans-Bold;
+        margin-top: 14px;
+    }
+    &__album-descr {
+        /*display:block;*/
+        font-size: 14px;
+        line-height: 24.27px;
+        .va18;
+        clear: none;
+        float: right;
+        max-width: 672px;
+        padding-left: 3px;
+    }
+    &__album-short-descr {
+        /*display:block;*/
+        font-size: 23px;
+        line-height: 24.27px;
+        .va18;
+        color:#000000;
+        &_number_one {
+            margin-bottom: 14px;
+        }
+        &_number_two {
+            margin-bottom: 19px;
+        }
+        &_number_three {
+            line-height: 35.27px;
+            margin-bottom: 14px;
+        }
+        &_wrap_nowrap {
+            white-space: nowrap; 
+        }
+    }
+    &__album-full-descr {
+        /*display:block;*/
+        font-size: 14px;
+        line-height: 24.27px;
+        .va18;
+        color:#acacac;
+        &_number_one {
+            margin-bottom: 25px;
+        }
+        &_number_two {
+            margin-bottom: 17.5px;
+        }
+        &_number_three {
+            margin-bottom: 88.5px;
+        }
+    }
+    &__album-year_margin_double {
+        margin-top: 42px;
+    }
+    &__button-play {
+        /*display:flex;*/
+        width: 196px;
+        height: 56px;
+        font-family: OpenSans-Bold;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        line-height: 56px;
+        /*vertical-align: middle;*/
+        alignment-baseline: middle;
+        &_background_one {
+            background: url('@{imgpath}mount.png') no-repeat;
+            color:#ffffff;
+            margin-bottom: 109px;
+        }
+        &_background_two {
+            background: url('@{imgpath}palm.png') no-repeat;
+            color:#000000;
+            margin-bottom: 86px;
+        }
+        &_background_three {
+            background: url('@{imgpath}shadow.png') no-repeat;
+            color:#000000;
+        }
+    }
+    &__button-play:active {
+        box-shadow: inset 0 5px 15px #535353;
+    }
+}

@@ -18,4 +18,12 @@ var jq11 = jQuery.noConflict(true);
     * 1000 скорость перехода в миллисекундах
     */
   });
+  /* Подготавливаем иконку меню */
+    $('#b-header__menu').prepend('<div class="i-header__menu-icon"></div>');
+                 /* Включаем навигацию */
+    $(".i-header__menu-icon").on("click", function(){
+        $(".b-header__menu-items").slideToggle();
+        $(this).toggleClass("active");
+        $(".i-header__menu-icon").toggleClass("i-header__menu-icon_state_escape");
+    });
 })(jq11);
