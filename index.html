@@ -5,11 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" media="all" href="dist/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="plugins/jquery-1.4.2.min.js"></script>
     <!--<script type="text/javascript">var jq14 = jQuery.noConflict(true);</script>-->
     <script type="text/javascript" src="plugins/jquery-ui-1.8.2.custom.min.js"></script>
-    <script type="text/javascript" src="plugins/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="dist/script.js"></script>
     <script>
         $(function() {
             $('#audio1').gAudio();
@@ -21,7 +20,7 @@
 <body>
 <!-- Header -->
 <div class="b-header" id="about">
-    <div class="b-header__menu">
+    <div class="b-header__menu" tabindex='1' id="b-header__menu">
         <ul class="b-header__menu-items">
             <li class="b-header__menu-item"><a href="#about" class="b-header__link">about</a></li>
             <li class="b-header__menu-item"><a href="#discography" class="b-header__link">discography</a></li>
@@ -49,7 +48,7 @@
             <div class="b-discography__album-name">Hell and Silence</div>
         </div>
         <div class="b-discography__album-descr">
-            <div class="b-discography__album-short-descr b-discography__album-short-descr_number_1">Hell and Silence is an EP by Las Vegas rock group</div>
+            <div class="b-discography__album-short-descr b-discography__album-short-descr_number_one">Hell and Silence is an EP by Las Vegas rock group</div>
             <div class="b-discography__album-full-descr b-discography__album-full-descr_number_one">Hell and Silence is an EP by Las Vegas rock group , released in March 2010 in the United States. It was recorded at Battle Born Studios. All songs were written by Imagine Dragons and self-produced. The EP was in part mixed by Grammy nominated engineer Mark Needham.</br>To promote the album the band performed five shows at SXSW 2010 including at the BMI Official Showcase.While at SXSW they were endorsed by Blue Microphones. They also toured the western United States with Nico Vega and Saint Motel. They also performed at Bite of Las Vegas Festival 2010, New Noise Music Festival, Neon Reverb Festival, and Fork Fest.</div>
             <div class="b-discography__button-play b-discography__button-play_background_one">play</div>
         </div>
@@ -103,13 +102,12 @@
     <div class="b-latter-compositions__track">
         <div class="b-latter-compositions__descr-of-track b-latter-compositions__descr-of-track_float_left">
             <div class="b-latter-compositions__date">03.04.2015</div>
-            <div class="b-latter-compositions__short-name">indian sammer</div>
+            <div class="b-latter-compositions__album-name">indian sammer</div>
             <div class="b-latter-compositions__name">Sam Feldt ft. Kimberly Anne - Show Me Love (EDX's Indian Summer Remix)</div>
             <div class="b-latter-compositions__description">"Radioactive" is a song recorded by American rock band Imagine Dragons for their major-label debut EP Continued Silence and later on their debut studio album, Night Visions (2012), as the opening track. "Radioactive" was</div>
             <ul class="b-latter-compositions__links">
                 <li class="b-latter-compositions__link">
-                    <div class="button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a>
-                    </div>
+                    <a href="https://itunes.apple.com/ru/album/show-me-love-feat-kimberly-anne/987474208?i=987474647"class="b-latter-compositions__itunes-link"><div class="b-latter-compositions__itunes-button">Visit the iTunes</div></a>
                 </li>
                 <li class="b-latter-compositions__link"></li>
                 <li class="b-latter-compositions__link"></li>
@@ -118,7 +116,7 @@
             </ul>
         </div>
         <div class="b-latter-compositions__player b-latter-compositions__player_float_right b-latter-compositions__player_background_first">
-            <audio class="b-latter-compositions__audio-control-panel" id="audio1" src="media/Show-Me-Love-feat-Kimberly.ogg">
+            <audio class="b-latter-compositions__audio-control-panel" id="audio1" src="media/Show-Me-Love-feat-Kimberly.ogg" preload>
                 <source src="media/Show-Me-Love-feat-Kimberly.ogg" type="audio/ogg"/>
                 <source src="media/Show-Me-Love-feat-Kimberly.aac" type="audio/aac"/>
             </audio>
@@ -142,13 +140,12 @@
     <div class="b-latter-compositions__track">
         <div class="b-latter-compositions__descr-of-track b-latter-compositions__descr-of-track_float_right">
             <div class="b-latter-compositions__date">20.07.2015</div>
-            <div class="b-latter-compositions__short-name">indian sammer remix</div>
-            <div class="b-latter-compositions__name">Sam Feldt - Show Me Love (EDX's Indian Summer Remix)</div>
+            <div class="b-latter-compositions__album-name">indian sammer remix</div>
+            <div class="b-latter-compositions__name"><span class="b-latter-compositions_word-spacing_big">Sam Feldt - Show Me Love (EDX's Indian</span></br>Summer Remix)</div>
             <div class="b-latter-compositions__description">Amsterdam's Sam Feldt earned attention in Europe and then worldwide for his melodic house remixes, mixtapes, and collaborations including 2014's "Bloesem" with De Hofnar and "Hot Skin" with Kav Verhouzer on... Dutch label Spinnin' Records. After a series of live shows in Europe, which he built over time to contain mostly his own productions, he toured North America for the first time in early 2015. "Midnight Hearts" with the Him featuring ANG13 followed soon...</div>
             <ul class="b-latter-compositions__links">
                 <li class="b-latter-compositions__link">
-                    <div class="b-latter-compositions__button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a>
-                    </div>
+                    <a href="https://geo.itunes.apple.com/ru/album/show-me-love-edx-remix-radio-edit-feat-kimberly-anne-single/1024083989?mt=1&app=music"class="b-latter-compositions__itunes-link"><div class="b-latter-compositions__itunes-button">Visit the iTunes</div></a>
                 </li>
                 <li class="b-latter-compositions__link"></li>
                 <li class="b-latter-compositions__link"></li>
@@ -166,10 +163,18 @@
     <div class="b-latter-compositions__track">
         <div class="b-latter-compositions__descr-of-track b-latter-compositions__descr-of-track_float_left">
             <div class="b-latter-compositions__date">03.04.2015</div>
-            <div class="b-latter-compositions__short-name">indian sammer</div>
-            <div class="b-latter-compositions__name">Sam Feldt ft.Kimberly Anne - Show Me Love (EDX's Indian Summer Remix)</div>
-            <div class="b-latter-compositions__description">"Radioactive" is a song recorded by American rock band Imagine Dragons for their major-label debut EP Continued Silence and later on their debut studio album, Night Visions (2012), as the opening track. "Radioactive" was</div>
-            <div class="b-latter-compositions__links"><div class="button"><a href="https://itunes.com" class="b-latter-compositions__itunes">Visit the iTunes</a></div></div>
+            <div class="b-latter-compositions__album-name">chill nation</div>
+            <div class="b-latter-compositions__name">James Bay - Let It Go (Bearson Remix)</div>
+            <div class="b-latter-compositions__description"><div class="b-latter-compositions_scroll_hidden">A soulful singer/songwriter from a small English town with a penchant for crafting moving and evocative folk-pop confections in the vein of Ed Sheeran, Foy Vance, and Ben Howard, James Bay hails from the North Hertf...</br>shire market town of Hitchin. Bay honed his skills regionally, eventually landing high-exposure support slots with Tom Odell, John Newman, and Kodaline before inking a record deal with Republic/Universal in 2012.</div></div>
+            <ul class="b-latter-compositions__links">
+                <li class="b-latter-compositions__link">
+                    <a href="https://geo.itunes.apple.com/us/album/let-it-go/948749743?i=948749751&mt=1&app=music"class="b-latter-compositions__itunes-link"><div class="b-latter-compositions__itunes-button">Visit the iTunes</div></a>
+                </li>
+                <li class="b-latter-compositions__link"></li>
+                <li class="b-latter-compositions__link"></li>
+                <li class="b-latter-compositions__link"></li>
+                <li class="b-latter-compositions__link"></li>
+            </ul>
         </div>
         <div class="b-latter-compositions__player b-latter-compositions__player_float_right b-latter-compositions__player_background_third">
             <audio id="audio3" src="media/Let-It-Go.aac">
@@ -182,25 +187,39 @@
 <!-- /Latter Compositions-->
 <!-- Slider -->
 <div class="b-slider">
-    <input type="radio" name="slider" id="slider_1" checked="checked">
+    <input type="radio" name="slider" class="b-slider__radio-button" id="slider_1" checked="checked">
     <div class="b-slider__slide">
-        <img src='images/note.png' alt=''>
-        <div class="b-slider__preview">In 2008, lead singer Dan Reynolds met drummer Andrew Tolman at Brigham Young University where they were both students</div>
+        <div class="b-slider__note">
+            <img src='images/note.png' alt='note'>
+        </div>
+        <div class="b-slider__preview">In 2008, lead singer Dan Reynolds met&nbsp;</br>drummer Andrew Tolman at Brigham Young University where they were both students</div>
+        <div class="b-slider__descr">Tolman recruited longtime high school friend Daniel Wayne "Wing" Sermon,</br>who had graduated from Berklee College of Music. Tolman later recruited</br>his wife, Brittany Tolman, to sing backup and play keys.</div>
+        <div class="b-slider__years">- Early years (2008–10)&nbsp;&nbsp;</div>
     </div>
-    <label for="slider_3"></label>
-    <label for="slider_2"></label>
-    <input type="radio" name="slider" id="slider_2">
+    <label for="slider_3" class="b-slider__button-back"></label>
+    <label for="slider_2" class="b-slider__button-forward"></label>
+    <input type="radio" name="slider" class="b-slider__radio-button" id="slider_2">
     <div class="b-slider__slide">
-        2 слайд
+        <div class="b-slider__note">
+            <img src='images/note.png' alt='note'>
+        </div>
+        <div class="b-slider__preview">Lorem Ipsum&nbsp;</br>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</div>
+        <div class="b-slider__descr"><p class="b-slider__paragraph">Tolman recruited longtime high school friend Daniel Wayne "Wing" Sermon,</br> is simply dummy text of the printing and typesetting industry.</p><p class="b-slider__paragraph">Lorem has been the industry's standard dummy text ever since</br>the 1500s, when an unknown printer took a galley of type and scrambled it to make</br>type specimen book. It has survived not only five centuries, but also tbut also the leap into</br>electronic typesetting, remaining essentially unchanged. It was popularised in</br>the 1960s with the release of Letraset sheets containing Lorem Ipsum</br>passages, and more recently with</br>desktop publishing software like Aldus PageMaker including versions of</p><p class="b-slider__paragraph">Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo</br>voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus,</br>qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas</br>molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,</br>qui officia deserunt mollitia animi, id est</br>laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p><p class="b-slider__paragraph">Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod</br>maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p><p class="b-slider__paragraph">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</br>eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente</br>delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut</br>perferendis doloribus asperiores repellat.</p></div>
+        <div class="b-slider__years">-Years (2008–15)&nbsp;&nbsp;</div>
     </div>
-    <label for="slider_1"></label>
-    <label for="slider_3"></label>
-    <input type="radio" name="slider" id="slider_3">
+    <label for="slider_1" class="b-slider__button-back"></label>
+    <label for="slider_3" class="b-slider__button-forward"></label>
+    <input type="radio" name="slider" class="b-slider__radio-button" id="slider_3">
     <div class="b-slider__slide">
-        3 слайд
+        <div class="b-slider__note">
+            <img src='images/note.png' alt='note'>
+        </div>
+        <div class="b-slider__preview">Lorem Ipsum&nbsp;</br>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</div>
+        <div class="b-slider__descr">Tolman recruited longtime high school friend Daniel Wayne "Wing" Sermon,</br>who had graduated from Berklee College of Music. Tolman later recruited</br>his wife, Brittany Tolman, to sing backup and play keys.</div>
+        <div class="b-slider__years">-Years (2010–13)&nbsp;&nbsp;</div>
     </div>
-    <label for="slider_2"></label>
-    <label for="slider_1"></label>
+    <label for="slider_2" class="b-slider__button-back"></label>
+    <label for="slider_1" class="b-slider__button-forward"></label>
 </div>
 <!-- /Slider -->
 <!-- New tracks -->

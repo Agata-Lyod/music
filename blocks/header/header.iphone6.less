@@ -1,0 +1,109 @@
+/* Header min*/
+@media @iphone6 {
+    .b-header {
+        margin-bottom: 125px;
+        min-height: 1336px;
+        background: url('@{imgpath-min}header.png') no-repeat center top;
+        background-size: cover;
+        /*height:100rem;*/
+        &__menu {
+            /*display: none;*/
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 50;
+            background: transparent;
+        }
+        &__menu-icon
+        /*&__menu-items:after*/ {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 50px;
+            right: 69px;
+            width: 82px;
+            height: 58px;
+            background: url('@{imgpath-min}header-menu.png');
+            z-index: 50;
+            cursor: pointer;
+        }
+        &__menu-items {
+            list-style: none;
+            position: relative;
+            display: none;
+            width: 750px;
+            left: 50%;
+            z-index: 0;
+            background: rgba(0,0,0,0.4);
+            /*transform: translateX(-49.72%);*/
+            }
+        &__menu-item {
+            /*background: rgba(0,0,0,0.6);*/
+            display: block;
+            padding-top: 3.5px;
+            padding-right: 39px;
+            padding-left: 120px;
+            width: 100%;
+        }
+        &__link {
+            font-family: Dosis-Regular;
+            font-size: 24px;
+            line-height: 59.27px;
+            color:#fff;
+            text-transform: uppercase;
+            position: relative;
+            text-decoration: none;
+            .va118;
+        }
+        &__link:hover {
+            color:#000;
+        }
+        &__link:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.1em;
+            bottom: -9px;
+            left: 0;
+            background-color: #000000;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+        }
+        &__link:hover:before,
+        &__link:target:before,
+        &__link:focus:before{
+            visibility: visible;
+            transform: scaleX(1);
+        }
+        &__logo {
+            display: flex;
+            height: 1336px;
+            text-align: center;
+    }
+        &__logo img {
+            width: 539px;
+            height: 499px;
+            margin: auto;
+            padding-bottom: 165px;
+            padding-right: 15.5px;
+        }
+    }
+    .i-header__menu-icon
+        /*&__menu-items:after*/ {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 50px;
+        right: 69px;
+        width: 82px;
+        height: 58px;
+        background: url('@{imgpath-min}header-menu.png');
+        z-index: 50;
+        cursor: pointer;
+        &_state_escape {
+            background: url('@{imgpath-min}header-menu-escape.png') center no-repeat;
+            background-size: contain;
+        }
+    }
+}

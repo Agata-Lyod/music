@@ -1,0 +1,151 @@
+/* b-Slider */
+.b-slider {
+    width: 100%;
+    margin-bottom: 165px;
+    background-image: url('@{imgpath}ocean.png');
+    min-height: 642px;
+    border: 1px solid #888;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    &__slide {
+        position: absolute;
+        overflow-y: scroll;
+        /*margin-right: 0;*/
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        padding-right: 18px;
+        margin-left: calc(100vw - 100%);
+        top: 0;
+        /*left: -9px;*/
+        /*right: -6px;*/
+        height: 83%;
+        /*bottom: 220px;*/
+        /*z-index: 0;*/
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+    }
+    &__slide:hover {
+        /*width: 100%;
+        margin-left: calc(100vw - 100%);
+        overflow-y: scroll;*/
+        background: rgba(0,0,0,0.2);
+        /*transition: visibility 1s;*/
+    }
+    &__paragraph {
+        margin-bottom: 2em;
+    }
+    &__note {
+        position: relative;
+        margin-top: 162px;
+        margin-bottom: 35px;
+    }
+    &__note:before {
+        position: absolute;
+        content: url('@{imgpath}slider-flash-left.png');
+        transform: translate(-51px, 6px);
+        /*z-index: 20;*/
+    }
+    &__note:after {
+        position: absolute;
+        content: url('@{imgpath}slider-flash-right.png');
+        transform: translate(25px, 6px);
+    }
+    &__preview {
+        font-family: Dosis-Regular;
+        font-size: 18.49px;
+        color: #fff;
+        line-height: 26.27px;
+        .va118;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+    &__descr {
+        margin: 0 auto 57px;
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #798285;
+        line-height: 24.27px;
+        .va18;
+        margin-bottom: 57px;
+    }
+    &__years {
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #565e61;
+        line-height: 24.27px;
+        .va18;
+    }
+    &__radio-button {
+        position: relative;
+        /*transform: translateY(400px);*/
+        /*display: none;*/
+        margin-right: 32px;
+        top: 541px;
+        /*bottom: 400px;*/
+        /*margin-top: 20%;*/
+        /*z-index: 20;*/
+    }
+    &__button-back,
+    &__button-forward {
+        display: none;
+    }
+    &__radio-button:checked + &__slide + &__button-back,
+    &__radio-button:checked + &__slide + label + &__button-forward {
+        display: block;
+        /*width: 80px;
+        height: 80px;*/
+        /*cursor: pointer;*/
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /*z-index: 10;*/
+    }
+    &__radio-button:checked + &__slide + &__button-back:after,
+    &__radio-button:checked + &__slide + label + &__button-forward:after {
+        display: block;
+        position: absolute;
+        top: 6px;
+        /*bottom: 0;*/
+        height: 22px;
+        line-height: 171px;
+        /*z-index: 10;*/
+        cursor: pointer;
+    }
+    &__radio-button:checked + &__slide + &__button-back {
+        width: 85px;
+        height: 171px;
+        background: url(../images/right.png) no-repeat;
+        left: 0;
+    }
+    &__radio-button:checked + &__slide + &__button-back:after {
+        content: url(../images/slider-strelka-vlevo.png);
+        /*left: 49%;*/
+        right: 42px;
+    }
+    &__radio-button:checked + &__slide + label + &__button-forward {
+        width: 85px;
+        height: 171px;
+        background: url(../images/left.png) no-repeat;
+        right: 0;
+    }
+    &__radio-button:checked + &__slide + label + &__button-forward:after {
+        content: url(../images/slider-strelka-vpravo.png);
+        /*right: 48%;*/
+        left: 42px;
+    }
+    
+    &__radio-button:checked + &__slide {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    }
+}
+#slider_3 {
+    margin-right: 0;
+}
+
+
+
