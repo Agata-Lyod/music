@@ -1,6 +1,5 @@
 // Прокрутка к якорям
-var jq11 = jQuery.noConflict(true);
-(function($){
+$(function(){
   $('a[href^="#"]').on('click', function(event) {
     // отменяем стандартное действие
     event.preventDefault();
@@ -26,16 +25,7 @@ var jq11 = jQuery.noConflict(true);
         $(this).toggleClass("active");
         $(".i-header__menu-icon").toggleClass("i-header__menu-icon_state_escape");
     });
-})(jq11);
-/*
- * ghindaaudioPlayer - jQuery plugin 1.0.0
- *
- * Copyright (c) 2010 Cristian-Ionut Colceriu
- *
- * www.ghinda.net
- * contact@ghinda.net
- *
- */
+});
 (function($) {
     // plugin definition
     $.fn.gAudio = function(options) {       
@@ -53,7 +43,7 @@ var jq11 = jQuery.noConflict(true);
             //main wrapper
             var $audio_wrap = $('<div></div>').addClass('i-latter-compositions__audio-player').addClass(options.theme).addClass(options.childtheme);
             //controls wraper
-            var $audio_controls = $('<div class="i-latter-compositions__audio-controls"><a class="i-latter-compositions__audio-play" title="Play/Pause"></a><div class="i-latter-compositions__audio-seek"></div><div class="i-latter-compositions__audio-timer">00:00</div><div class="i-latter-compositions__audio-duration"></div></div>');
+            var $audio_controls = $('<div class="i-latter-compositions__audio-controls"><a class="i-latter-compositions__audio-play" title="Play/Pause"></a><div class="i-latter-compositions__audio-seek"></div><div class="i-latter-compositions__audio-timer">0:00</div><div class="i-latter-compositions__audio-duration"></div></div>');
             $gAudio.wrap($audio_wrap);
             $gAudio.after($audio_controls);
             
@@ -65,7 +55,7 @@ var jq11 = jQuery.noConflict(true);
             var $ghinda_audio_timer = $('.i-latter-compositions__audio-timer', $audio_container);
             var $ghinda_audio_duration = $('.i-latter-compositions__audio-duration', $audio_container);
 
-            $audio_controls.hide(); // keep the controls hidden
+            //$audio_controls.hide(); // keep the controls hidden
                         
             var gPlay = function() {
                 if($gAudio.attr('paused') == false) {
@@ -81,14 +71,12 @@ var jq11 = jQuery.noConflict(true);
             $gAudio.bind('play', function() {
                 $ghinda_play_btn.addClass('i-latter-compositions__paused-button');
             });
-            
-            $gAudio.bind('pause', function() {
-                $ghinda_play_btn.removeClass('i-latter-compositions__paused-button');
-            });
-            
-            $gAudio.bind('ended', function() {
-                $ghinda_play_btn.removeClass('i-latter-compositions__paused-button');
-            });
+            //$gAudio.bind('pause', function() {
+            //    $ghinda_play_btn.removeClass('i-latter-compositions__paused-button');
+            //});
+            //$gAudio.bind('ended', function() {
+            //    $ghinda_play_btn.removeClass('i-latter-compositions__paused-button');
+            //});
             
             var seeksliding;
             var createSeek = function() {
@@ -118,7 +106,7 @@ var jq11 = jQuery.noConflict(true);
             createSeek();
         
             var gTimeFormat=function(seconds){
-                var m=Math.floor(seconds/60)<10?"0"+Math.floor(seconds/60):Math.floor(seconds/60);
+                var m=Math.floor(seconds/60)<10?""+Math.floor(seconds/60):Math.floor(seconds/60);
                 var s=Math.floor(seconds-(m*60))<10?"0"+Math.floor(seconds-(m*60)):Math.floor(seconds-(m*60));
                 return m+":"+s;
             };

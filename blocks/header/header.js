@@ -1,6 +1,5 @@
 // Прокрутка к якорям
-var jq11 = jQuery.noConflict(true);
-(function($){
+$(function(){
   $('a[href^="#"]').on('click', function(event) {
     // отменяем стандартное действие
     event.preventDefault();
@@ -26,4 +25,4 @@ var jq11 = jQuery.noConflict(true);
         $(this).toggleClass("active");
         $(".i-header__menu-icon").toggleClass("i-header__menu-icon_state_escape");
     });
-})(jq11);
+});

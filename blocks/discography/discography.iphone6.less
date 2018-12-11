@@ -2,8 +2,8 @@
     .b-discography {
         /*display: block;*/
         background: url('@{imgpath-min}forest.png') no-repeat center bottom;
-        min-height: 787px;
-        margin-bottom: 165px;
+        min-height: 2134px;
+        margin-bottom: 110px;
         /*width:100vw;*/
         &__title {
             line-height: 35px;
@@ -14,20 +14,21 @@
             background-position: 0 -269px;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            transform: translate(-1px,-1px);
+            transform: translate(-3px,-1px);
         }
         &__title:before {
-            transform: translate(-15.4%,-18px);
+            transform: translate(-15.5%,-18px);
             z-index: -1;
         }
         &__preview {
+            width: 635px;
             font-size: 15px;
             color: #798285;
             text-align: center;
             line-height: 24.27px;
             /*max-width: 735px;*/
-            margin: 42px auto 149px;
-            padding-left: 3px;
+            margin: 42px auto 86px;
+            padding-left: 0;
             .va118;
         }
         &__album {
@@ -38,33 +39,39 @@
         &__album-title {
             max-width: 50%;
             float: left;
-            font-size: 14px;
-            padding: 17px 1px;
+            font-size: 15px;
+            padding: 16px 2px;
+            margin-bottom: 24px;
         }
         &__album-year {
+            margin-bottom: 9px;
             font-family: OpenSans-Bold;
+            font-size: 15px;
             color: rgba(0,0,0,0.65);
             opacity: 35%;
         }
         &__album-year:after {
             /*display:block;*/
-            content: url('@{imgpath}black-line-discography.png');
-            position:absolute;
-            transform: translate(-31px, 13px);
+            content: '';
+            width: 649px;
+            height: 1px;
+            position: absolute;
+            background-color: #000;
+            transform: translate(-32px, 28px);
         }
         &__album-name {
+            margin-bottom: 0;
             color: #000000;
             text-transform: uppercase;
             font-family: OpenSans-Bold;
-            margin-top: 14px;
         }
         &__album-descr {
             /*display:block;*/
             font-size: 15px;
             line-height: 24.27px;
             .va18;
-            clear: none;
-            float: right;
+            clear: both;
+            float: none;
             max-width: 672px;
             padding-left: 3px;
             /*text-align: justify;*/
@@ -76,7 +83,8 @@
             .va18;
             color:#000000;
             &_number_one {
-                margin-bottom: 14px;
+                margin-bottom: 19px;
+                word-spacing: 0.085em;
             }
             &_number_two {
                 margin-bottom: 19px;
@@ -86,7 +94,8 @@
                 margin-bottom: 14px;
             }
             &_wrap_nowrap {
-                white-space: nowrap; 
+                width: 439px;
+                white-space: normal;
             }
         }
         &__album-full-descr {
@@ -97,7 +106,7 @@
             .va18;
             color:#acacac;
             &_number_one {
-                margin-bottom: 25px;
+                margin-bottom: 41px;
             }
             &_number_two {
                 margin-bottom: 17.5px;
@@ -110,8 +119,7 @@
             margin-top: 42px;
         }
         &__button-play {
-            /*display:flex;*/
-            margin: auto auto;
+            margin: auto;
             width: 196px;
             height: 56px;
             font-family: OpenSans-Bold;
@@ -119,12 +127,11 @@
             text-transform: uppercase;
             cursor: pointer;
             line-height: 56px;
-            /*vertical-align: middle;*/
-            alignment-baseline: middle;
+            transform: translateX(-2px);
             &_background_one {
                 background: url('@{imgpath}mount.png') no-repeat;
                 color:#ffffff;
-                margin-bottom: 109px;
+                margin-bottom: 89px;
             }
             &_background_two {
                 background: url('@{imgpath}palm.png') no-repeat;
