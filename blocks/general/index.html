@@ -4,18 +4,11 @@
     <title>John Doe | Музыка | remix</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" media="all" href="dist/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="plugins/jquery-1.4.2.min.js"></script>
-    <!--<script type="text/javascript">var jq14 = jQuery.noConflict(true);</script>-->
-    <script type="text/javascript" src="plugins/jquery-ui-1.8.2.custom.min.js"></script>
-    <script>
-        $(function() {
-            $('#audio1').gAudio();
-            $('#audio2').gAudio();
-            $('#audio3').gAudio();
-        });
-    </script>
+    <link rel="stylesheet" media="all" href="/dist/style.css" />
+    <link rel="stylesheet" href="/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+
+    <!--<script type="text/javascript" src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>-->
 </head>
 <body>
 @@include('./../header/header.html')
@@ -27,7 +20,31 @@
 @@include('./../upcoming-events/upcoming-events.html')
 @@include('./../history/history.html')
 @@include('./../contact/contact.html')
-<script type="text/javascript" src="plugins/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="dist/script.js"></script>
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>-->
+<script type="text/javascript" src="/plugins/jquery-3.3.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.js"></script>
+<script type="text/javascript" src="/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script type="text/javascript" src="/plugins/jquery-ui-1.8.2.custom.min.js" defer></script>
+<script type="text/javascript" src="/dist/script.js" defer></script>
+<script>
+$(function(){
+    setTimeout(getPlayer,1000);
+    function getPlayer() {
+        $('#audio1').gAudio();
+        $('#audio2').gAudio();
+        $('#audio3').gAudio();
+    }
+});
+</script>
+<script>
+$(function(){
+    $('.owl-carousel').owlCarousel({
+        center:true,
+        loop:true,
+        autoplayHoverPause:true,
+        items:5
+    });
+});
+</script>
 </body>
 </html>

@@ -4,18 +4,11 @@
     <title>John Doe | Музыка | remix</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" media="all" href="dist/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="plugins/jquery-1.4.2.min.js"></script>
-    <!--<script type="text/javascript">var jq14 = jQuery.noConflict(true);</script>-->
-    <script type="text/javascript" src="plugins/jquery-ui-1.8.2.custom.min.js"></script>
-    <script>
-        $(function() {
-            $('#audio1').gAudio();
-            $('#audio2').gAudio();
-            $('#audio3').gAudio();
-        });
-    </script>
+    <link rel="stylesheet" media="all" href="/dist/style.css" />
+    <link rel="stylesheet" href="/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+
+    <!--<script type="text/javascript" src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>-->
 </head>
 <body>
 <!-- Header -->
@@ -41,7 +34,7 @@
 <div class="b-discography" id="discography">
     <div class="wrap">
     <div class="title b-discography__title">discography</div>
-    <div class="b-discography__preview">September 4 world heard Night Visions, the first full album. He reached the 2 position in</br>the chart Billboard 200. The single &laquo;it's Time&raquo; took 22 th place in the Billboard Hot 100, </br>4th in the Billboard Alternative and Billboard Rock, and how went platinum.</div>
+    <div class="b-discography__preview">September 4 world heard Night Visions, the first full album. He reached the 2 position inthe chart Billboard 200. The single &laquo;it's Time&raquo; took 22 th place in the Billboard Hot 100, 4th in the Billboard Alternative and Billboard Rock, and how went platinum.</div>
     <div class="b-discography__album">
         <div class="b-discography__album-title">
             <div class="b-discography__album-year">2010</div>
@@ -116,25 +109,11 @@
             </ul>
         </div>
         <div class="b-latter-compositions__player b-latter-compositions__player_float_right b-latter-compositions__player_background_first">
-            <audio class="b-latter-compositions__audio-control-panel" id="audio1" src="media/Show-Me-Love-feat-Kimberly.ogg" preload>
-                <source src="media/Show-Me-Love-feat-Kimberly.ogg" type="audio/ogg"/>
+            <audio class="b-latter-compositions__audio" id="audio1" src="media/Show-Me-Love-feat-Kimberly.ogg" preload>
                 <source src="media/Show-Me-Love-feat-Kimberly.aac" type="audio/aac"/>
+                <source src="media/Show-Me-Love-feat-Kimberly.mp3" type="audio/mp3"/>
+                Тег audio не поддерживается вашим браузером
             </audio>
-            <div class="b-latter-compositions__controls">
-                <span class="b-latter-compositions__play b-latter-compositions__playpause" id="play1">
-                    <img src="images/play.png" alt=""/>
-                </span>
-                <span class="b-latter-compositions__pause b-latter-compositions_display_none" id="pause1">
-                    <img src="images/pause.png" alt=""/>
-                    <img src="images/pause.png" alt=""/>
-                </span>
-                <span class="b-latter-compositions__timeline">
-                    <img src="images/white-timeline.png" alt=""/>
-                </span>
-                <span class="b-latter-compositions__scrubber b-latter-compositions_display_none" id="scrubber1">
-                    <img src="images/scrubber.png" alt=""/>
-                </span>
-            </div>
         </div>
     </div>
     <div class="b-latter-compositions__track">
@@ -154,9 +133,10 @@
             </ul>
         </div>
         <div class="b-latter-compositions__player b-latter-compositions__player_float_left b-latter-compositions__player_background_second">
-            <audio class="b-latter-compositions__audio-control-panel" id="audio2" src="media/Show-Me-Love.aac">
-                <source src="media/Show-Me-Love.ogg" type="audio/ogg">
+            <audio class="b-latter-compositions__audio" id="audio2" src="media/Show-Me-Love.ogg">
+                <source src="media/Show-Me-Love.aac" type="audio/aac">
                 <source src="media/Show-Me-Love.mp3" type="audio/mp3">
+                Тег audio не поддерживается вашим браузером
             </audio>
         </div>
     </div>
@@ -177,9 +157,10 @@
             </ul>
         </div>
         <div class="b-latter-compositions__player b-latter-compositions__player_float_right b-latter-compositions__player_background_third">
-            <audio id="audio3" src="media/Let-It-Go.aac">
-                <source src="media/Let-It-Go.ogg" type="audio/ogg">
+            <audio class="b-latter-compositions__audio" id="audio3" src="media/Let-It-Go.ogg" controls>
+                <source src="media/Let-It-Go.aac" type="audio/aac">
                 <source src="media/Let-It-Go.mp3" type="audio/mp3">
+                Тег audio не поддерживается вашим браузером
             </audio>
         </div>
     </div>
@@ -294,6 +275,22 @@
 <!-- History -->
 <div class="b-history" id="history">
     <div class="title b-history__title">history</div>
+    <div class="b-history__preview">In 2008, lead singer Dan Reynolds met drummer Andrew Tolman at Brigham Young University where they were both students.Tolman recruited longtime high school friend Daniel Wayne "Wing" Sermon, who had graduated from Berklee College of Music</div>
+    <div class="b-history__timeline owl-carousel">
+        <div class="b-history__date b-history__mar">mar 16
+            <div class="b-history__case b-history__apr-case">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+        <div class="b-history__date b-history__apr">apr 11
+            <div class="b-history__case b-history__apr-case">Tolman later recruited his wife, Brittany Tolman, to sing backup and play keys.</div>
+        </div>
+        <div class="b-history__date b-history__may center">may 09 <div class="b-history__case b-history__may-case">Tolman later recruited his wife, Brittany Tolman, to sing backup and play keys.</div></div>
+        <div class="b-history__date b-history__jun">jun 06
+            <div class="b-history__case b-history__jun-case">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+        </div>
+        <div class="b-history__date b-history__jul">jul 25
+            <div class="b-history__case b-history__jul-case">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+        </div>
+    </div>
 </div>
 <!-- /History -->
 <!-- Contact -->
@@ -318,7 +315,31 @@
     </div>
 </div>
 <!-- /Contact -->
-<script type="text/javascript" src="plugins/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="dist/script.js"></script>
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>-->
+<script type="text/javascript" src="/plugins/jquery-3.3.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.js"></script>
+<script type="text/javascript" src="/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script type="text/javascript" src="/plugins/jquery-ui-1.8.2.custom.min.js" defer></script>
+<script type="text/javascript" src="/dist/script.js" defer></script>
+<script>
+$(function(){
+    setTimeout(getPlayer,1000);
+    function getPlayer() {
+        $('#audio1').gAudio();
+        $('#audio2').gAudio();
+        $('#audio3').gAudio();
+    }
+});
+</script>
+<script>
+$(function(){
+    $('.owl-carousel').owlCarousel({
+        center:true,
+        loop:true,
+        autoplayHoverPause:true,
+        items:5
+    });
+});
+</script>
 </body>
 </html>

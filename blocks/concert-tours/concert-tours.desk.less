@@ -4,9 +4,9 @@
     margin-bottom: 162px;
     background: url('@{imgpath}concert-tours.png') no-repeat center bottom;
     &__title {
-        margin-bottom: 34px;
+        margin-bottom: 49px;
         line-height: 34px;
-        height: 1.05em;
+        height: 0.75em;
         background: linear-gradient(#62a2ad, #8dbab3);
         background-position: 5px 0;
         -webkit-background-clip: text;
@@ -98,11 +98,29 @@
     }
 }
 @keyframes buy-button-hover {
-    20% {background-color: rgba(0,80,100,0.7);}
-    100% {background-color: rgba(0,80,100,0.5);
-        color: rgb(255,255,255);}
+    20% {
+        background-color: rgba(0,80,100,0.7);
+    }
+    100% {
+        background-color: rgba(0,80,100,0.5);
+        color: rgb(255,255,255);
+    }
 }
 @keyframes buy-after-hover {
     from {}
-    to {filter: invert(100%) brightness(150%);}
+    to {
+        filter: invert(100%) brightness(150%);
+    }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .b-concert-tours {
+        &__title {
+            background: transparent;
+            color: #62a2ad;
+        }
+        &__title:before {
+            transform: translate(69.8%,-16px);
+            z-index: -1;
+        }
+    }
 }
