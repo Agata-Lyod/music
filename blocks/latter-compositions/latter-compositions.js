@@ -27,10 +27,10 @@
             var $ghinda_audio_timer = $('.i-latter-compositions__audio-timer', $audio_container);
             var $ghinda_audio_duration = $('.i-latter-compositions__audio-duration', $audio_container);
 
-            //$audio_controls.hide(); // keep the controls hidden
+            $audio_controls.hide(); // keep the controls hidden
                         
             var gPlay = function() {
-                if($gAudio.attr('paused') == false) {
+                if($gAudio.prop('paused') == false) {
                     $gAudio[0].pause();
                 } else {
                     $gAudio[0].play();
@@ -43,17 +43,17 @@
             $gAudio.bind('play', function() {
                 $ghinda_play_btn.addClass('i-latter-compositions__paused-button');
             });
-            //$gAudio.bind('pause', function() {
-            //    $ghinda_play_btn.removeClass('i-latter-compositions__paused-button');
-            //});
-            //$gAudio.bind('ended', function() {
-            //    $ghinda_play_btn.removeClass('i-latter-compositions__paused-button');
-            //});
+            $gAudio.bind('pause', function() {
+                $ghinda_play_btn.removeClass('i-latter-compositions__paused-button');
+            });
+            $gAudio.bind('ended', function() {
+                $ghinda_play_btn.removeClass('i-latter-compositions__paused-button');
+            });
             
             var seeksliding;
             var createSeek = function() {
-                if($gAudio.attr('readyState')) {
-                    var audio_duration = $gAudio.attr('duration');
+                if($gAudio.prop('readyState')) {
+                    var audio_duration = $gAudio.prop('duration');
                     $ghinda_audio_seek.slider({
                         value: 0,
                         step: 0.01,
@@ -66,7 +66,7 @@
                         },
                         stop:function(e,ui){
                             seeksliding = false;
-                            $gAudio.attr("currentTime",ui.value);
+                            $gAudio.prop("currentTime",ui.value);
                         }
                     });
                     $audio_controls.show();
@@ -84,12 +84,12 @@
             };
             
             var seekUpdate = function() {
-                var currenttime = $gAudio.attr('currentTime');
+                var currenttime = $gAudio.prop('currentTime');
                 if(!seeksliding) $ghinda_audio_seek.slider('value', currenttime);
                 $ghinda_audio_timer.text(gTimeFormat(currenttime));
             };
 
-            var duration = $gAudio.attr('duration');
+            var duration = $gAudio.prop('duration');
             $ghinda_audio_duration.text(gTimeFormat(duration));
             
             
@@ -106,3 +106,11 @@
     };
 
 })(jQuery);
+$(function(){
+    setTimeout(getPlayer,1000);
+    function getPlayer() {
+        $('#audio1').gAudio();
+        $('#audio2').gAudio();
+        $('#audio3').gAudio();
+    }
+});

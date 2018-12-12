@@ -44,7 +44,7 @@ a:hover {
 .title:before {
     content: url('@{imgpath}black-line-title.png');
     position: absolute;
-    /*z-index: -1;*/
+    z-index: -1;
 }
 .wrap {
     margin: 0 auto;
@@ -56,6 +56,18 @@ a:hover {
         margin: 0 auto;
         max-width: 325px;
         /*overflow-x: hidden;*/
+    }
+    .title {
+    font-size: 50.49/2px;
+    font-family: Dosis-Regular;
+    line-height: 34/2px;
+    }
+    .title:before {
+    content: '';
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    z-index: -1;
     }
 }
 /*body>div:last-child {

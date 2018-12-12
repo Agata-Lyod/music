@@ -1,9 +1,9 @@
 /* Header min*/
 @media @iphone6 {
     .b-header {
-        margin-bottom: 33px;
-        min-height: 1336px;
-        background: url('@{imgpath-min}header.png') 6px top no-repeat;
+        margin-bottom: 33/2px;
+        min-height: 1336/2px;
+        background: url('@{imgpath-min}header.png') 2px top no-repeat;
         background-size: contain;
         /*height:100rem;*/
         &__menu {
@@ -14,41 +14,26 @@
             z-index: 50;
             background: transparent;
         }
-        &__menu-icon
-        /*&__menu-items:after*/ {
-            content: '';
-            position: absolute;
-            display: block;
-            top: 50px;
-            right: 69px;
-            width: 82px;
-            height: 58px;
-            background: url('@{imgpath-min}header-menu.png');
-            /*z-index: 50;*/
-            cursor: pointer;
-        }
         &__menu-items {
             list-style: none;
             position: relative;
             display: none;
-            width: 750px;
+            width: 750/2px;
             left: 50%;
             z-index: 0;
-            background: rgba(0,0,0,0.4);
+            background: rgba(0,0,0,0.5);
             /*transform: translateX(-49.72%);*/
             }
         &__menu-item {
             /*background: rgba(0,0,0,0.6);*/
             display: block;
-            padding-top: 3.5px;
-            padding-right: 39px;
-            padding-left: 120px;
+            padding-left: 8px;
             width: 100%;
         }
         &__link {
             font-family: Dosis-Regular;
-            font-size: 24px;
-            line-height: 59.27px;
+            font-size: 17px;
+            line-height: 59.27/2px;
             color:#fff;
             text-transform: uppercase;
             position: relative;
@@ -78,15 +63,15 @@
         }
         &__logo {
             display: flex;
-            height: 1336px;
+            height: 1336/2px;
             text-align: center;
     }
         &__logo img {
-            width: 539px;
-            height: 499px;
+            width: 539/2px;
+            height: 499/2px;
             margin: auto;
-            padding-bottom: 285px;
-            padding-right: 28px;
+            padding-bottom: 285/2px;
+            padding-right: 28/2px;
         }
     }
     .i-header__menu-icon
@@ -94,11 +79,12 @@
         content: '';
         position: absolute;
         display: block;
-        top: 50px;
-        right: 69px;
-        width: 82px;
-        height: 58px;
+        top: 50/2px;
+        right: 69/2px;
+        width: 82/2px;
+        height: 58/2px;
         background: url('@{imgpath-min}header-menu.png');
+        background-size: contain;
         z-index: 50;
         cursor: pointer;
         &_state_escape {

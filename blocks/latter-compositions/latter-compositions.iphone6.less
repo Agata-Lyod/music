@@ -1,81 +1,84 @@
     /* Latter compositions */
 @media @iphone6 {
     .b-latter-compositions {
-        margin-bottom: 108px;
-        min-height: 2822px;
+        margin-bottom: 108/2px;
+        min-height: 2822/2px;
         &__title {
             color: rgb(0,0,0);
-            line-height: 34px;
-            margin-bottom: 49px;
+            line-height: 34/2px;
+            margin-bottom: 49/2px;
             transform: translateX(5px);
         }
         &__title:before {
             content: '';
             background-color: #000;
-            width: 612px;
+            width: 612/2px;
             height: 1px;
             transform: translate(-27px, 18px);
         }
         &__preview {
             text-align: center;
-            font-size: 14px;
+            font-size: 14/2px;
             font-family: OpenSans-Regular;
-            line-height: 24.27px;
+            line-height: 24.27/2px;
             color: rgb(121,130,133);
             .va118;
-            margin-bottom: 79px;
+            margin-bottom: 79/2px;
         }
         &__track {
             position: static;
             box-sizing: border-box;
             /*display: inline-block;*/
-            min-height: 844px;
-            margin-bottom: 20px;
+            min-height: 844/2px;
+            margin-bottom: 20/2px;
             /*overflow: hidden;*/
         }
         &__track:last-child {
             margin-bottom: 0;
         }
         &__date {
-            font-size: 14px;
+            font-size: 14/2px;
             font-family: OpenSans-Bold;
             color: rgba(0,0,0,0.65);
-            margin-bottom: 14px;
+            margin-bottom: 14/2px;
         }
         &__date:after {
-            content: url('@{imgpath}lat-comp-black-line.png');
             position: absolute;
+            content: "";
+            height: 1px;
+            width: 50px;
+            background-color: #000;
             transform: translate(-70.5px, 13px);
         }
         &__album-name {
-            font-size: 14px;
+            font-size: 14/2px;
             font-family: OpenSans-Bold;
             color: #000;
             text-transform: uppercase;
-            margin-bottom: 41px;
+            margin-bottom: 41/2px;
         }
         &__name {
-            font-size: 23px;
+            font-size: 23/2px;
             font-family: OpenSans-Regular;
             color: #000;
             .va18;
-            line-height: 24.27px;
-            margin-bottom: 29.5px;
+            line-height: 24.27/2px;
+            margin-bottom: 29.5/2px;
         }
         &_word-spacing_big {
             color: inherit;
-            word-spacing: 6px;
+            word-spacing: 6/2px;
         }
         &__description {
             position: static;
-            top: 201px;
-            width: 505px;
-            height: 70px;
-            font-size: 14px;
+            top: 201/2px;
+            width: 505/2px;
+            height: 70/2px;
+            font-size: 14/2px;
             font-family: OpenSans-Regular;
             color: #798285;
             .va18;
-            line-height: 24.27px;
+            line-height: 24.27/2px;
             overflow: hidden;
         }
         /*&_scroll_hidden {
@@ -88,11 +91,11 @@
             margin: 0 auto;
             box-sizing: border-box;
             position: relative;
-            width: 600px;
-            height: 422px;
+            width: 600/2px;
+            height: 422/2px;
             background-color: rgb(245,246,246);
-            padding-left: 35px;
-            padding-right: 50px;
+            padding-left: 35/2px;
+            padding-right: 50/2px;
             float: none;
             /*clear: both;*/
             /*&_float_right {
@@ -122,16 +125,20 @@
         &__descr-of-track:after {
             position: absolute;
             left: 50%;
-            top: 417px;
+            top: 414/2px;
             content: url('@{imgpath-min}lat-comp-strelka-vniz.png');
             z-index: 10;
         }
+        &__links {
+        position: absolute;
+        bottom: 38/2px;
+        }
         &__itunes-link {
             display: block;
-            width: 196px;
-            height: 56px;
+            width: 196/2px;
+            height: 56/2px;
             box-sizing: border-box;
-            line-height: 55px;
+            line-height: 55/2px;
             color: #000;
             /*text-align: center;*/
             border-width: 1px;
@@ -141,16 +148,16 @@
             z-index: 201;
         }
         &__itunes-button {
-            font-size: 14px;
+            font-size: 14/2px;
             font-family: OpenSans-Bold;
             color: inherit;
-            padding-left: 4px;
+            padding-left: 4/2px;
             /*padding-top: 1px;*/
             text-align: center;
         }
         &__itunes-button:after {
         content: url('@{imgpath}button-buy.png');
-        margin-left: 12px;
+        margin-left: 12/2px;
         }
         &__link {
             display: inline-block;
@@ -161,19 +168,22 @@
         &__player {
             float: none;
             margin: 0 auto;
-            width: 600px;
-            height: 422px;
+            width: 600/2px;
+            height: 422/2px;
             text-align: center;
             position: relative;
             box-sizing: border-box;
             &_background_first {
                 background: url('@{imgpath-min}show-me-love.png') bottom;
+                .bg-cover;
             }
             &_background_second {
                 background: url('@{imgpath-min}music-is-life.png');
+                .bg-cover;
             }
             &_background_third {
                 background: url('@{imgpath-min}chill-nation.png');
+                .bg-cover;
             }
         }
     }
