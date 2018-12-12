@@ -1,13 +1,13 @@
 /*  new-tracks */
 @media @iphone6 {
     .b-new-tracks {
-        min-height: 2796px;
-        margin-bottom: 66px;
+        min-height: 2796/2px;
+        margin-bottom: 66/2px;
         &__list {
             display  : flex;
-            max-width: 650px;
-            margin-left: 22px;
-            height   : 2790px;
+            max-width: 650/2px;
+            margin-left: 22/2px;
+            height   : 2790/2px;
             /*clear:none;*/
             align-content: space-between;
             align-items: stretch;
@@ -15,42 +15,55 @@
             justify-content: space-between;
         }
         &__item {
-            width:384px;
-            height:422px;
+            width: 384/2px;
+            height: 422/2px;
             margin: 0 auto;
+            .bg-contain;
             &_number_1 {
                 background: url('@{imgpath-min}track1.png');
+                .bg-contain;
             }
             &_number_2 {
                 background: url('@{imgpath-min}track2.png');
+                .bg-contain;
             }
             &_number_3 {
                 background: url('@{imgpath-min}track3.png');
+                .bg-contain;
             }
             &_number_4 {
                 background: url('@{imgpath-min}track4.png');
+                .bg-contain;
             }
             &_number_5 {
                 background: url('@{imgpath-min}track5.png');
+                .bg-contain;
             }
             &_number_6 {
                 background: url('@{imgpath-min}track6.png');
+                .bg-contain;
             }
         }
         &__descr {
             text-align: left;
-            padding: 35px;
+            padding: 35/2px;
             text-align: left;
         }
         &__date {
+            position: relative;
             color: #000000;
+            font-size: 14/2px;
             /*margin-top:35px;*/
             /*text-align: left;*/
             font-family: OpenSans-Bold;
-            margin-bottom: 12px;
+            margin-bottom: 12/2px;
         }
         &__date:after {
-            content: url('@{imgpath}black-line.png');
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 50px;
+            background-color: #000;
         }
         &__album {
             color: #ffffff;
@@ -58,22 +71,22 @@
             /*text-align: left;*/
             font-family: OpenSans-Bold;
             text-transform: uppercase;
-            margin-bottom: 12px;
+            margin-bottom: 12/2px;
         }
         &__name {
             color: #000000;
             /*margin-top:35px;*/
             /*text-align: left;*/
             font-family: OpenSans-Regular;
-            font-size: 23px;
+            font-size: 23/2px;
         }
         &__full-descr {
             /*position: absolute;*/
             /*position: relative;*/
             font-family: OpenSans-Regular;
-            font-size: 14px;
+            font-size: 14/2px;
             overflow-y: hidden;
-            max-height: 155px;
+            max-height: 155/2px;
             /*text-overflow: scroll;*/
             /*white-space: nowrap;*/
             /*height: 50%;*/

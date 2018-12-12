@@ -1,7 +1,7 @@
 /* Header */
 .b-header {
     margin-bottom: 65px;
-    height:1062px;
+    min-height: 1062px;
     background: url('@{imgpath}header.png') no-repeat center top;
     /*background-size: cover;*/
     /*height:100rem;*/
@@ -11,7 +11,7 @@
         position: fixed;
         top: 0;
         background: url('@{imgpath}menu.png');
-        z-index: 50;
+        z-index: 10;
     }
     &__menu-items {
         list-style: none;
@@ -25,7 +25,7 @@
         }
     &__menu-item {
         display: inline-block;
-        padding-top: 3.5px;
+        padding-top: 3px;
         padding-right: 39px;
         &_padding_right-small {
             padding-right: 34px;
@@ -74,7 +74,7 @@
         height: 397px;
         margin: auto;
         padding-bottom: 165px;
-        padding-right: 15.5px;
+        padding-right: 15px;
     }
 }
 .i-header__menu-icon {

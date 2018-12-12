@@ -19,32 +19,33 @@
 @@include('./../new-tracks/new-tracks.html')
 @@include('./../upcoming-events/upcoming-events.html')
 @@include('./../history/history.html')
-@@include('./../contact/contact.html')
 <!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>-->
-<script type="text/javascript" src="/plugins/jquery-3.3.1.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.1.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.js" defer></script>
 <script type="text/javascript" src="/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-<script type="text/javascript" src="/plugins/jquery-ui-1.8.2.custom.min.js" defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/dist/script.js" defer></script>
-<script>
-$(function(){
-    setTimeout(getPlayer,1000);
-    function getPlayer() {
-        $('#audio1').gAudio();
-        $('#audio2').gAudio();
-        $('#audio3').gAudio();
-    }
-});
-</script>
 <script>
 $(function(){
     $('.owl-carousel').owlCarousel({
         center:true,
         loop:true,
         autoplayHoverPause:true,
-        items:5
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items:1
+            },
+            375: {
+                items: 2
+            },
+            1200: {
+                items: 5
+            }
+        }
     });
 });
 </script>
+@@include('./../contact/contact.html')
 </body>
 </html>

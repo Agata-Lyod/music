@@ -6,15 +6,16 @@
     margin-bottom: 165px;
     /*width:100vw;*/
     &__title {
-        line-height: 35px;
+        line-height: 34px;
         margin: 0 auto;
+        padding-right: 4px;
         width: 345px;
         height: 40px;
         background: url('@{imgpath}discography-back.png') no-repeat;
         background-position: 0 -269px;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transform: translate(-1px,-1px);
+        z-index:10;
     }
     &__title:before {
         transform: translate(-15.4%,-18px);
@@ -46,6 +47,7 @@
         font-family: OpenSans-Bold;
         color: rgba(0,0,0,0.65);
         opacity: 35%;
+        margin-bottom: 14px;
     }
     &__album-year:after {
         /*display:block;*/
@@ -57,7 +59,6 @@
         color: #000000;
         text-transform: uppercase;
         font-family: OpenSans-Bold;
-        margin-top: 14px;
     }
     &__album-descr {
         /*display:block;*/
@@ -96,13 +97,13 @@
         .va18;
         color:#acacac;
         &_number_one {
-            margin-bottom: 25px;
+            margin-bottom: 24px;
         }
         &_number_two {
-            margin-bottom: 17.5px;
+            margin-bottom: 16px;
         }
         &_number_three {
-            margin-bottom: 88.5px;
+            margin-bottom: 89px;
         }
     }
     &__album-year_margin_double {
@@ -117,21 +118,19 @@
         text-transform: uppercase;
         cursor: pointer;
         line-height: 56px;
-        /*vertical-align: middle;*/
-        alignment-baseline: middle;
         &_background_one {
             background: url('@{imgpath}mount.png') no-repeat;
-            color:#ffffff;
+            color:#fff;
             margin-bottom: 109px;
         }
         &_background_two {
             background: url('@{imgpath}palm.png') no-repeat;
-            color:#000000;
+            color: #000;
             margin-bottom: 86px;
         }
         &_background_three {
-            background: url('@{imgpath}shadow.png') no-repeat;
-            color:#000000;
+            background: url('@{imgpath}shadow.png') no-repeat bottom;
+            color: #000;
         }
     }
     &__button-play:active {

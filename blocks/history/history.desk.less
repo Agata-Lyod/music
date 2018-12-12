@@ -4,8 +4,10 @@
     background: url('@{imgpath}history.png') no-repeat center bottom;
     margin-bottom: 119px;
     &__title {
-    padding-top: 15px;
-    margin-bottom: 53px;
+        position: relative;
+        padding-top: 15px;
+        margin-bottom: 53px;
+        z-index: 0;
     }
     &__title:before {
         content:'';
@@ -13,6 +15,7 @@
         width: 272px;
         height: 1px;
         transform: translate(-36px, 18px);
+        z-index: -1;
     }
     &__preview {
         .va118;
