@@ -1,0 +1,124 @@
+@media @laptop {
+    /* base styles */
+    .i-latter-compositions__audio-player {}
+    .i-latter-compositions__audio-play {
+        cursor: pointer;
+    }
+    .i-latter-compositions__audio-timer {
+        cursor: default;
+    }
+    /* Start of default theme */
+    .i-latter-compositions__audio-player {
+        width: 45vw;
+        box-sizing: border-box;
+        position: relative;
+        margin-top: 80%;
+        font-family: OpenSans-Light;
+        font-size: 12px;
+    }
+
+    .i-latter-compositions__audio-controls {
+        box-sizing: border-box;
+        /*height: 22px;*/
+        line-height: 22px;
+        margin-left: 35px;
+        position: relative;
+        width: 80%;
+        text-align: left;
+    }
+    .i-latter-compositions__audio-play, .i-latter-compositions__audio-seek, .i-latter-compositions__audio-timer, .i-latter-compositions__audio-duration {
+        /*float: left;*/
+        display: inline-block;
+    }
+
+    /* play, pause */
+    .i-latter-compositions__audio-play {
+        /*display: block;*/
+        width: 22px;
+        height: 22px;
+        vertical-align: middle;
+        /*padding-top: 5px;*/
+        /*margin-left: 5px;*/
+        margin-right: 18px;
+        background: url('@{imgpath}play.png') no-repeat left;
+        /*opacity: 0.7;*/
+        -moz-transition: all 0.2s ease-in-out; /* Firefox */
+        -webkit-transition: all 0.2s ease-in-out; /* Safari and Chrome */
+        -o-transition: all 0.2s ease-in-out;  /* Opera */
+        transition: all 0.2s ease-in-out; 
+    }
+    .i-latter-compositions__paused-button {
+        vertical-align: middle;
+        background: url('@{imgpath}pause.png') no-repeat 20% 50%, url('@{imgpath}pause.png') no-repeat 55% 50%;
+    }
+    .i-latter-compositions__audio-player audio {
+        /*float: left;*/
+    }
+    .i-latter-compositions__audio-play:hover {  
+        opacity: 1;
+    }
+    /* seek */
+    .i-latter-compositions__audio-seek {
+        vertical-align: middle;
+        position: relative;
+        width: 22vw;
+        height: 2px;
+        margin-right: 27px;
+        background: #535353;
+    }
+    .ui-slider-handle {
+        width: 12px;
+        height: 12px;
+        top: -5px;
+        border-radius: 10px; 
+        background: #e6e6e6;
+        background-image: -moz-linear-gradient(top, #e6e6e6, #d5d5d5);
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #e6e6e6),color-stop(1, #d5d5d5));
+        box-shadow: inset 0 -3px 3px #d5d5d5;
+        cursor: pointer;
+    }
+    .ui-slider-handle.ui-state-hover {
+        background: #fff;
+        cursor: pointer;
+    }
+    .ui-slider-range {
+        background: #fff;
+    }
+    /* timer */
+    .i-latter-compositions__audio-timer {
+        vertical-align: bottom;
+        margin-right: 3px;
+        color: #999;
+    }
+    .i-latter-compositions__audio-duration {
+        vertical-align: bottom;
+        margin-right: 0;
+        color: #fff;
+    }
+    .i-latter-compositions__audio-duration:before {
+        content: '/';
+        margin-right: 3px;
+        color: #fff;
+    }
+    /* needed jquery ui styles
+     * using these, we don't depend on jQuery UI's stylsheet
+     */
+    .ui-slider-handle {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        margin-left:-0.6em;
+        cursor: default;
+        outline: none;
+    }
+    .ui-slider-range {
+        display:block;
+        width:100%; 
+        height:100%;
+        left:0;
+        bottom: 0;
+        border:0 none;
+        position:absolute;
+        z-index:1;
+    }
+}

@@ -2,9 +2,10 @@
 @media @iphone6 {
     .b-slider {
         width: 100%;
-        margin-bottom: 54px;
+        margin-bottom: 56/2px;
         background-image: url('@{imgpath-min}ocean.png');
-        min-height: 642px;
+        .bg-contain;
+        min-height: 642/2px;
         /*border: 1px solid #888;*/
         position: relative;
         overflow: hidden;
@@ -16,7 +17,7 @@
             box-sizing: border-box;
             width: 100%;
             text-align: center;
-            padding-right: 18px;
+            padding-right: 16/2px;
             margin-left: calc(100vw - 100%);
             top: 0;
             /*left: -9px;*/
@@ -39,52 +40,56 @@
             margin-bottom: 2em;
         }
         &__note {
+            margin: 162/2px auto 17px;
             position: relative;
-            margin-top: 162px;
-            margin-bottom: 35px;
+            width: 30px;
         }
         &__note:before {
+            content:'';
             position: absolute;
-            content: url('@{imgpath}slider-flash-left.png');
-            transform: translate(-51px, 6px);
+            background: url('@{imgpath}slider-flash-left.png') center no-repeat;
+            .bg-contain;
+            width: 20px;
+            height: 11px;
+            transform: translate(-25px, 3px);
             /*z-index: 20;*/
         }
         &__note:after {
             position: absolute;
             content: url('@{imgpath}slider-flash-right.png');
-            transform: translate(25px, 6px);
+            transform: translate(25/2px, 6/2px);
         }
         &__preview {
             font-family: Dosis-Regular;
-            font-size: 18.49px;
+            font-size: 18.49/2px;
             color: #fff;
-            line-height: 26.27px;
+            line-height: 26.27/2px;
             .va118;
             text-transform: uppercase;
-            margin-bottom: 32px;
+            margin-bottom: 32/2px;
         }
         &__descr {
-            margin: 0 auto 57px;
+            margin: 0 auto 57/2px;
             font-family: OpenSans-Regular;
-            font-size: 14px;
+            font-size: 14/2px;
             color: #798285;
-            line-height: 24.27px;
+            line-height: 24.27/2px;
             .va18;
-            margin-bottom: 57px;
+            margin-bottom: 57/2px;
         }
         &__years {
             font-family: OpenSans-Regular;
-            font-size: 14px;
+            font-size: 14/2px;
             color: #565e61;
-            line-height: 24.27px;
+            line-height: 24.27/2px;
             .va18;
         }
         &__radio-button {
             position: relative;
             /*transform: translateY(400px);*/
             /*display: none;*/
-            margin-right: 32px;
-            top: 541px;
+            margin-right: 30/2px;
+            top: 538/2px;
             /*bottom: 400px;*/
             /*margin-top: 20%;*/
             /*z-index: 20;*/
@@ -105,34 +110,34 @@
         &__radio-button:checked + &__slide + label + &__button-forward:after {
             display: none;
             position: absolute;
-            top: 6px;
+            top: 6/2px;
             /*bottom: 0;*/
-            height: 22px;
-            line-height: 171px;
+            height: 22/2px;
+            line-height: 171/2px;
             /*z-index: 10;*/
             cursor: pointer;
         }
         &__radio-button:checked + &__slide + &__button-back {
-            width: 85px;
-            height: 171px;
+            width: 85/2px;
+            height: 171/2px;
             background: url(../images/right.png) no-repeat;
             left: 0;
         }
         &__radio-button:checked + &__slide + &__button-back:after {
             content: url(../images/slider-strelka-vlevo.png);
             /*left: 49%;*/
-            right: 42px;
+            right: 42/2px;
         }
         &__radio-button:checked + &__slide + label + &__button-forward {
-            width: 85px;
-            height: 171px;
+            width: 85/2px;
+            height: 171/2px;
             background: url(../images/left.png) no-repeat;
             right: 0;
         }
         &__radio-button:checked + &__slide + label + &__button-forward:after {
             content: url(../images/slider-strelka-vpravo.png);
             /*right: 48%;*/
-            left: 42px;
+            left: 42/2px;
         }
         
         &__radio-button:checked + &__slide {
