@@ -1,36 +1,38 @@
 @media @iphone6 {
     /* Upcoming events */
     .b-upcoming-events {
-        min-height: 1203px;
-        margin-bottom: 10px;
+        min-height: 601px;
+        margin-bottom: 5px;
         background: url('@{imgpath-min}bridge.png') no-repeat;
+        .bg-cover;
         /*z-index: -20;*/
         /*background-size: cover;*/
         &__title {
             position: relative;
             height: 1.1em;
-            padding-top: 69px;
-            margin-left: 13px;
-            margin-bottom: 93px;
+            padding-top: 35px;
+            margin-left: 2px;
+            margin-bottom: 47px;
             color: #42717e;
             z-index: 1;
         }
         &__title:before {
             position: absolute;
-            transform: translate(-4px,-18px);
+            width: 251px;
+            transform: translate(-1px,9px);
             z-index: -1;
         }
         &__tour {
-            padding-left: 16%;
+            padding-left: 15.5%;
         }
         &__name-of-tour {
-            margin-bottom: 15px;
+            margin-bottom: 9px;
             font-family: OpenSans-Regular;
             .va18;
             color: #000;
-            font-size: 23px;
+            font-size: 23/2px;
             &_margin-bottom_big {
-                margin-bottom: 28px;
+                margin-bottom: 14px;
             }
             &_letter-spacing_small {
                 color: inherit;
@@ -38,60 +40,76 @@
             }
         }
         &__name-of-tour:after {
+            content: '';
+            background-color: #000;
+            width: 67px;
+            height: 1px;
             position: absolute;
-            transform: translate(-238px,12px);
-            content: url('@{imgpath}underline-upcom.png');
+            transform: translate(-119px, 17px);
         }
         &__name-of-tour_underline-size_short:after {
-            content: url('@{imgpath}underline-short-upcom.png');
-            transform: translate(-238px,18px);
+            content: '';
+            background-color: #000;
+            width: 97px;
+            height: 1px;
+            transform: translate(-238/2px, 9px);
         }
         &__location-of-tour {
-            height: 52px;
-            margin-bottom: 72px;
+            height: 26px;
+            margin-bottom: 35px;
             font-family: OpenSans-Regular;
             .va18;
             color: #798285;
-            font-size: 14px;
-            line-height: 24.27px;
+            font-size: 14/2px;
+            line-height: 24.27/2px;
             overflow: hidden;
         }
         &__location-of-tour:after {
+            content: '';
+            background-color: #000;
+            width: 1px;
+            height: 26px;
             position: absolute;
-            transform: translate(-4px,16px);
-            content: url('@{imgpath}black-line-short.png');
-
+            transform: translate(-1px, 7px);
+           
         }
         &__descr-of-tour {
-            height: 128px;
-            margin-bottom: 59px;
+            position: relative;
+            height: 128/2px;
+            margin-bottom: 59/2px;
             font-family: OpenSans-Regular;
             color: #798285;
-            line-height: 24.27px;
+            line-height: 24.27/2px;
             .va18;
-            font-size: 14px;
+            font-size: 14/2px;
             overflow: hidden;
 
         }
         &__descr-of-tour:after {
+            content: '';
+            background-color: #000;
+            width: 1px;
+            height: 26px;
             position: absolute;
-            transform: translate(-383px,8px);
-            content: url('@{imgpath}black-line-short.png');
+            transform: translate(10px, 20px);
         }
         &__start-date-of-tour {
-            margin-bottom: 201px;
+            margin-bottom: 101px;
             font-family: OpenSans-Bold;
-            font-size: 14px;
+            font-size: 7px;
             color: rgba(0,0,0,0.65);
         }
         &__start-date-of-tour:after {
+            content: '';
+            background-color: #000;
+            width: 1px;
+            height: 82px;
             position: absolute;
-            transform: translate(-38px,40px);
-            content: url('@{imgpath}black-line-long.png');
-        }
+            transform: translate(-19px, 20px);
+            }
         &__finish-date-of-tour {
             font-family: OpenSans-Bold;
-            font-size: 14px;
+            font-size: 7px;
             color: rgba(0,0,0,0.65);
         }
     }
