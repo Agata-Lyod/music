@@ -1,28 +1,28 @@
     /* Concert tours */
 @media @iphone6 {
     .b-concert-tours {
-        min-height: 1184/2px;
-        margin-bottom: 118/2px;
-        background: url('@{imgpath-min}concert-tours.png') no-repeat center bottom;
+        min-height   : 1184/2px;
+        margin-bottom: 59px;
+        background   : url('@{imgpath-min}concert-tours.png') no-repeat center bottom;
         .bg-contain;
         &__title {
-            margin-bottom: 25px;
-            line-height: 17px;
+            margin-bottom          : 25px;
+            line-height            : 17px;
             /*height: 1.2em;*/
-            background: linear-gradient(#62a2ad, #8dbab3);
-            background-position: 5/2px 0;
+            background             : linear-gradient(#62a2ad, #8dbab3);
+            background-position    : 5/2px 0;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         &__title:before {
-            width: 251px;
+            width    : 251px;
             transform: translate(-25px, 10px);
-            z-index: -1;
+            z-index  : -1;
         }
         &__preview {
-            margin: 0 auto 154px;
-            width: 318px;
-            text-align: center;
+            margin     : 0 auto 154px;
+            width      : 318px;
+            text-align : center;
             .fs15-retina;
             line-height: 24.27/2px;
             .va118;
@@ -32,51 +32,51 @@
             /*margin-bottom: 464px;*/
         }
         &__date {
-            font-family: OpenSans-Bold;
-            color: rgba(0,0,0,0.65);
+            font-family  : OpenSans-Bold;
+            color        : rgba(0,0,0,0.65);
             .fs15-retina;
             margin-bottom: 6px;
         }
         &__date:after {
-            content: '';
-            position: absolute;
-            height: 1px;
-            width: 196px;
+            content         : '';
+            position        : absolute;
+            height          : 1px;
+            width           : 196px;
             background-color: #000;
             transform: translate(-39px, 13px);
         }
         &__name-of-tour {
-            margin-bottom: 36px;
+            margin-bottom : 36px;
             text-transform: uppercase;
-            font-family: OpenSans-Bold;
+            font-family   : OpenSans-Bold;
             .fs15-retina;
-            color:#000;
-            transform: translateX(-1.5px);
+            color         :#000;
+            transform     : translateX(-1.5px);
         }
         &__time-of-tour {
-            font-family: OpenSans-Regular;
-            font-size: 23/2px;
+            font-family  : OpenSans-Regular;
+            font-size    : 23/2px;
             .va18;
-            color:#000;
-            transform: translateX(-1.5px);
+            color        :#000;
+            transform    : translateX(-1.5px);
             margin-bottom: 8px;
         }
         &__descr-of-tour {
-            width: 393/2px;
-            font-family: OpenSans-Regular;
+            width        : 393/2px;
+            font-family  : OpenSans-Regular;
             .fs15-retina;
             .va18;
-            line-height: 24.27/2px;
-            color: #798285;
+            line-height  : 24.27/2px;
+            color        : #798285;
             margin-bottom: 35/2px;
         }
         &__buy-button {
-            display: block;
-            width: 196/2px;
-            height: 56/2px;
-            box-sizing: border-box;
-            line-height: 55/2px;
-            color: #000;
+            display     : block;
+            width       : 98px;
+            height      : 28px;
+            box-sizing  : border-box;
+            line-height : 55/2px;
+            color       : #000;
             /*text-align: center;*/
             border-width: 1px;
             border-color: rgba(99, 99, 99, 0.561);
@@ -93,21 +93,21 @@
             
         }
         &__buy {
-            font-size: 14/2px;
-            font-family: OpenSans-Bold;
-            color: inherit;
-            padding-left: 8/2px;
-            text-align: center;
+            .fs15-retina;
+            font-family : OpenSans-Bold;
+            color       : inherit;
+            padding-left: 4px;
+            text-align  : center;
         }
         &__buy:after {
-        content: url('@{imgpath}button-buy.png');
+        content    : url('@{imgpath}button-buy.png');
         /*height: 2px;*/
         margin-left: 18/2px;
-        transform: scale(.5);
+        transform  : scale(.5);
         }
     }
     @keyframes buy-button-hover {
-        20% {background-color: rgba(0,80,100,0.7);}
+        20% {background-color : rgba(0,80,100,0.7);}
         100% {background-color: rgba(0,80,100,0.5);
             color: rgb(255,255,255);}
     }

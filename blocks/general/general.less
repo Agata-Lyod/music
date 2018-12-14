@@ -1,29 +1,29 @@
 /* Fonts */
 @font-face{
     font-family: 'Dosis-Regular';
-    src: url('../fonts/Dosis/Dosis-Regular.ttf') format('truetype');
+    src        : url('../fonts/Dosis/Dosis-Regular.ttf') format('truetype');
     /*font-weight: normal;
     font-style: italic;*/
 }
 @font-face{
     font-family: 'OpenSans-Bold';
-    src: url('../fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
+    src        : url('../fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
 }
 @font-face{
     font-family: 'OpenSans-Light';
-    src: url('../fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+    src        : url('../fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
 }
 @font-face{
     font-family: 'OpenSans-Regular';
-    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+    src        : url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 /* General */
 * {
-    padding: 0;
-    margin: 0;
+    padding    : 0;
+    margin     : 0;
     font-family: OpenSans-Regular;
-    color: #798285;
-    clear: both;
+    color      : #798285;
+    clear      : both;
 }
 a {
     text-decoration: none;
@@ -33,41 +33,41 @@ a:hover {
     cursor: pointer;
 }
 .title {
-    font-size: 50.49px;
-    font-family: Dosis-Regular;
-    line-height: 34px;
+    font-size     : 50.49px;
+    font-family   : Dosis-Regular;
+    line-height   : 34px;
     .va118;
     text-transform: uppercase;
-    text-align: center;
+    text-align    : center;
     /*z-index: 10;*/
 }
 .title:before {
-    content: url('@{imgpath}black-line-title.png');
+    content : url('@{imgpath}black-line-title.png');
     position: absolute;
-    z-index: -1;
+    z-index : -1;
 }
 .wrap {
-    margin: 0 auto;
+    margin      : 0 auto;
     padding-left: 2px;
-    max-width: 1200px;
+    max-width   : 1200px;
 }
 @media @iphone6 {
     .wrap {
-        margin: 0 auto;
+        margin   : 0 auto;
         max-width: 325px;
         /*overflow-x: hidden;*/
     }
     .title {
-    font-size: 50.49/2px;
+    font-size  : 50.49/2px;
     font-family: Dosis-Regular;
-    line-height: 34/2px;
+    line-height: 17px;
     }
     .title:before {
-    content: '';
-    height: 1px;
+    content         : '';
+    height          : 1px;
     background-color: #000;
-    position: absolute;
-    z-index: -1;
+    position        : absolute;
+    z-index         : -1;
     }
 }
 @media @laptop {
