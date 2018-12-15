@@ -1,116 +1,116 @@
 @media @iphone6 {
     /* Upcoming events */
     .b-upcoming-events {
-        min-height: 601px;
+        min-height   : 601px;
         margin-bottom: 5px;
-        background: url('@{imgpath-min}bridge.png') no-repeat;
+        background   : url('@{imgpath-min}bridge.png') no-repeat;
         .bg-cover;
-        /*z-index: -20;*/
-        /*background-size: cover;*/
         &__title {
-            position: relative;
-            height: 1.1em;
-            padding-top: 35px;
-            margin-left: 2px;
+            position     : relative;
+            height       : 1.1em;
+            padding-top  : 35px;
+            margin-left  : 2px;
             margin-bottom: 47px;
-            color: #42717e;
-            z-index: 1;
+            color        : #42717e;
+            z-index      : 1;
         }
         &__title:before {
-            position: absolute;
-            width: 251px;
+            position : absolute;
+            width    : 251px;
             transform: translate(-1px,9px);
-            z-index: -1;
+            z-index  : -1;
         }
         &__tour {
+            position    : relative;
             padding-left: 15.5%;
         }
         &__name-of-tour {
             margin-bottom: 9px;
-            font-family: OpenSans-Regular;
+            font-family  : OpenSans-Regular;
             .va18;
-            color: #000;
+            color    : #000;
             font-size: 23/2px;
             &_margin-bottom_big {
                 margin-bottom: 14px;
             }
             &_letter-spacing_small {
-                color: inherit;
+                color         : inherit;
                 letter-spacing: -0.025em;
             }
         }
         &__name-of-tour:after {
-            content: '';
+            content         : '';
             background-color: #000;
-            width: 67px;
-            height: 1px;
-            position: absolute;
-            transform: translate(-119px, 17px);
+            width           : 63px;
+            height          : 1px;
+            position        : absolute;
+            transform       : translate(-119px, 17px);
         }
         &__name-of-tour_underline-size_short:after {
-            content: '';
+            content         : '';
             background-color: #000;
-            width: 97px;
-            height: 1px;
-            transform: translate(-238/2px, 9px);
+            width           : 97px;
+            height          : 1px;
+            transform       : translate(-119px, 16px);
         }
         &__location-of-tour {
-            height: 26px;
+            height       : 26px;
             margin-bottom: 35px;
-            font-family: OpenSans-Regular;
+            font-family  : OpenSans-Regular;
             .va18;
-            color: #798285;
-            font-size: 14/2px;
-            line-height: 24.27/2px;
-            overflow: hidden;
+            color        : #798285;
+            font-size    : 14/2px;
+            line-height  : 24.27/2px;
+            overflow     : hidden;
         }
         &__location-of-tour:after {
-            content: '';
+            content         : '';
             background-color: #000;
-            width: 1px;
-            height: 26px;
-            position: absolute;
-            transform: translate(-1px, 7px);
+            width           : 1px;
+            height          : 26px;
+            position        : absolute;
+            transform       : translate(-2px, 7px);
            
         }
         &__descr-of-tour {
-            position: relative;
-            height: 128/2px;
-            margin-bottom: 59/2px;
-            font-family: OpenSans-Regular;
-            color: #798285;
-            line-height: 24.27/2px;
+            position     : static;
+            width        : 275px;
+            height       : 100px;
+            margin-bottom: 10px;
+            font-family  : OpenSans-Regular;
+            color        : #798285;
+            line-height  : 24.27/2px;
             .va18;
-            font-size: 14/2px;
-            overflow: hidden;
+            font-size    : 14/2px;
+            overflow     : hidden;
 
         }
         &__descr-of-tour:after {
-            content: '';
-            background-color: #000;
-            width: 1px;
-            height: 26px;
-            position: absolute;
-            transform: translate(10px, 20px);
+            content  : url('@{imgpath}black-line-short.png');
+            position : absolute;
+            height   : 26px;
+            transform: translate(-192px, 22px);
+            overflow : hidden;
+            /*z-index: 200;*/
         }
         &__start-date-of-tour {
             margin-bottom: 101px;
-            font-family: OpenSans-Bold;
-            font-size: 7px;
-            color: rgba(0,0,0,0.65);
+            font-family  : OpenSans-Bold;
+            font-size    : 7.5px;
+            color        : rgba(0,0,0,0.65);
         }
         &__start-date-of-tour:after {
-            content: '';
+            content         : '';
             background-color: #000;
-            width: 1px;
-            height: 82px;
-            position: absolute;
-            transform: translate(-19px, 20px);
+            width           : 1px;
+            height          : 82px;
+            position        : absolute;
+            transform       : translate(-22px, 20px);
             }
         &__finish-date-of-tour {
             font-family: OpenSans-Bold;
-            font-size: 7px;
-            color: rgba(0,0,0,0.65);
+            font-size  : 7.5px;
+            color      : rgba(0,0,0,0.65);
         }
     }
 }

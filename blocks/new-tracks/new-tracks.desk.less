@@ -1,18 +1,18 @@
 /*  new-tracks */
 .b-new-tracks {
-    min-height: 872px;
+    min-height   : 872px;
     margin-bottom: 122px;
     &__list {
-        display  : flex;
-        max-width: 1201px;
-        height   : 872px;
-        align-content: space-between;
-        align-items: stretch;
-        flex-wrap: wrap;
+        display        : flex;
+        max-width      : 1201px;
+        height         : 872px;
+        align-content  : space-between;
+        align-items    : stretch;
+        flex-wrap      : wrap;
         justify-content: space-between;
     }
     &__item {
-        width:384px;
+        width :384px;
         height:422px;
         /*margin:14px 12.5px;*/
         &_number_1 {
@@ -35,42 +35,49 @@
         }
     }
     &__descr {
+        position  : relative;
         text-align: left;
-        padding: 35px;
+        padding   : 28px 40px 30px 35px;
         text-align: left;
     }
     &__date {
-        color: #000000;
-        /*margin-top:35px;*/
-        /*text-align: left;*/
-        font-family: OpenSans-Bold;
-        margin-bottom: 12px;
+        color        : #000000;
+        font-size    : 14px;
+        line-height  : 24.27px;
+        font-family  : OpenSans-Bold;
+        margin-bottom: 8px;
     }
     &__date:after {
+        position: absolute;
         content: url('@{imgpath}black-line.png');
+        transform: translate(-71px, 12px);
     }
     &__album {
-        color: #ffffff;
-        /*margin-top:35px;*/
-        /*text-align: left;*/
-        font-family: OpenSans-Bold;
+        color         : #ffffff;
+        font-family   : OpenSans-Bold;
         text-transform: uppercase;
-        margin-bottom: 12px;
+        margin-bottom : 38px;
+        font-size     : 14px;
+        line-height   : 24.27px;
+
     }
     &__name {
-        color: #000000;
-        /*margin-top:35px;*/
-        /*text-align: left;*/
+        color      : #000000;
         font-family: OpenSans-Regular;
-        font-size: 23px;
+        font-size  : 23px;
+        line-height: 24.27px;
+        .va18;
     }
     &__full-descr {
-        /*position: absolute;*/
-        /*position: relative;*/
+        position   : absolute;
+        top        : 202px;
+        width      : 308px;
         font-family: OpenSans-Regular;
-        font-size: 14px;
-        overflow-y: hidden;
-        max-height: 155px;
+        font-size  : 14px;
+        overflow-y : hidden;
+        max-height : 151px;
+        .va18;
+        line-height: 24.27px;
         /*text-overflow: scroll;*/
         /*white-space: nowrap;*/
         /*height: 50%;*/

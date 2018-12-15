@@ -38,18 +38,20 @@
         font-size: 35.49px;
         .va118;
         color:#000;
-        opacity: 0.28;
+        opacity: 1;
         text-transform: uppercase;
         cursor: pointer;
         transition: 0.6s;
     }
-    &__radio-button:checked + &__date {
-        opacity: 1;
-        position: relative;
-        transform: translateX(250%);
-    }
     &__case {
         display: none;
+    }
+    &__date-back {
+        font-family: Dosis-Regular;
+        font-size: 35.49px;
+        background-color: rgba(245,245,245,0.9);
+        border-radius: 40px;
+        opacity: 1;
     }
 }
 .owl-item {
@@ -61,7 +63,12 @@
     opacity: 1;
     height: 210px;
 }
-.owl-item.center .b-history__date:before {
+.owl-item.center .b-history__date-back {
+        opacity: 1;
+        color: rgba(0,0,0,1);
+        background-color: rgba(245,245,245,0.9);
+}
+.owl-item.center .b-history__date-back:before {
     position: absolute;
     content: '';
     width: 8px;
@@ -70,7 +77,7 @@
     border-radius: 4px;
     transform: translate(-58px, 18px);
 }
-.owl-item.center .b-history__date:after {
+.owl-item.center .b-history__date-back:after {
     position: absolute;
     content: '';
     width: 8px;
@@ -97,7 +104,17 @@
 .owl-carousel {
     /*overflow-x: scroll;*/
     overflow-y: visible;
-    transform: translateX(-5px);
+    transform: translateX(-1.8%);
+}
+.owl-carousel:after {
+    /*display: block;*/
+    position: absolute;
+    content:'';
+    background-color: #afafaf;
+    width: 100vw;
+    height: 1px;
+    z-index: -1;
+    top: 25px;
 }
 .owl-item.center {
     width: 390px !important;
@@ -105,26 +122,8 @@
 }
 .owl-item.cloned:not(.active) {
     visibility: hidden;
-    display: inline-block;
     clear: none;
 }
-.owl-item.active {
-    display: inline-block;
-}
-.owl-item.active:not(.center):after {
-    content:'';
-    width: 148px;
-    height: 1px;
-    background-color: #afafaf;
-    transform: translate(173px, -39px);
-    display: inline-block;
-}
-.owl-item.center:after {
-    content:'';
-    width: 148px;
-    height: 1px;
-    background-color: #afafaf;
-    transform: translate(208px, -205px);
-    display: inline-block;
-}
+
+
 

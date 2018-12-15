@@ -1,6 +1,13 @@
 @imgpath: "../images/";
 @imgpath-min: "../images/min/";
-@desktop: ~"only screen and (min-width : 1201px) and (-webkit-max-device-pixel-ratio : 1)";
-@iphone6: ~"only screen and (max-width : 650px) and (-webkit-min-device-pixel-ratio : 1.5) and (orientation : portrait)";
-@laptop: ~"only screen and (min-width : 651px) and (max-width : 1200px)";
+@desktop: ~"only screen and (min-width : 1201px)
+    and (-webkit-max-device-pixel-ratio : 1)";
+@iphone6: ~"only screen and (max-width : 650px)
+    and (-webkit-min-device-pixel-ratio : 1.5)
+    and (orientation : portrait),
+    only screen and (max-width : 325px)
+    and (-webkit-max-device-pixel-ratio : 1.4)
+    and (orientation : portrait)";
+@laptop: ~"only screen and (min-width : 651px)
+and (max-width : 1200px)";
 /*@landscape: ~"only screen and (orientation : landscape)";*/
