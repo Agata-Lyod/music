@@ -8,13 +8,16 @@
         padding-left: 49.8%
     }
     &__title {
+        position: relative;
         padding-top: 151px;
         text-align: left;
         color: #454545;
         margin-bottom: 36px;
+        z-index: 1;
     }
     &__title:before {
         transform: translate(3px,-18px);
+        z-index: -1;
     }
     &__adress {
         margin-bottom: 10px;

@@ -4,7 +4,8 @@
         background: url('@{imgpath-min}forest.png') no-repeat center bottom;
         .bg-contain;
         min-height: 2134/2px;
-        margin-bottom: 110/2px;
+        margin-bottom: 55px;
+        padding-bottom: 145px;
         /*width:100vw;*/
         &__title {
             position: relative;
@@ -16,7 +17,7 @@
             background-position: 0 -269px;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            z-index:1;
+            z-index: 1;
             /*transform: translate(-3px,-1px);*/
         }
         &__title:before {
@@ -31,7 +32,7 @@
         }
         &__preview {
             width: 325px;
-            font-size: 15/2px;
+            .fs-s;
             color: #798285;
             text-align: center;
             line-height: 24.27/2px;
@@ -48,14 +49,14 @@
         &__album-title {
             max-width: 50%;
             float: left;
-            font-size: 15/2px;
+            .fs-s;
             padding: 0;
             margin-bottom: 12px;
         }
         &__album-year {
             margin-bottom: 6px;
             font-family: OpenSans-Bold;
-            font-size: 15/2px;
+            .fs-xs;
             color: rgba(0,0,0,0.65);
             opacity: 35%;
         }
@@ -77,7 +78,7 @@
         }
         &__album-descr {
             /*display:block;*/
-            font-size: 15/2px;
+            .fs-s;
             line-height: 24.27px;
             .va18;
             clear: both;
@@ -110,7 +111,7 @@
         }
         &__album-full-descr {
             /*display:block;*/
-            font-size: 15/2px;
+            .fs-s;
             line-height: 24.27/2px;
             text-align: justify;
             .va18;
@@ -130,13 +131,13 @@
         }
         &__button-play {
             margin: auto;
-            width: 196/2px;
-            height: 56/2px;
+            width: 98px;
+            height: 28px;
             font-family: OpenSans-Bold;
             text-align: center;
             text-transform: uppercase;
             cursor: pointer;
-            line-height: 56/2px;
+            line-height: 28px;
             transform: translateX(-2px);
             &_background_one {
                 background: url('@{imgpath}mount.png') no-repeat;

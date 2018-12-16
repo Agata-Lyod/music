@@ -1,0 +1,146 @@
+@media @laptop {
+    /* Discography */
+    .b-discography {
+        /*display: block;*/
+        background: url('@{imgpath}forest.png') no-repeat center bottom;
+        min-height: 1778px;
+        margin-bottom: 165px;
+        /*width:100vw;*/
+        &__title {
+            line-height: 34px;
+            margin: 0 auto;
+            padding-right: 4px;
+            width: 345px;
+            height: 40px;
+            background: url('@{imgpath}discography-back.png') no-repeat;
+            background-position: 0 -269px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index:10;
+        }
+        &__title:before {
+            transform: translate(-15.4%,-18px);
+            z-index: -1;
+        }
+        &__preview {
+            width: 725px;
+            font-size: 14px;
+            color: #798285;
+            text-align: center;
+            line-height: 24.27px;
+            /*max-width: 735px;*/
+            margin: 42px auto 149px;
+            padding-left: 3px;
+            .va118;
+        }
+        &__album {
+            width: 100%;
+            clear: both;
+            position: relative;
+        }
+        &__album-title {
+            /*position: relative;*/
+            max-width: 50%;
+            float: left;
+            font-size: 14px;
+            padding: 17px 1px;
+        }
+        &__album-year {
+            position: relative;
+            font-family: OpenSans-Bold;
+            color: rgba(0,0,0,0.65);
+            opacity: 35%;
+            margin-bottom: 14px;
+        }
+        &__album-year:after {
+            /*display:block;*/
+            content: '';
+            position: absolute;
+            background-color: #000;
+            height: 1px;
+            width: 100%;
+            transform: translate(-31px, 28px);
+        }
+        &__album-name {
+            color: #000000;
+            text-transform: uppercase;
+            font-family: OpenSans-Bold;
+        }
+        &__album-descr {
+            /*display:block;*/
+            font-size: 14px;
+            line-height: 24.27px;
+            .va18;
+            clear: none;
+            float: right;
+            max-width: 672px;
+            padding-left: 3px;
+        }
+        &__album-short-descr {
+            /*display:block;*/
+            font-size: 23px;
+            line-height: 24.27px;
+            .va18;
+            color:#000000;
+            &_number_one {
+                margin-bottom: 14px;
+            }
+            &_number_two {
+                margin-bottom: 19px;
+            }
+            &_number_three {
+                line-height: 35.27px;
+                margin-bottom: 14px;
+            }
+            &_wrap_nowrap {
+                white-space: nowrap; 
+            }
+        }
+        &__album-full-descr {
+            /*display:block;*/
+            font-size: 14px;
+            line-height: 24.27px;
+            .va18;
+            color:#acacac;
+            &_number_one {
+                margin-bottom: 24px;
+            }
+            &_number_two {
+                margin-bottom: 16px;
+            }
+            &_number_three {
+                margin-bottom: 89px;
+            }
+        }
+        &__album-year_margin_double {
+            margin-top: 42px;
+        }
+        &__button-play {
+            /*display:flex;*/
+            width: 196px;
+            height: 56px;
+            font-family: OpenSans-Bold;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            line-height: 56px;
+            &_background_one {
+                background: url('@{imgpath}mount.png') no-repeat;
+                color:#fff;
+                margin-bottom: 109px;
+            }
+            &_background_two {
+                background: url('@{imgpath}palm.png') no-repeat;
+                color: #000;
+                margin-bottom: 86px;
+            }
+            &_background_three {
+                background: url('@{imgpath}shadow.png') no-repeat bottom;
+                color: #000;
+            }
+        }
+        &__button-play:active {
+            box-shadow: inset 0 5px 15px #535353;
+        }
+    }
+}

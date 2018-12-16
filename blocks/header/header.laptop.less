@@ -1,0 +1,89 @@
+@media @laptop {
+    /* Header */
+    .b-header {
+        margin-bottom: 65px;
+        min-height: 1062px;
+        background: url('@{imgpath}header.png') center top no-repeat;
+        background-size: cover;
+        /*height:100rem;*/
+        &__menu {
+            width: 100%;
+            height: auto;
+            /*max-height: 124px;*/
+            position: fixed;
+            top: 0;
+            background: rgba(220,220,220,0.9);
+            z-index: 10;
+        }
+        &__menu-items {
+            list-style: none;
+            position: relative;
+            display: flex !important;
+            min-height: 62px;
+            justify-content: space-around;
+            width: 100%;
+            flex-flow: row;
+            flex-wrap: wrap;
+            /*margin: 0 auto;*/
+            left: 0;
+            transform: translateX(0);
+            }
+        &__menu-item {
+            display: auto;
+            flex-shrink: 0.1;
+            padding-top: 3px;
+            padding-right: 0;
+            &_padding_right-small {
+                padding-right: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+        &__link {
+            font-family: Dosis-Regular;
+            font-size: 17px;
+            line-height: 59.27px;
+            text-transform: uppercase;
+            position: relative;
+            text-decoration: none;
+            .va118;
+        }
+        &__link:hover {
+            color:#000000;
+        }
+        &__link:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.1em;
+            bottom: -9px;
+            left: 0;
+            background-color: #000000;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+        }
+        &__link:hover:before,
+        &__link:target:before,
+        &__link:focus:before{
+            visibility: visible;
+            transform: scaleX(1);
+        }
+        &__logo {
+            display: flex;
+            height: 1000px;
+            text-align: center;
+        }
+        &__logo img {
+            width: 428px;
+            height: 397px;
+            margin: auto;
+            padding-bottom: 165px;
+            padding-right: 15px;
+        }
+    }
+    .i-header__menu-icon {
+        display: none;
+    }
+}

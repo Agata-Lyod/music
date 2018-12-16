@@ -1,19 +1,20 @@
 /*  new-tracks */
 .b-new-tracks {
-    min-height   : 872px;
+    min-height   : 100%;
     margin-bottom: 122px;
     &__list {
         display        : flex;
+        flex-flow      : row wrap;
         max-width      : 1201px;
-        height         : 872px;
+        min-height     : 872px;
         align-content  : space-between;
-        align-items    : stretch;
-        flex-wrap      : wrap;
+        align-items    : center;
         justify-content: space-between;
     }
     &__item {
         width :384px;
         height:422px;
+        margin: auto;
         /*margin:14px 12.5px;*/
         &_number_1 {
             background: url('@{imgpath}track1.png');
