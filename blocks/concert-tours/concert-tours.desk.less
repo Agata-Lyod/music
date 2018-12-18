@@ -1,81 +1,81 @@
 /* Concert tours */
 .b-concert-tours {
-    min-height: 1253px;
+    min-height   : 1253px;
     margin-bottom: 162px;
-    background: url('@{imgpath}concert-tours.png') no-repeat center bottom;
+    background   : url('@{imgpath}concert-tours.png') no-repeat center bottom;
     &__title {
-        margin-bottom: 49px;
-        line-height: 34px;
-        height: 0.75em;
-        background: linear-gradient(#62a2ad, #8dbab3);
-        background-position: 5px 0;
+        margin-bottom          : 49px;
+        line-height            : 34px;
+        height                 : 0.75em;
+        background             : linear-gradient(#62a2ad, #8dbab3);
+        background-position    : 5px 0;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     &__title:before {
         transform: translate(-9.8%,-16px);
-        z-index: -1;
+        z-index  : -1;
     }
     &__preview {
         margin-bottom: 463px;
-        text-align: center;
-        font-size: 14px;
-        line-height: 24.27px;
+        text-align   : center;
+        font-size    : 14px;
+        line-height  : 24.27px;
         .va118;
-        transform: translateX(-2.7px);
+        transform    : translateX(-2.7px);
     }
     &__tour {
         /*margin-bottom: 464px;*/
     }
     &__date {
-        font-family: OpenSans-Bold;
-        color: rgba(0,0,0,0.65);
-        font-size: 14px;
+        font-family  : OpenSans-Bold;
+        color        : rgba(0,0,0,0.65);
+        font-size    : 14px;
         margin-bottom: 14px;
     }
     &__date:after {
-        content: url('@{imgpath}black-line-tours.png');
-        position: absolute;
+        content  : url('@{imgpath}black-line-tours.png');
+        position : absolute;
         transform: translate(-70px, 12.3px);
     }
     &__name-of-tour {
-        margin-bottom: 71px;
+        margin-bottom : 71px;
         text-transform: uppercase;
-        font-family: OpenSans-Bold;
-        font-size: 14px;
-        color:#000000;
-        transform: translateX(-1.5px);
+        font-family   : OpenSans-Bold;
+        font-size     : 14px;
+        color         : #000;
+        transform     : translateX(-1.5px);
     }
     &__time-of-tour {
-        font-family: OpenSans-Regular;
-        font-size: 23px;
+        font-family  : OpenSans-Regular;
+        font-size    : 23px;
         .va18;
-        color:#000000;
-        transform: translateX(-1.5px);
+        color        :#000;
+        transform    : translateX(-1.5px);
         margin-bottom: 16px;
     }
     &__descr-of-tour {
-        width: 672px;
-        font-family: OpenSans-Regular;
-        font-size: 14px;
+        width        : 672px;
+        font-family  : OpenSans-Regular;
+        font-size    : 14px;
         .va18;
-        line-height: 24.27px;
-        color: #798285;
+        line-height  : 24.27px;
+        color        : #798285;
         margin-bottom: 35px;
     }
     &__buy-button {
-        display: block;
-        width: 196px;
-        height: 56px;
-        box-sizing: border-box;
-        line-height: 55px;
-        color: #000;
+        display     : block;
+        width       : 196px;
+        height      : 56px;
+        box-sizing  : border-box;
+        line-height : 55px;
+        color       : #000;
         /*text-align: center;*/
         border-width: 1px;
         border-color: rgba(99, 99, 99, 0.561);
         border-style: solid;
         /*opacity: 0.439;*/
-        z-index: 201;
+        z-index     : 201;
     }
     &__buy-button:hover {
         animation: buy-button-hover 0.5s forwards;
@@ -86,14 +86,14 @@
         
     }
     &__buy {
-        font-size: 14px;
-        font-family: OpenSans-Bold;
-        color: inherit;
+        font-size   : 14px;
+        font-family : OpenSans-Bold;
+        color       : inherit;
         padding-left: 8px;
-        text-align: center;
+        text-align  : center;
     }
     &__buy:after {
-    content: url('@{imgpath}button-buy.png');
+    content    : url('@{imgpath}button-buy.png');
     margin-left: 18px;
     }
 }
@@ -103,7 +103,7 @@
     }
     100% {
         background-color: rgba(0,80,100,0.5);
-        color: rgb(255,255,255);
+        color           : rgb(255,255,255);
     }
 }
 @keyframes buy-after-hover {
@@ -116,11 +116,11 @@
     .b-concert-tours {
         &__title {
             background: transparent;
-            color: #62a2ad;
+            color     : #62a2ad;
         }
         &__title:before {
             transform: translate(69.8%,-16px);
-            z-index: -1;
+            z-index  : -1;
         }
     }
 }

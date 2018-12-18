@@ -55,9 +55,13 @@
             /*z-index: 20;*/
         }
         &__note:after {
+            content: '';
             position: absolute;
-            content: url('@{imgpath}slider-flash-right.png');
-            transform: translate(25/2px, 6/2px);
+            width: 20px;
+            height: 11px;
+            background: url('@{imgpath}slider-flash-right.png') center no-repeat;
+            .bg-contain;
+            transform: translate(12px, 3px);
         }
         &__preview {
             font-family: Dosis-Regular;
@@ -66,16 +70,17 @@
             line-height: 26.27/2px;
             .va118;
             text-transform: uppercase;
-            margin-bottom: 32/2px;
+            margin-bottom: 16px;
         }
         &__descr {
-            margin: 0 auto 57/2px;
+            margin: 0 auto 28px;
+            width:80%;
             font-family: OpenSans-Regular;
-            font-size: 14/2px;
+            .fs-s;
             color: #798285;
             line-height: 24.27/2px;
             .va18;
-            margin-bottom: 57/2px;
+            /*margin-bottom: 57/2px;*/
         }
         &__years {
             font-family: OpenSans-Regular;
@@ -87,7 +92,7 @@
         &__radio-button {
             position: relative;
             /*transform: translateY(400px);*/
-            /*display: none;*/
+            display: none;
             margin-right: 30/2px;
             top: 538/2px;
             /*bottom: 400px;*/
@@ -110,9 +115,9 @@
         &__radio-button:checked + &__slide + label + &__button-forward:after {
             display: none;
             position: absolute;
-            top: 6/2px;
+            top: 3px;
             /*bottom: 0;*/
-            height: 22/2px;
+            height: 11px;
             line-height: 171/2px;
             /*z-index: 10;*/
             cursor: pointer;
@@ -126,7 +131,7 @@
         &__radio-button:checked + &__slide + &__button-back:after {
             content: url(../images/slider-strelka-vlevo.png);
             /*left: 49%;*/
-            right: 42/2px;
+            right: 21px;
         }
         &__radio-button:checked + &__slide + label + &__button-forward {
             width: 85/2px;

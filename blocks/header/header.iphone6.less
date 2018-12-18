@@ -2,42 +2,42 @@
 @media @iphone6 {
     .b-header {
         margin-bottom: 16px;
-        min-height: 1336/2px;
-        background: url('@{imgpath-min}header.png') 2px top no-repeat;
+        min-height   : 1336/2px;
+        background   : url('@{imgpath-min}header.png') 2px top no-repeat;
         .bg-cover;
         /*height:100rem;*/
         &__menu {
             /*display: none;*/
-            width: 100%;
-            position: fixed;
-            top: 0;
-            z-index: 50;
+            width     : 100%;
+            position  : fixed;
+            top       : 0;
+            z-index   : 50;
             background: transparent;
         }
         &__menu-items {
             list-style: none;
-            position: relative;
-            display: none;
-            width: 750/2px;
-            left: 0;
-            z-index: 0;
+            position  : relative;
+            display   : none;
+            width     : 100%;
+            left      : 0;
+            z-index   : 0;
             background: rgba(0,0,0,0.5);
-            transform: translateX(0);
+            transform : translateX(0);
             }
         &__menu-item {
             /*background: rgba(0,0,0,0.6);*/
-            display: block;
-            padding-left: 25px;
-            width: 100%;
+            display      : block;
+            padding-left : 25px;
+            width        : 100%;
             margin-bottom: 12px;
         }
         &__link {
-            font-family: Dosis-Regular;
-            font-size: 17px;
-            line-height: 59.27/2px;
-            color:#fff;
-            text-transform: uppercase;
-            position: relative;
+            font-family    : Dosis-Regular;
+            font-size      : 17px;
+            line-height    : 59.27/2px;
+            color          : #fff;
+            text-transform : uppercase;
+            position       : relative;
             text-decoration: none;
             .va118;
         }
@@ -45,52 +45,52 @@
             color:#000;
         }
         &__link:before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 0.1em;
-            bottom: -9px;
-            left: 0;
-            background-color: #000000;
-            visibility: hidden;
-            transform: scaleX(0);
-            transition: all 0.3s ease-in-out 0s;
+            content         : '';
+            position        : absolute;
+            width           : 100%;
+            height          : 0.1em;
+            bottom          : -9px;
+            left            : 0;
+            background-color: #000;
+            visibility      : hidden;
+            transform       : scaleX(0);
+            transition      : all 0.3s ease-in-out 0s;
         }
         &__link:hover:before,
         &__link:target:before,
         &__link:focus:before{
             visibility: visible;
-            transform: scaleX(1);
+            transform : scaleX(1);
         }
         &__logo {
-            display: flex;
-            height: 1336/2px;
+            display   : flex;
+            height    : 1336/2px;
             text-align: center;
     }
         &__logo img {
-            width: 539/2px;
-            height: 499/2px;
-            margin: auto;
+            width         : 539/2px;
+            height        : 499/2px;
+            margin        : auto;
             padding-bottom: 285/2px;
-            padding-right: 28/2px;
+            padding-right : 14px;
         }
     }
     .i-header__menu-icon
         /*&__menu-items:after*/ {
-        content: '';
-        position: absolute;
-        display: block;
-        top: 50/2px;
-        right: 69/2px;
-        width: 82/2px;
-        height: 58/2px;
+        content   : '';
+        position  : absolute;
+        display   : block;
+        top       : 25px;
+        right     : 69/2px;
+        width     : 82/2px;
+        height    : 58/2px;
         background: url('@{imgpath-min}header-menu.png');
-        background-size: contain;
-        z-index: 50;
-        cursor: pointer;
+        .bg-contain;
+        z-index   : 50;
+        cursor    : pointer;
         &_state_escape {
             background: url('@{imgpath-min}header-menu-escape.png') center no-repeat;
-            background-size: contain;
+            .bg-contain;
         }
     }
 }

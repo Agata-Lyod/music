@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html  lang="en">
 <head>
     <title>John Doe | Музыка | remix</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,12 +19,11 @@
 @@include('./../new-tracks/new-tracks.html')
 @@include('./../upcoming-events/upcoming-events.html')
 @@include('./../history/history.html')
-<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.4.1.js" defer></script>
-<script type="text/javascript" src="/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/dist/script.js" defer></script>
+<script src="/dist/script.js" defer></script>
 <script>
 $(function(){
     $('.owl-carousel').owlCarousel({
@@ -44,12 +43,13 @@ $(function(){
             },
             1200: {
                 items: 5,
-                margin:70
+                margin:100
             }
         }
     });
 });
 </script>
+<script src="/plugins/TouchSwipe-Jquery-Plugin-master/jquery.touchSwipe.min.js"></script>
 @@include('./../contact/contact.html')
 </body>
 </html>

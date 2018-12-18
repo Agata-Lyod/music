@@ -18,7 +18,7 @@ $(function(){
     */
   });
   /* Подготавливаем иконку меню */
-    $('#b-header__menu').prepend('<div class="i-header__menu-icon"></div>');
+    $('.b-header__menu').prepend('<div class="i-header__menu-icon"></div>');
                  /* Включаем навигацию */
     $(".i-header__menu-icon").on("click", function(){
         $(".b-header__menu-items").slideToggle();
@@ -142,3 +142,17 @@ $(function(){
         $('#audio3').gAudio();
     }
 });
+
+$(function() {
+    $('.b-slider__slide').swipe( {
+    //Generic swipe handler for all directions
+        swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+            $(this).next('.b-slider__button-back').trigger('click');
+        },
+        swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+            $(this).next().next('.b-slider__button-forward').trigger('click');
+        },
+
+     });
+});
+
