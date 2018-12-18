@@ -1,11 +1,13 @@
 $(function() {
-  $("#slider_1+.b-slider__slide").swipe( {
+    $('.b-slider__slide').swipe( {
     //Generic swipe handler for all directions
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      $(this).slideToggle("You swiped " + direction );  
-    }
-  });
+        swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+            $(this).next('.b-slider__button-back').trigger('click');
+        },
+        swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+            $(this).next().next('.b-slider__button-forward').trigger('click');
+        },
 
-  //Set some options later
-  $("#test").swipe( {fingers:2} );
+     });
 });
+

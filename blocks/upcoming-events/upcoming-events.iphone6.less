@@ -75,22 +75,24 @@
         &__descr-of-tour {
             position     : static;
             width        : 275px;
-            height       : 100px;
-            margin-bottom: 10px;
+            height       : 126px;
+            margin-bottom: 65px;
             font-family  : OpenSans-Regular;
             color        : #798285;
             line-height  : 24.27/2px;
             .va18;
             .fs-s;
-            overflow     : hidden;
+            overflow     : scroll;
 
         }
         &__descr-of-tour:after {
             content  : url('@{imgpath}black-line-short.png');
             position : absolute;
             height   : 26px;
-            transform: translate(-192px, 22px);
-            overflow : hidden;
+            transform: translate(0, 0);
+            top: 84%;
+            left: 19.5%;
+            overflow : visible;
             /*z-index: 200;*/
         }
         &__start-date-of-tour {
