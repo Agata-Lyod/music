@@ -1,33 +1,33 @@
     /* b-Slider */
 @media @iphone6 {
     .b-slider {
-        width: 100%;
-        margin-bottom: 28px;
+        width           : 100%;
+        margin-bottom   : 28px;
         background-image: url('@{imgpath-min}ocean.png');
         .bg-contain;
-        min-height: 321px;
+        min-height      : 321px;
         /*border: 1px solid #888;*/
-        position: relative;
-        overflow: hidden;
-        text-align: center;
+        position        : relative;
+        overflow        : hidden;
+        text-align      : center;
         &__slide {
-            position: absolute;
-            overflow-y: scroll;
+            position     : absolute;
+            overflow-y   : scroll;
             /*margin-right: 0;*/
-            box-sizing: border-box;
-            width: 100%;
-            text-align: center;
-            padding-right: 16/2px;
-            margin-left: calc(100vw - 100%);
-            top: 0;
+            box-sizing   : border-box;
+            width        : 100%;
+            text-align   : center;
+            padding-right: 8px;
+            margin-left  : calc(100vw - 100%);
+            top          : 0;
             /*left: -9px;*/
             /*right: -6px;*/
-            height: 83%;
+            height       : 83%;
             /*bottom: 220px;*/
             /*z-index: 0;*/
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+            visibility   : hidden;
+            opacity      : 0;
+            transition   : opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
         }
         &__slide:hover {
             /*width: 100%;
@@ -40,61 +40,61 @@
             margin-bottom: 2em;
         }
         &__note {
-            margin: 162/2px auto 17px;
+            margin  : 81px auto 17px;
             position: relative;
-            width: 30px;
+            width   : 30px;
         }
         &__note:before {
-            content:'';
-            position: absolute;
+            content   :'';
+            position  : absolute;
             background: url('@{imgpath}slider-flash-left.png') center no-repeat;
             .bg-contain;
-            width: 20px;
-            height: 11px;
-            transform: translate(-25px, 3px);
+            width     : 20px;
+            height    : 11px;
+            transform : translate(-25px, 3px);
             /*z-index: 20;*/
         }
         &__note:after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 11px;
+            content   : '';
+            position  : absolute;
+            width     : 20px;
+            height    : 11px;
             background: url('@{imgpath}slider-flash-right.png') center no-repeat;
             .bg-contain;
-            transform: translate(12px, 3px);
+            transform : translate(12px, 3px);
         }
         &__preview {
-            font-family: Dosis-Regular;
-            font-size: 18.49/2px;
-            color: #fff;
-            line-height: 26.27/2px;
+            font-family   : Dosis-Regular;
+            font-size     : 18.49/2px;
+            color         : #fff;
+            line-height   : 26.27/2px;
             .va118;
             text-transform: uppercase;
-            margin-bottom: 16px;
+            margin-bottom : 16px;
         }
         &__descr {
-            margin: 0 auto 28px;
-            width:80%;
+            margin     : 0 auto 28px;
+            width      : 80%;
             font-family: OpenSans-Regular;
             .fs-s;
-            color: #798285;
+            color      : #798285;
             line-height: 24.27/2px;
             .va18;
             /*margin-bottom: 57/2px;*/
         }
         &__years {
             font-family: OpenSans-Regular;
-            font-size: 14/2px;
-            color: #565e61;
+            .fs-xs;
+            color      : #565e61;
             line-height: 24.27/2px;
             .va18;
         }
         &__radio-button {
-            position: relative;
-            /*transform: translateY(400px);*/
-            display: none;
-            margin-right: 30/2px;
-            top: 538/2px;
+            position    : relative;
+            /*transform : translateY(400px);*/
+            display     : none;
+            margin-right: 15px;
+            top         : 538/2px;
             /*bottom: 400px;*/
             /*margin-top: 20%;*/
             /*z-index: 20;*/
@@ -105,49 +105,49 @@
         }
         &__radio-button:checked + &__slide + &__button-back,
         &__radio-button:checked + &__slide + label + &__button-forward {
-            display: none;
-            position: absolute;
-            top: 50%;
+            display  : none;
+            position : absolute;
+            top      : 50%;
             transform: translateY(-50%);
             /*z-index: 10;*/
         }
         &__radio-button:checked + &__slide + &__button-back:after,
         &__radio-button:checked + &__slide + label + &__button-forward:after {
-            display: none;
-            position: absolute;
-            top: 3px;
-            /*bottom: 0;*/
-            height: 11px;
+            display    : none;
+            position   : absolute;
+            top        : 3px;
+            /*bottom   : 0;*/
+            height     : 11px;
             line-height: 171/2px;
-            /*z-index: 10;*/
-            cursor: pointer;
+            /*z-index  : 10;*/
+            cursor     : pointer;
         }
         &__radio-button:checked + &__slide + &__button-back {
-            width: 85/2px;
-            height: 171/2px;
+            width     : 42px;
+            height    : 171/2px;
             background: url(../images/right.png) no-repeat;
-            left: 0;
+            left      : 0;
         }
         &__radio-button:checked + &__slide + &__button-back:after {
             content: url(../images/slider-strelka-vlevo.png);
-            /*left: 49%;*/
-            right: 21px;
+            /*left : 49%;*/
+            right  : 21px;
         }
         &__radio-button:checked + &__slide + label + &__button-forward {
-            width: 85/2px;
-            height: 171/2px;
+            width     : 85/2px;
+            height    : 171/2px;
             background: url(../images/left.png) no-repeat;
-            right: 0;
+            right     : 0;
         }
         &__radio-button:checked + &__slide + label + &__button-forward:after {
             content: url(../images/slider-strelka-vpravo.png);
             /*right: 48%;*/
-            left: 42/2px;
+            left   : 21px;
         }
         
         &__radio-button:checked + &__slide {
             visibility: visible;
-            opacity: 1;
+            opacity   : 1;
             transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
         }
     }

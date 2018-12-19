@@ -1,23 +1,23 @@
 /* Upcoming events */
 .b-upcoming-events {
-    min-height: 1203px;
+    min-height   : 1203px;
     margin-bottom: 145px;
-    background: url('@{imgpath}bridge.png') no-repeat center bottom;
-    z-index: -20;
+    background   : url('@{imgpath}bridge.png') no-repeat center bottom;
+    z-index      : -20;
     /*background-size: cover;*/
     &__title {
-        position: relative;
-        height: 1.1em;
-        padding-top: 214px;
-        margin-left: 38.4%;
+        position     : relative;
+        height       : 1.1em;
+        padding-top  : 214px;
+        margin-left  : 38.4%;
         margin-bottom: 93px;
-        color: #42717e;
-        z-index: 1;
+        color        : #42717e;
+        z-index      : 1;
     }
     &__title:before {
-        position: absolute;
-        transform: translate(-4px,-18px);
-        z-index: -1;
+        position  : absolute;
+        transform : translate(-4px,-18px);
+        z-index   : -1;
         overflow-y: hidden
     }
     &__tour {
@@ -25,74 +25,83 @@
     }
     &__name-of-tour {
         margin-bottom: 15px;
-        font-family: OpenSans-Regular;
+        font-family  : OpenSans-Regular;
         .va18;
-        color: #000;
-        font-size: 23px;
+        color        : #000;
+        font-size    : 23px;
         &_margin-bottom_big {
             margin-bottom: 28px;
         }
         &_letter-spacing_small {
-            color: inherit;
+            color         : inherit;
             letter-spacing: -0.025em;
         }
     }
     &__name-of-tour:after {
-        position: absolute;
+        position : absolute;
         transform: translate(-238px,12px);
-        content: url('@{imgpath}underline-upcom.png');
+        content  : url('@{imgpath}underline-upcom.png');
     }
     &__name-of-tour_underline-size_short:after {
-        content: url('@{imgpath}underline-short-upcom.png');
+        content  : url('@{imgpath}underline-short-upcom.png');
         transform: translate(-238px,18px);
     }
     &__location-of-tour {
-        height: 52px;
+        height       : 52px;
         margin-bottom: 72px;
-        font-family: OpenSans-Regular;
+        font-family  : OpenSans-Regular;
         .va18;
-        color: #798285;
-        font-size: 14px;
-        line-height: 24.27px;
-        overflow: hidden;
+        color        : #798285;
+        font-size    : 14px;
+        line-height  : 24.27px;
+        overflow     : hidden;
     }
     &__location-of-tour:after {
-        position: absolute;
+        position : absolute;
         transform: translate(-4px,16px);
-        content: url('@{imgpath}black-line-short.png');
+        content  : url('@{imgpath}black-line-short.png');
 
     }
     &__descr-of-tour {
-        height: 128px;
+        height       : 128px;
         margin-bottom: 59px;
-        font-family: OpenSans-Regular;
-        color: #798285;
-        line-height: 24.27px;
+        font-family  : OpenSans-Regular;
+        color        : #798285;
+        line-height  : 24.27px;
         .va18;
-        font-size: 14px;
-        overflow: hidden;
+        font-size    : 14px;
+        overflow     : hidden;
 
     }
     &__descr-of-tour:after {
-        content: url('@{imgpath}black-line-short.png');
-        position: absolute;
+        content  : url('@{imgpath}black-line-short.png');
+        position : absolute;
         transform: translate(-383px,8px);
         
     }
     &__start-date-of-tour {
         margin-bottom: 201px;
-        font-family: OpenSans-Bold;
-        font-size: 14px;
-        color: rgba(0,0,0,0.65);
+        font-family  : OpenSans-Bold;
+        font-size    : 14px;
+        color        : rgba(0,0,0,0.65);
     }
     &__start-date-of-tour:after {
-        position: absolute;
+        position : absolute;
         transform: translate(-38px,40px);
-        content: url('@{imgpath}black-line-long.png');
+        content  : url('@{imgpath}black-line-long.png');
     }
     &__finish-date-of-tour {
         font-family: OpenSans-Bold;
-        font-size: 14px;
-        color: rgba(0,0,0,0.65);
+        font-size  : 14px;
+        color      : rgba(0,0,0,0.65);
+    }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .b-upcoming-events {
+        &__title:before {
+            position : absolute;
+            transform: translate(24%,-16px);
+            z-index  : -1;
+        }
     }
 }
