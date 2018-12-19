@@ -1587,7 +1587,7 @@ and (max-width : 1200px) {
     and (-webkit-max-device-pixel-ratio : 1.4)
     and (orientation : portrait) {
   .b-contact {
-    height: 447px;
+    min-height: 447px;
     background: url('../images/min/footer.png') no-repeat center bottom;
     background-size: cover;
   }
@@ -2111,7 +2111,7 @@ and (max-width : 1200px) {
   .owl-item.center .b-history__case {
     display: block;
     position: absolute;
-    width: 130px;
+    width: 100%;
     font-family: OpenSans-Regular;
     font-size: 14px;
     line-height: 18px !important;
@@ -2128,8 +2128,8 @@ and (max-width : 1200px) {
   .owl-carousel {
     /*overflow-x: scroll;*/
     overflow-y: visible;
-    -webkit-transform: translateX(-15px);
-    transform: translateX(-15px);
+    -webkit-transform: translateX(-1%);
+    transform: translateX(-1%);
   }
   .owl-carousel:after {
     /*display: block;*/
@@ -2898,7 +2898,8 @@ and (max-width : 1200px) {
   .b-upcoming-events__start-date-of-tour {
     margin-bottom: 101px;
     font-family: OpenSans-Bold;
-    font-size: 7.5px;
+    font-size: 14px;
+    line-height: 18px !important;
     color: rgba(0, 0, 0, 0.65);
   }
   .b-upcoming-events__start-date-of-tour:after {
@@ -2907,8 +2908,8 @@ and (max-width : 1200px) {
     width: 1px;
     height: 82px;
     position: absolute;
-    -webkit-transform: translate(-22px, 20px);
-    transform: translate(-22px, 20px);
+    -webkit-transform: translate(-54px, 20px);
+    transform: translate(-54px, 20px);
   }
   .b-upcoming-events__finish-date-of-tour {
     font-family: OpenSans-Bold;
