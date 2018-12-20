@@ -5,46 +5,43 @@
         margin-bottom: 32px;
         &__list {
             display        : flex;
-            flex-flow      : row wrap;
             max-width      : 86.7%;
-            margin-left    : 11px;
-            /*height         : 2794/2px;*/
-            align-content  : space-between;
-            /*align-items    : center;*/
-            flex-wrap      : wrap;
-            justify-content: space-between;
+            margin    : auto;
         }
         &__item {
-            min-width : 384/2px;
-            min-height: 211px;
-            margin: auto;
-            .bg-contain;
+            max-width : 300px;
+            max-height: 320px;
+            /*height: 100%;*/
+            margin    : 0 auto 1em;
+            .bg-cover;
             &_number_1 {
-                background: url('@{imgpath-min}track1.png') no-repeat;
-                .bg-contain;
+                background: url('@{imgpath-min}track1.png') right no-repeat;
+                .bg-cover;
             }
             &_number_2 {
-                background: url('@{imgpath-min}track2.png') no-repeat;
-                .bg-contain;
+                background: url('@{imgpath-min}track2.png') right no-repeat;
+                .bg-cover;
             }
             &_number_3 {
-                background: url('@{imgpath-min}track3.png') no-repeat;
-                .bg-contain;
+                background: url('@{imgpath-min}track3.png') right no-repeat;
+                .bg-cover;
             }
             &_number_4 {
-                background: url('@{imgpath-min}track4.png') no-repeat;
-                .bg-contain;
+                background: url('@{imgpath-min}track4.png') right no-repeat;
+                .bg-cover;
             }
             &_number_5 {
-                background: url('@{imgpath-min}track5.png') no-repeat;
-                .bg-contain;
+                background: url('@{imgpath-min}track5.png') right no-repeat;
+                .bg-cover;
             }
             &_number_6 {
-                background: url('@{imgpath-min}track6.png') no-repeat;
-                .bg-contain;
+                background: url('@{imgpath-min}track6.png') right no-repeat;
+                .bg-cover;
             }
         }
         &__descr {
+            max-width: 90%;
+            height: 90%;
             position  : relative;
             padding   : 13px 40px 30px 16px;
             text-align: left;
@@ -86,12 +83,12 @@
             position   : absolute;
             top        : 90px;
             font-family: OpenSans-Regular;
-            .fs-s;
-            overflow-y : hidden;
-            max-height : 100%;
+            font-size  : 14px;
+            overflow-y : scroll;
+            height : 60%;
             max-width  : 90%;
             line-height: 20.27px;
-            /*text-overflow: scroll;*/
+            text-overflow: clip;
             /*white-space: nowrap;*/
             /*height: 50%;*/
         }

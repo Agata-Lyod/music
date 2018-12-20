@@ -1156,7 +1156,7 @@ and (max-width : 1200px) {
   font-family: OpenSans-Regular;
   font-size: 14px;
   overflow-y: hidden;
-  max-height: 151px;
+  height: 151px;
   letter-spacing: 0.018em;
   line-height: 24.27px;
   /*text-overflow: scroll;*/
@@ -1511,11 +1511,11 @@ and (max-width : 1200px) {
   }
   .b-concert-tours__buy-button {
     display: block;
-    width: 98px;
-    height: 28px;
+    width: 196px;
+    height: 56px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    line-height: 27.5px;
+    line-height: 56px;
     color: #000;
     /*text-align: center;*/
     border-width: 1px;
@@ -1535,11 +1535,11 @@ and (max-width : 1200px) {
   }
   .b-concert-tours__buy {
     font-size: 14px;
-    line-height: 18px !important;
     font-family: OpenSans-Bold;
     color: inherit;
     padding-left: 4px;
     text-align: center;
+    line-height: 55px;
   }
   .b-concert-tours__buy:after {
     content: url('../images/button-buy.png');
@@ -1822,7 +1822,7 @@ and (max-width : 1200px) {
     letter-spacing: 0.018em;
     clear: both;
     float: none;
-    max-width: 336px;
+    max-width: 100;
     padding-left: 0;
     /*text-align: justify;*/
   }
@@ -1852,6 +1852,7 @@ and (max-width : 1200px) {
     /*display:block;*/
     font-size: 14px;
     line-height: 18px !important;
+    background: rgba(255, 255, 255, 0.6);
     line-height: 12.135px;
     text-align: justify;
     letter-spacing: 0.018em;
@@ -1930,22 +1931,29 @@ and (max-width : 1200px) {
     position: relative;
     display: none;
     width: 100%;
+    height: 100vh;
     left: 0;
     z-index: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   .b-header__menu-item {
     /*background: rgba(0,0,0,0.6);*/
     display: block;
-    padding-left: 25px;
+    padding-left: 3%;
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 6vh;
+  }
+  .b-header__menu-item:first-child {
+    padding-top: 6vh;
+  }
+  .b-header__menu-item:last-child {
+    margin-bottom: 0;
   }
   .b-header__link {
     font-family: Dosis-Regular;
-    font-size: 17px;
+    font-size: 4vh;
     line-height: 29.635px;
     color: #fff;
     text-transform: uppercase;
@@ -2521,53 +2529,43 @@ and (max-width : 1200px) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
     max-width: 86.7%;
-    margin-left: 11px;
-    /*height         : 2794/2px;*/
-    -ms-flex-line-pack: justify;
-    align-content: space-between;
-    /*align-items    : center;*/
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    margin: auto;
   }
   .b-new-tracks__item {
-    min-width: 192px;
-    min-height: 211px;
-    margin: auto;
-    background-size: contain;
+    max-width: 300px;
+    max-height: 320px;
+    /*height: 100%;*/
+    margin: 0 auto 1em;
+    background-size: cover;
   }
   .b-new-tracks__item_number_1 {
-    background: url('../images/min/track1.png') no-repeat;
-    background-size: contain;
+    background: url('../images/min/track1.png') right no-repeat;
+    background-size: cover;
   }
   .b-new-tracks__item_number_2 {
-    background: url('../images/min/track2.png') no-repeat;
-    background-size: contain;
+    background: url('../images/min/track2.png') right no-repeat;
+    background-size: cover;
   }
   .b-new-tracks__item_number_3 {
-    background: url('../images/min/track3.png') no-repeat;
-    background-size: contain;
+    background: url('../images/min/track3.png') right no-repeat;
+    background-size: cover;
   }
   .b-new-tracks__item_number_4 {
-    background: url('../images/min/track4.png') no-repeat;
-    background-size: contain;
+    background: url('../images/min/track4.png') right no-repeat;
+    background-size: cover;
   }
   .b-new-tracks__item_number_5 {
-    background: url('../images/min/track5.png') no-repeat;
-    background-size: contain;
+    background: url('../images/min/track5.png') right no-repeat;
+    background-size: cover;
   }
   .b-new-tracks__item_number_6 {
-    background: url('../images/min/track6.png') no-repeat;
-    background-size: contain;
+    background: url('../images/min/track6.png') right no-repeat;
+    background-size: cover;
   }
   .b-new-tracks__descr {
+    max-width: 90%;
+    height: 90%;
     position: relative;
     padding: 13px 40px 30px 16px;
     text-align: left;
@@ -2610,12 +2608,11 @@ and (max-width : 1200px) {
     top: 90px;
     font-family: OpenSans-Regular;
     font-size: 14px;
-    line-height: 18px !important;
-    overflow-y: hidden;
-    max-height: 100%;
+    overflow-y: scroll;
+    height: 60%;
     max-width: 90%;
     line-height: 20.27px;
-    /*text-overflow: scroll;*/
+    text-overflow: clip;
     /*white-space: nowrap;*/
     /*height: 50%;*/
   }
@@ -3628,5 +3625,124 @@ and (max-width : 1200px) {
   }
   audio.stoped + div .i-latter-compositions__audio-seek {
     background-color: #fff;
+  }
+}
+@media only screen and (min-width : 651px)
+and (max-width : 1200px) {
+  /* Upcoming events */
+  .b-upcoming-events {
+    min-height: 1203px;
+    margin-bottom: 145px;
+    background: url('../images/bridge.png') no-repeat center bottom;
+    z-index: -20;
+    /*background-size: cover;*/
+  }
+  .b-upcoming-events__title {
+    position: relative;
+    height: 1.1em;
+    padding-top: 214px;
+    margin-left: 18.4%;
+    margin-bottom: 93px;
+    color: #42717e;
+    z-index: 1;
+  }
+  .b-upcoming-events__title:before {
+    position: absolute;
+    -webkit-transform: translate(-4px, -18px);
+    transform: translate(-4px, -18px);
+    z-index: -1;
+    overflow-y: hidden;
+  }
+  .b-upcoming-events__tour {
+    position: relative;
+    padding-left: 20.13%;
+  }
+  .b-upcoming-events__name-of-tour {
+    margin-bottom: 15px;
+    font-family: OpenSans-Regular;
+    letter-spacing: 0.018em;
+    color: #000;
+    font-size: 23px;
+  }
+  .b-upcoming-events__name-of-tour_margin-bottom_big {
+    margin-bottom: 28px;
+  }
+  .b-upcoming-events__name-of-tour_letter-spacing_small {
+    color: inherit;
+    letter-spacing: -0.025em;
+  }
+  .b-upcoming-events__name-of-tour:after {
+    position: absolute;
+    -webkit-transform: translate(-238px, 12px);
+    transform: translate(-238px, 12px);
+    content: url('../images/underline-upcom.png');
+  }
+  .b-upcoming-events__name-of-tour_underline-size_short:after {
+    content: url('../images/underline-short-upcom.png');
+    -webkit-transform: translate(-238px, 18px);
+    transform: translate(-238px, 18px);
+  }
+  .b-upcoming-events__location-of-tour {
+    height: 52px;
+    margin-bottom: 72px;
+    font-family: OpenSans-Regular;
+    letter-spacing: 0.018em;
+    color: #798285;
+    font-size: 14px;
+    line-height: 24.27px;
+    overflow: hidden;
+  }
+  .b-upcoming-events__location-of-tour:after {
+    position: absolute;
+    -webkit-transform: translate(-4px, 16px);
+    transform: translate(-4px, 16px);
+    content: url('../images/black-line-short.png');
+  }
+  .b-upcoming-events__descr-of-tour {
+    /*position     : relative;*/
+    height: 100%;
+    max-width: 70%;
+    margin-bottom: 59px;
+    font-family: OpenSans-Regular;
+    color: #798285;
+    line-height: 24.27px;
+    letter-spacing: 0.018em;
+    font-size: 14px;
+    /*overflow     : scroll;*/
+  }
+  .b-upcoming-events__descr-of-tour:after {
+    content: url('../images/black-line-short.png');
+    position: absolute;
+    top: 91%;
+    left: 25%;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .b-upcoming-events__start-date-of-tour {
+    margin-bottom: 201px;
+    font-family: OpenSans-Bold;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  .b-upcoming-events__start-date-of-tour:after {
+    position: absolute;
+    -webkit-transform: translate(-38px, 40px);
+    transform: translate(-38px, 40px);
+    content: url('../images/black-line-long.png');
+  }
+  .b-upcoming-events__finish-date-of-tour {
+    font-family: OpenSans-Bold;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+}
+@media only screen and (min-width : 651px)
+and (max-width : 1200px) and screen and (-ms-high-contrast: active), only screen and (min-width : 651px)
+and (max-width : 1200px) and (-ms-high-contrast: none) {
+  .b-upcoming-events__title:before {
+    position: absolute;
+    -webkit-transform: translate(24%, -16px);
+    transform: translate(24%, -16px);
+    z-index: -1;
   }
 }
