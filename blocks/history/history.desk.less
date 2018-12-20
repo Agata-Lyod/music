@@ -124,6 +124,18 @@
     visibility: hidden;
     clear     : none;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .b-history {
+        &__title:before {
+            position : absolute;
+            transform: translate(300%,16px);
+            z-index  : -1;
+        }
+    }
+    .owl-item.center .b-history__date-back:before {
+        transform: translate(58px, 18px);
+    }
+}
 
 
 

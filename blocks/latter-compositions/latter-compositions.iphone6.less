@@ -56,28 +56,28 @@
             margin-bottom: 18px;
         }
         &__name {
-            font-size: 23/2px;
-            font-family: OpenSans-Regular;
-            color: #000;
+            font-size    : 23/2px;
+            font-family  : OpenSans-Regular;
+            color        : #000;
             .va18;
-            line-height: 24.27/2px;
+            line-height  : 24.27/2px;
             margin-bottom: 29.5/2px;
         }
         &_word-spacing_big {
-            color: inherit;
+            color       : inherit;
             word-spacing: 6/2px;
         }
         &__description {
-            position: static;
-            top: 201/2px;
-            width: 505/2px;
-            height: 70/2px;
+            position   : static;
+            top        : 201/2px;
+            width      : 505/2px;
+            height     : 70/2px;
             .fs-s;
             font-family: OpenSans-Regular;
-            color: #798285;
+            color      : #798285;
             .va18;
             line-height: 24.27/2px;
-            overflow: hidden;
+            overflow   : hidden;
         }
         /*&_scroll_hidden {
             width: 102%;
@@ -85,17 +85,17 @@
             /*text-overflow: ellipsis;
         }*/
         &__descr-of-track {
-            display: block;
-            margin: 0 auto;
-            box-sizing: border-box;
-            position: relative;
-            width: 300px;
-            height: 211px;
+            display         : block;
+            margin          : 0 auto;
+            box-sizing      : border-box;
+            position        : relative;
+            width           : 300px;
+            height          : 211px;
             background-color: rgb(245,246,246);
-            padding-left: 17px;
-            padding-right: 25px;
-            float: none;
-            padding-top: 15px;
+            padding-left    : 17px;
+            padding-right   : 25px;
+            float           : none;
+            padding-top     : 15px;
             /*clear: both;*/
             /*&_float_right {
                 float: right;
@@ -123,10 +123,10 @@
         }
         &__descr-of-track:after {
             position: absolute;
-            left: 45.8%;
-            top: 201px;
-            content: url('@{imgpath-min}lat-comp-strelka-vniz.png');
-            z-index: 10;
+            left    : 45.8%;
+            top     : 201px;
+            content : url('@{imgpath-min}lat-comp-strelka-vniz.png');
+            z-index : 10;
         }
         &__links {
         position: absolute;
@@ -148,22 +148,22 @@
         }
         &__itunes-button {
             .fs-xs;
-            font-family: OpenSans-Bold;
-            color: inherit;
-            line-height : 24px;
-            padding-right: 9px;
+            font-family   : OpenSans-Bold;
+            color         : inherit;
+            line-height   : 24px;
+            padding-right : 9px;
             padding-bottom: 7px;
-            padding-top: 0;
-            text-align: center;
+            padding-top   : 0;
+            text-align    : center;
         }
         &__itunes-button:after {
-            content:'';
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            background: url('@{imgpath}button-buy.png') center no-repeat;
+            content    :'';
+            position   : absolute;
+            width      : 5px;
+            height     : 5px;
+            background : url('@{imgpath}button-buy.png') center no-repeat;
             .bg-contain;
-            top: 12px;
+            top        : 12px;
             margin-left: 3px;
         }
         &__link {
@@ -173,12 +173,12 @@
             margin-right: 0;
         }
         &__player {
-            float: none;
-            margin: 0 auto;
-            width: 300px;
-            height: 211px;
+            float     : none;
+            margin    : 0 auto;
+            width     : 300px;
+            height    : 211px;
             text-align: center;
-            position: relative;
+            position  : relative;
             box-sizing: border-box;
             &_background_first {
                 background: url('@{imgpath-min}show-me-love.png') bottom;
@@ -196,6 +196,9 @@
     }
     .i-latter-compositions__audio-player.simpledark {
         position: absolute;
+    }
+    audio.stoped + div .i-latter-compositions__audio-seek {
+        background-color: #fff;
     }
 }
 
