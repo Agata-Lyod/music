@@ -5,7 +5,7 @@
         .bg-contain;
         min-height    : 2134/2px;
         margin-bottom : 55px;
-        padding-bottom: 145px;
+        padding-bottom: 205px;
         /*width:100vw;*/
         &__title {
             position               : relative;
@@ -31,7 +31,7 @@
             z-index         : -10;
         }
         &__preview {
-            width       : 325px;
+            width       : 86.6%;
             .fs-s;
             color       : #798285;
             text-align  : center;
@@ -63,7 +63,7 @@
         &__album-year:after {
             /*display:block;*/
             content         : '';
-            width           : 324px;
+            width           : 97%;
             height          : 1px;
             position        : absolute;
             background-color: #000;
@@ -112,7 +112,9 @@
         &__album-full-descr {
             /*display:block;*/
             .fs-s;
-            background : rgba(255,255,255,0.6);
+            padding    : 5px;
+            transform  :translateX(-5px);
+            background : rgba(255,255,255,0.8);
             line-height: 24.27/2px;
             text-align : justify;
             .va18;

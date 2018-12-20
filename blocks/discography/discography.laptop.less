@@ -2,9 +2,10 @@
     /* Discography */
     .b-discography {
         /*display: block;*/
-        background   : url('@{imgpath}forest.png') no-repeat center bottom;
-        min-height   : 1778px;
-        margin-bottom: 165px;
+        background    : url('@{imgpath}forest.png') no-repeat center bottom;
+        min-height    : 1778px;
+        margin-bottom : 165px;
+        padding-bottom: 150px;
         /*width:100vw;*/
         &__title {
             line-height            : 34px;
@@ -23,7 +24,7 @@
             z-index  : -1;
         }
         &__preview {
-            width       : 725px;
+            width       : 80%;
             font-size   : 14px;
             color       : #798285;
             text-align  : center;
@@ -34,6 +35,7 @@
             .va118;
         }
         &__album {
+            height:100%;
             width   : 100%;
             clear   : both;
             position: relative;
@@ -73,7 +75,7 @@
             .va18;
             clear       : none;
             float       : right;
-            max-width   : 672px;
+            max-width   : 100%;
             padding-left: 3px;
 
         }
@@ -83,6 +85,7 @@
             line-height: 24.27px;
             .va18;
             color:#000000;
+            white-space: normal;
             &_number_one {
                 margin-bottom: 14px;
             }
@@ -93,9 +96,9 @@
                 line-height  : 35.27px;
                 margin-bottom: 14px;
             }
-            &_wrap_nowrap {
-                white-space: nowrap; 
-            }
+            /*&_wrap_nowrap {
+                white-space: wrap; 
+            }*/
         }
         &__album-full-descr {
             /*display:block;*/
